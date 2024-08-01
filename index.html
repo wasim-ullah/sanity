@@ -1,52 +1,736 @@
 <!DOCTYPE html>
-<html>
+<!-- ✨ Built with Framer • https://www.framer.com/ -->
+<html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <title>Sanity.ai</title>
+  <meta charset="utf-8"><!-- End of headStart -->
+  <meta name="viewport" content="width=device-width">
+  <meta name="generator" content="Framer 3f9fff0">
+  <title>Danilo Tanic</title>
   <meta name="description" content=
-  "The platform with a mission to make things more sane aka human friendly in the era of AI.">
-  <link rel="canonical" href="https://sanity.ai">
-  <meta name="viewport" content=
-  "width=device-width, initial-scale=1.0">
-  <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://sanity.ai">
+  "Software designer based in Berlin, Germany.">
+  <meta name="framer-search-index" content=
+  "https://framerusercontent.com/sites/2sluiSkF9LKzBkI3On2ecQ/searchIndex-9hPEVC2nmKWK.json">
+  <link rel="icon" href=
+  "https://framerusercontent.com/images/JtZxR3yDd5kqx1IhllvhzX6gvk.png">
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Sanity.ai">
+  <meta property="og:title" content="Danilo Tanic">
   <meta property="og:description" content=
-  "The platform with a mission to make things more sane aka human friendly in the era of AI.">
+  "Software designer based in Berlin, Germany.">
   <meta property="og:image" content=
-  "https://sanity.ai/public/og-preview.jpg">
-  <!-- Twitter Meta Tags -->
+  "https://framerusercontent.com/images/S4oBkkmnqdNWDIi0egVBduLdVY.png">
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@usesanity">
-  <meta property="twitter:domain" content="sanity.ai">
-  <meta property="twitter:url" content="https://sanity.ai">
-  <meta name="twitter:title" content="Sanity.ai">
+  <meta name="twitter:title" content="Danilo Tanic">
   <meta name="twitter:description" content=
-  "The platform with a mission to make things more sane aka human friendly in the era of AI.">
+  "Software designer based in Berlin, Germany.">
   <meta name="twitter:image" content=
-  "https://sanity.ai/public/og-preview.jpg">
-  <style>
-        body { 
-          line-height: 1.4;
-            font-size: 16px;
-            padding: 0 10px;
-            margin: 50px auto;
-            max-width: 650px;
-        }
+  "https://framerusercontent.com/images/S4oBkkmnqdNWDIi0egVBduLdVY.png">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
 
-        #maincontent
-        {
-        max-width:42em;margin:15 auto;
+  <script async src=
+  "https://www.googletagmanager.com/gtag/js?id=G-00XFLPMZZ9"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){window.dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-        }
-  </style>
+      gtag('config', 'G-00XFLPMZZ9');
+  </script>
+  <meta name="robots" content="max-image-preview:large">
+  <link rel="canonical" href="https://danilotanic.com/">
+  <meta property="og:url" content="https://danilotanic.com/">
+  <link rel="modulepreload" fetchpriority="low" href=
+  "https://framerusercontent.com/sites/2sluiSkF9LKzBkI3On2ecQ/chunk-VHAWNIPZ.mjs">
+  <link rel="modulepreload" fetchpriority="low" href=
+  "https://framerusercontent.com/sites/2sluiSkF9LKzBkI3On2ecQ/chunk-OIST4OYN.mjs">
+  <link rel="modulepreload" fetchpriority="low" href=
+  "https://framerusercontent.com/sites/2sluiSkF9LKzBkI3On2ecQ/EkX9VWDUSJtPa7nN2b9P7zoBaiXlOQW5zF8t6ykNHMc.QEKLWUIV.mjs">
+  <link rel="modulepreload" fetchpriority="low" href=
+  "https://framerusercontent.com/sites/2sluiSkF9LKzBkI3On2ecQ/chunk-Q6VS7IT6.mjs">
+
+  <script>
+  const applyIntlFormatPatch = function xe(e){function t(d,n){return typeof n=="bigint"?`${n}n`:n instanceof Date?n.getTime():n}function r(...d){let n=JSON.stringify(d,t),c=0;for(let u=0;u<n.length;u++)c+=n.charCodeAt(u),c+=c<<10,c^=c>>6;return c+=c<<3,c^=c>>11,c+=c<<15,c>>>0}function o(d,n,c){let u=d[n];if(typeof u<"u")return u;let h=c();return d[n]=h,h}function a(d){return{...d}}let s=Date.prototype.toLocaleString,l=Date.prototype.toLocaleDateString;s&&(Date.prototype.toLocaleString=function(n,c){let u=r(this,n,c);return o(e.Date.toLocaleString,u,()=>s.call(this,n,c))}),l&&(Date.prototype.toLocaleDateString=function(n,c){let u=r(this,n,c);return o(e.Date.toLocaleDateString,u,()=>l.call(this,n,c))});let i=Object.getOwnPropertyDescriptors(Intl.DateTimeFormat.prototype).format.get,m=Intl.DateTimeFormat.prototype.formatRange,T=Intl.DateTimeFormat.prototype.formatToParts,p=Intl.DateTimeFormat.prototype.formatRangeToParts;function y(d){let n=d.resolvedOptions(),c={locale:n.locale,calendar:n.calendar,numberingSystem:n.numberingSystem,timeZone:n.timeZone,hour12:n.hour12,weekday:n.weekday,era:n.era,year:n.year,month:n.month,day:n.day,hour:n.hour,minute:n.minute,second:n.second,timeZoneName:n.timeZoneName};for(let u in n)u in c||(c[u]=n[u]);return c}i&&Object.defineProperty(Intl.DateTimeFormat.prototype,"format",{get(){function d(n){let c=y(this),u=r(n,c);return o(e.DateTimeFormat.format,u,()=>i.call(this)(n))}return d.bind(this)}}),m&&(Intl.DateTimeFormat.prototype.formatRange=function(n,c){let u=y(this),h=r(n,c,u);return o(e.DateTimeFormat.formatRange,h,()=>m.call(this,n,c))}),T&&(Intl.DateTimeFormat.prototype.formatToParts=function(n){let c=y(this),u=r(n,c);return o(e.DateTimeFormat.formatToParts,u,()=>T.call(this,n)).map(a)}),p&&(Intl.DateTimeFormat.prototype.formatRangeToParts=function(n,c){let u=y(this),h=r(n,c,u);return o(e.DateTimeFormat.formatRangeToParts,h,()=>p.call(this,n,c)).map(a)});let P=Number.prototype.toLocaleString;P&&(Number.prototype.toLocaleString=function(n,c){let u=r(this,n,c);return o(e.Number.toLocaleString,u,()=>P.call(this,n,c))});let x=Object.getOwnPropertyDescriptors(Intl.NumberFormat.prototype).format.get,b=Intl.NumberFormat.prototype.formatRange,S=Intl.NumberFormat.prototype.formatToParts,H=Intl.NumberFormat.prototype.formatRangeToParts;function L(d){let n=d.resolvedOptions(),c={locale:n.locale,numberingSystem:n.numberingSystem,style:n.style,currency:n.currency,currencyDisplay:n.currencyDisplay,currencySign:n.currencySign,unit:n.unit,unitDisplay:n.unitDisplay,minimumIntegerDigits:n.minimumIntegerDigits,minimumFractionDigits:n.minimumFractionDigits,maximumFractionDigits:n.maximumFractionDigits,minimumSignificantDigits:n.minimumSignificantDigits,maximumSignificantDigits:n.maximumSignificantDigits,useGrouping:n.useGrouping===!0?"auto":n.useGrouping,notation:n.notation,compactDisplay:n.compactDisplay,signDisplay:n.signDisplay,roundingIncrement:n.roundingIncrement??1,roundingMode:n.roundingMode??"halfExpand",roundingPriority:n.roundingPriority??"auto",trailingZeroDisplay:n.trailingZeroDisplay??"auto"};for(let u in n)u in c||(c[u]=n[u]);return c}x&&Object.defineProperty(Intl.NumberFormat.prototype,"format",{get(){function d(n){let c=L(this),u=r(n,c);return o(e.NumberFormat.format,u,()=>x.call(this)(n))}return d.bind(this)}}),b&&(Intl.NumberFormat.prototype.formatRange=function(n,c){let u=L(this),h=r(n,c,u);return o(e.NumberFormat.formatRange,h,()=>b.call(this,n,c))}),S&&(Intl.NumberFormat.prototype.formatToParts=function(n){let c=L(this),u=r(n,c);return o(e.NumberFormat.formatToParts,u,()=>S.call(this,n)).map(a)}),H&&(Intl.NumberFormat.prototype.formatRangeToParts=function(n,c){let u=L(this),h=r(n,c,u);return o(e.NumberFormat.formatRangeToParts,h,()=>H.call(this,n,c)).map(a)})};const formatCache = {"Date":{"toLocaleString":{},"toLocaleDateString":{}},"DateTimeFormat":{"format":{"1900151115":"June 8, 2024","4187746613":"June 8, 2024"},"formatRange":{},"formatToParts":{},"formatRangeToParts":{}},"Number":{"toLocaleString":{}},"NumberFormat":{"format":{},"formatRange":{},"formatToParts":{},"formatRangeToParts":{}}};applyIntlFormatPatch(formatCache);
+  </script>
+  <style data-framer-css-ssr-minified="" data-framer-components=
+  "framer-Em4oI framer-P43QB framer-BRyp7 framer-G4Mus">
+  html,body,#main{margin:0;padding:0;box-sizing:border-box}:root{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}*{box-sizing:border-box;-webkit-font-smoothing:inherit}h1,h2,h3,h4,h5,h6,p,figure{margin:0}body,input,textarea,select,button{font-size:12px;font-family:sans-serif}@font-face{font-family:"Suisse Int'l Regular";src:url(https://framerusercontent.com/assets/UGPPQeICcMn4k35Dq8FDTKYBE.otf);font-display:swap}@font-face{font-family:"Suisse Int'l Regular Placeholder";src:local("Arial");ascent-override:95.68%;descent-override:30.18%;line-gap-override:0%;size-adjust:103.05%}[data-framer-component-type]{position:absolute}[data-framer-component-type=Text]{cursor:inherit}[data-framer-component-text-autosized] *{white-space:pre}[data-framer-component-type=Text]>*{text-align:var(--framer-text-alignment, start)}[data-framer-component-type=Text] span span,[data-framer-component-type=Text] p span,[data-framer-component-type=Text] h1 span,[data-framer-component-type=Text] h2 span,[data-framer-component-type=Text] h3 span,[data-framer-component-type=Text] h4 span,[data-framer-component-type=Text] h5 span,[data-framer-component-type=Text] h6 span{display:block}[data-framer-component-type=Text] span span span,[data-framer-component-type=Text] p span span,[data-framer-component-type=Text] h1 span span,[data-framer-component-type=Text] h2 span span,[data-framer-component-type=Text] h3 span span,[data-framer-component-type=Text] h4 span span,[data-framer-component-type=Text] h5 span span,[data-framer-component-type=Text] h6 span span{display:unset}[data-framer-component-type=Text] div div span,[data-framer-component-type=Text] a div span,[data-framer-component-type=Text] span span span,[data-framer-component-type=Text] p span span,[data-framer-component-type=Text] h1 span span,[data-framer-component-type=Text] h2 span span,[data-framer-component-type=Text] h3 span span,[data-framer-component-type=Text] h4 span span,[data-framer-component-type=Text] h5 span span,[data-framer-component-type=Text] h6 span span,[data-framer-component-type=Text] a{font-family:var(--font-family);font-style:var(--font-style);font-weight:min(calc(var(--framer-font-weight-increase, 0) + var(--font-weight, 400)),900);color:var(--text-color);letter-spacing:var(--letter-spacing);font-size:var(--font-size);text-transform:var(--text-transform);text-decoration:var(--text-decoration);line-height:var(--line-height)}[data-framer-component-type=Text] div div span,[data-framer-component-type=Text] a div span,[data-framer-component-type=Text] span span span,[data-framer-component-type=Text] p span span,[data-framer-component-type=Text] h1 span span,[data-framer-component-type=Text] h2 span span,[data-framer-component-type=Text] h3 span span,[data-framer-component-type=Text] h4 span span,[data-framer-component-type=Text] h5 span span,[data-framer-component-type=Text] h6 span span,[data-framer-component-type=Text] a{--font-family: var(--framer-font-family);--font-style: var(--framer-font-style);--font-weight: var(--framer-font-weight);--text-color: var(--framer-text-color);--letter-spacing: var(--framer-letter-spacing);--font-size: var(--framer-font-size);--text-transform: var(--framer-text-transform);--text-decoration: var(--framer-text-decoration);--line-height: var(--framer-line-height)}[data-framer-component-type=Text] a,[data-framer-component-type=Text] a div span,[data-framer-component-type=Text] a span span span,[data-framer-component-type=Text] a p span span,[data-framer-component-type=Text] a h1 span span,[data-framer-component-type=Text] a h2 span span,[data-framer-component-type=Text] a h3 span span,[data-framer-component-type=Text] a h4 span span,[data-framer-component-type=Text] a h5 span span,[data-framer-component-type=Text] a h6 span span{--font-family: var(--framer-link-font-family, var(--framer-font-family));--font-style: var(--framer-link-font-style, var(--framer-font-style));--font-weight: var(--framer-link-font-weight, var(--framer-font-weight));--text-color: var(--framer-link-text-color, var(--framer-text-color));--font-size: var(--framer-link-font-size, var(--framer-font-size));--text-transform: var(--framer-link-text-transform, var(--framer-text-transform));--text-decoration: var(--framer-link-text-decoration, var(--framer-text-decoration))}[data-framer-component-type=Text] a:hover,[data-framer-component-type=Text] a div span:hover,[data-framer-component-type=Text] a span span span:hover,[data-framer-component-type=Text] a p span span:hover,[data-framer-component-type=Text] a h1 span span:hover,[data-framer-component-type=Text] a h2 span span:hover,[data-framer-component-type=Text] a h3 span span:hover,[data-framer-component-type=Text] a h4 span span:hover,[data-framer-component-type=Text] a h5 span span:hover,[data-framer-component-type=Text] a h6 span span:hover{--font-family: var(--framer-link-hover-font-family, var(--framer-link-font-family, var(--framer-font-family)));--font-style: var(--framer-link-hover-font-style, var(--framer-link-font-style, var(--framer-font-style)));--font-weight: var(--framer-link-hover-font-weight, var(--framer-link-font-weight, var(--framer-font-weight)));--text-color: var(--framer-link-hover-text-color, var(--framer-link-text-color, var(--framer-text-color)));--font-size: var(--framer-link-hover-font-size, var(--framer-link-font-size, var(--framer-font-size)));--text-transform: var(--framer-link-hover-text-transform, var(--framer-link-text-transform, var(--framer-text-transform)));--text-decoration: var(--framer-link-hover-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration)))}[data-framer-component-type=Text].isCurrent a,[data-framer-component-type=Text].isCurrent a div span,[data-framer-component-type=Text].isCurrent a span span span,[data-framer-component-type=Text].isCurrent a p span span,[data-framer-component-type=Text].isCurrent a h1 span span,[data-framer-component-type=Text].isCurrent a h2 span span,[data-framer-component-type=Text].isCurrent a h3 span span,[data-framer-component-type=Text].isCurrent a h4 span span,[data-framer-component-type=Text].isCurrent a h5 span span,[data-framer-component-type=Text].isCurrent a h6 span span{--font-family: var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family)));--font-style: var(--framer-link-current-font-style, var(--framer-link-font-style, var(--framer-font-style)));--font-weight: var(--framer-link-current-font-weight, var(--framer-link-font-weight, var(--framer-font-weight)));--text-color: var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-text-color)));--font-size: var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size)));--text-transform: var(--framer-link-current-text-transform, var(--framer-link-text-transform, var(--framer-text-transform)));--text-decoration: var(--framer-link-current-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration)))}p.framer-text,div.framer-text,h1.framer-text,h2.framer-text,h3.framer-text,h4.framer-text,h5.framer-text,h6.framer-text,ol.framer-text,ul.framer-text{margin:0;padding:0}p.framer-text,div.framer-text,h1.framer-text,h2.framer-text,h3.framer-text,h4.framer-text,h5.framer-text,h6.framer-text,li.framer-text,ol.framer-text,ul.framer-text,span.framer-text:not([data-text-fill]){font-family:var(--framer-font-family, Inter, Inter Placeholder, sans-serif);font-style:var(--framer-font-style, normal);font-weight:var(--framer-font-weight, 400);color:var(--framer-text-color, #000);font-size:calc(var(--framer-font-size, 16px) * var(--framer-font-size-scale, 1));letter-spacing:var(--framer-letter-spacing, 0);text-transform:var(--framer-text-transform, none);text-decoration:var(--framer-text-decoration, none);line-height:var(--framer-line-height, 1.2em);text-align:var(--framer-text-alignment, start);-webkit-text-stroke-width:var(--framer-text-stroke-width, initial);-webkit-text-stroke-color:var(--framer-text-stroke-color, initial)}.framer-fit-text .framer-text{white-space:nowrap;white-space-collapse:preserve}strong.framer-text{font-family:var(--framer-font-family-bold);font-style:var(--framer-font-style-bold);font-weight:var(--framer-font-weight-bold, bolder)}em.framer-text{font-family:var(--framer-font-family-italic);font-style:var(--framer-font-style-italic, italic);font-weight:var(--framer-font-weight-italic)}em.framer-text>strong.framer-text{font-family:var(--framer-font-family-bold-italic);font-style:var(--framer-font-style-bold-italic, italic);font-weight:var(--framer-font-weight-bold-italic, bolder)}p.framer-text:not(:first-child),div.framer-text:not(:first-child),h1.framer-text:not(:first-child),h2.framer-text:not(:first-child),h3.framer-text:not(:first-child),h4.framer-text:not(:first-child),h5.framer-text:not(:first-child),h6.framer-text:not(:first-child),ol.framer-text:not(:first-child),ul.framer-text:not(:first-child),.framer-image.framer-text:not(:first-child){margin-top:var(--framer-paragraph-spacing, 0)}li.framer-text>ul.framer-text:nth-child(2),li.framer-text>ol.framer-text:nth-child(2){margin-top:0}.framer-text[data-text-fill]{display:inline-block;background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;padding:max(0em,calc(calc(1.3em - var(--framer-line-height, 1.3em)) / 2));margin:min(0em,calc(calc(1.3em - var(--framer-line-height, 1.3em)) / -2))}code.framer-text,code.framer-text span.framer-text:not([data-text-fill]){font-family:var(--framer-code-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));font-style:var(--framer-code-font-style, var(--framer-font-style, normal));font-weight:var(--framer-code-font-weight, var(--framer-font-weight, 400));color:var(--framer-code-text-color, var(--framer-text-color, #000));font-size:calc(var(--framer-font-size, 16px) * var(--framer-font-size-scale, 1));letter-spacing:var(--framer-letter-spacing, 0);line-height:var(--framer-line-height, 1.2em)}a.framer-text,a.framer-text span.framer-text:not([data-text-fill]){font-family:var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));font-style:var(--framer-link-font-style, var(--framer-font-style, normal));font-weight:var(--framer-link-font-weight, var(--framer-font-weight, 400));color:var(--framer-link-text-color, var(--framer-text-color, #000));font-size:calc(var(--framer-link-font-size, var(--framer-font-size, 16px)) * var(--framer-font-size-scale, 1));text-transform:var(--framer-link-text-transform, var(--framer-text-transform, none));text-decoration:var(--framer-link-text-decoration, var(--framer-text-decoration, none));cursor:var(--framer-custom-cursors, pointer)}code.framer-text a.framer-text,code.framer-text a.framer-text span.framer-text:not([data-text-fill]){font-family:var(--framer-code-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));font-style:var(--framer-code-font-style, var(--framer-font-style, normal));font-weight:var(--framer-code-font-weight, var(--framer-font-weight, 400));color:var(--framer-link-text-color, var(--framer-code-text-color, var(--framer-text-color, #000)));font-size:calc(var(--framer-link-font-size, var(--framer-font-size, 16px)) * var(--framer-font-size-scale, 1))}a.framer-text:hover,a.framer-text:hover span.framer-text:not([data-text-fill]){font-family:var(--framer-link-hover-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif)));font-style:var(--framer-link-hover-font-style, var(--framer-link-font-style, var(--framer-font-style, normal)));font-weight:var(--framer-link-hover-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400)));color:var(--framer-link-hover-text-color, var(--framer-link-text-color, var(--framer-text-color, #000)));font-size:calc(var(--framer-link-hover-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px))) * var(--framer-font-size-scale, 1));text-transform:var(--framer-link-hover-text-transform, var(--framer-link-text-transform, var(--framer-text-transform, none)));text-decoration:var(--framer-link-hover-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, none)))}code.framer-text a.framer-text:hover,code.framer-text a.framer-text:hover span.framer-text:not([data-text-fill]){font-family:var(--framer-code-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));font-style:var(--framer-code-font-style, var(--framer-font-style, normal));font-weight:var(--framer-code-font-weight, var(--framer-font-weight, 400));color:var(--framer-link-hover-text-color, var(--framer-link-text-color, var(--framer-code-text-color, var(--framer-text-color, #000))));font-size:calc(var(--framer-link-hover-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px))) * var(--framer-font-size-scale, 1))}a.framer-text[data-framer-page-link-current],a.framer-text[data-framer-page-link-current] span.framer-text:not([data-text-fill]){font-family:var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif)));font-style:var(--framer-link-current-font-style, var(--framer-link-font-style, var(--framer-font-style, normal)));font-weight:var(--framer-link-current-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400)));color:var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-text-color, #000)));font-size:calc(var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px))) * var(--framer-font-size-scale, 1));text-transform:var(--framer-link-current-text-transform, var(--framer-link-text-transform, var(--framer-text-transform, none)));text-decoration:var(--framer-link-current-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, none)))}code.framer-text a.framer-text[data-framer-page-link-current],code.framer-text a.framer-text[data-framer-page-link-current] span.framer-text:not([data-text-fill]){font-family:var(--framer-code-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));font-style:var(--framer-code-font-style, var(--framer-font-style, normal));font-weight:var(--framer-code-font-weight, var(--framer-font-weight, 400));color:var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-code-text-color, var(--framer-text-color, #000))));font-size:calc(var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px))) * var(--framer-font-size-scale, 1))}a.framer-text[data-framer-page-link-current]:hover,a.framer-text[data-framer-page-link-current]:hover span.framer-text:not([data-text-fill]){font-family:var(--framer-link-hover-font-family, var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif))));font-style:var(--framer-link-hover-font-style, var(--framer-link-current-font-style, var(--framer-link-font-style, var(--framer-font-style, normal))));font-weight:var(--framer-link-hover-font-weight, var(--framer-link-current-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400))));color:var(--framer-link-hover-text-color, var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-text-color, #000))));font-size:calc(var(--framer-link-hover-font-size, var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px)))) * var(--framer-font-size-scale, 1));text-transform:var(--framer-link-hover-text-transform, var(--framer-link-current-text-transform, var(--framer-link-text-transform, var(--framer-text-transform, none))));text-decoration:var(--framer-link-hover-text-decoration, var(--framer-link-current-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, none))))}code.framer-text a.framer-text[data-framer-page-link-current]:hover,code.framer-text a.framer-text[data-framer-page-link-current]:hover span.framer-text:not([data-text-fill]){font-family:var(--framer-code-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));font-style:var(--framer-code-font-style, var(--framer-font-style, normal));font-weight:var(--framer-code-font-weight, var(--framer-font-weight, 400));color:var(--framer-link-hover-text-color, var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-code-text-color, var(--framer-text-color, #000)))));font-size:calc(var(--framer-link-hover-font-size, var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px)))) * var(--framer-font-size-scale, 1))}.framer-image.framer-text{display:block;max-width:100%;height:auto}.text-styles-preset-reset.framer-text{--framer-font-family: Inter, Inter Placeholder, sans-serif;--framer-font-style: normal;--framer-font-weight: 500;--framer-text-color: #000;--framer-font-size: 16px;--framer-letter-spacing: 0;--framer-text-transform: none;--framer-text-decoration: none;--framer-line-height: 1.2em;--framer-text-alignment: start}ol.framer-text{--list-style-type: decimal}ul.framer-text,ol.framer-text{display:table;width:100%}li.framer-text{display:table-row;counter-increment:list-item;list-style:none}ol.framer-text>li.framer-text:before{display:table-cell;width:2.25ch;box-sizing:border-box;padding-inline-end:.75ch;content:counter(list-item,var(--list-style-type)) ".";white-space:nowrap}ul.framer-text>li.framer-text:before{display:table-cell;width:2.25ch;box-sizing:border-box;padding-inline-end:.75ch;content:"\2022"}.framer-text-module[style*=aspect-ratio]>:first-child{width:100%}@supports not (aspect-ratio: 1){.framer-text-module[style*=aspect-ratio]{position:relative}}@supports not (aspect-ratio: 1){.framer-text-module[style*=aspect-ratio]:before{content:"";display:block;padding-bottom:calc(100% / calc(var(--aspect-ratio)))}}@supports not (aspect-ratio: 1){.framer-text-module[style*=aspect-ratio]>:first-child{position:absolute;top:0;left:0;height:100%}}[data-framer-component-type=DeprecatedRichText]{cursor:inherit}[data-framer-component-type=DeprecatedRichText] .text-styles-preset-reset{--framer-font-family: Inter, Inter Placeholder, sans-serif;--framer-font-style: normal;--framer-font-weight: 500;--framer-text-color: #000;--framer-font-size: 16px;--framer-letter-spacing: 0;--framer-text-transform: none;--framer-text-decoration: none;--framer-line-height: 1.2em;--framer-text-alignment: start}[data-framer-component-type=DeprecatedRichText] p,[data-framer-component-type=DeprecatedRichText] div,[data-framer-component-type=DeprecatedRichText] h1,[data-framer-component-type=DeprecatedRichText] h2,[data-framer-component-type=DeprecatedRichText] h3,[data-framer-component-type=DeprecatedRichText] h4,[data-framer-component-type=DeprecatedRichText] h5,[data-framer-component-type=DeprecatedRichText] h6{margin:0;padding:0}[data-framer-component-type=DeprecatedRichText] p,[data-framer-component-type=DeprecatedRichText] div,[data-framer-component-type=DeprecatedRichText] h1,[data-framer-component-type=DeprecatedRichText] h2,[data-framer-component-type=DeprecatedRichText] h3,[data-framer-component-type=DeprecatedRichText] h4,[data-framer-component-type=DeprecatedRichText] h5,[data-framer-component-type=DeprecatedRichText] h6,[data-framer-component-type=DeprecatedRichText] li,[data-framer-component-type=DeprecatedRichText] ol,[data-framer-component-type=DeprecatedRichText] ul,[data-framer-component-type=DeprecatedRichText] span:not([data-text-fill]){font-family:var(--framer-font-family, Inter, Inter Placeholder, sans-serif);font-style:var(--framer-font-style, normal);font-weight:var(--framer-font-weight, 400);color:var(--framer-text-color, #000);font-size:var(--framer-font-size, 16px);letter-spacing:var(--framer-letter-spacing, 0);text-transform:var(--framer-text-transform, none);text-decoration:var(--framer-text-decoration, none);line-height:var(--framer-line-height, 1.2em);text-align:var(--framer-text-alignment, start)}[data-framer-component-type=DeprecatedRichText] p:not(:first-child),[data-framer-component-type=DeprecatedRichText] div:not(:first-child),[data-framer-component-type=DeprecatedRichText] h1:not(:first-child),[data-framer-component-type=DeprecatedRichText] h2:not(:first-child),[data-framer-component-type=DeprecatedRichText] h3:not(:first-child),[data-framer-component-type=DeprecatedRichText] h4:not(:first-child),[data-framer-component-type=DeprecatedRichText] h5:not(:first-child),[data-framer-component-type=DeprecatedRichText] h6:not(:first-child),[data-framer-component-type=DeprecatedRichText] ol:not(:first-child),[data-framer-component-type=DeprecatedRichText] ul:not(:first-child),[data-framer-component-type=DeprecatedRichText] .framer-image:not(:first-child){margin-top:var(--framer-paragraph-spacing, 0)}[data-framer-component-type=DeprecatedRichText] span[data-text-fill]{display:inline-block;background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}[data-framer-component-type=DeprecatedRichText] a,[data-framer-component-type=DeprecatedRichText] a span:not([data-text-fill]){font-family:var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));font-style:var(--framer-link-font-style, var(--framer-font-style, normal));font-weight:var(--framer-link-font-weight, var(--framer-font-weight, 400));color:var(--framer-link-text-color, var(--framer-text-color, #000));font-size:var(--framer-link-font-size, var(--framer-font-size, 16px));text-transform:var(--framer-link-text-transform, var(--framer-text-transform, none));text-decoration:var(--framer-link-text-decoration, var(--framer-text-decoration, none))}[data-framer-component-type=DeprecatedRichText] a:hover,[data-framer-component-type=DeprecatedRichText] a:hover span:not([data-text-fill]){font-family:var(--framer-link-hover-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif)));font-style:var(--framer-link-hover-font-style, var(--framer-link-font-style, var(--framer-font-style, normal)));font-weight:var(--framer-link-hover-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400)));color:var(--framer-link-hover-text-color, var(--framer-link-text-color, var(--framer-text-color, #000)));font-size:var(--framer-link-hover-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px)));text-transform:var(--framer-link-hover-text-transform, var(--framer-link-text-transform, var(--framer-text-transform, none)));text-decoration:var(--framer-link-hover-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, none)))}a[data-framer-page-link-current],a[data-framer-page-link-current] span:not([data-text-fill]){font-family:var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif)));font-style:var(--framer-link-current-font-style, var(--framer-link-font-style, var(--framer-font-style, normal)));font-weight:var(--framer-link-current-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400)));color:var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-text-color, #000)));font-size:var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px)));text-transform:var(--framer-link-current-text-transform, var(--framer-link-text-transform, var(--framer-text-transform, none)));text-decoration:var(--framer-link-current-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, none)))}a[data-framer-page-link-current]:hover,a[data-framer-page-link-current]:hover span:not([data-text-fill]){font-family:var(--framer-link-hover-font-family, var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif))));font-style:var(--framer-link-hover-font-style, var(--framer-link-current-font-style, var(--framer-link-font-style, var(--framer-font-style, normal))));font-weight:var(--framer-link-hover-font-weight, var(--framer-link-current-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400))));color:var(--framer-link-hover-text-color, var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-text-color, #000))));font-size:var(--framer-link-hover-font-size, var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px))));text-transform:var(--framer-link-hover-text-transform, var(--framer-link-current-text-transform, var(--framer-link-text-transform, var(--framer-text-transform, none))));text-decoration:var(--framer-link-hover-text-decoration, var(--framer-link-current-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, none))))}[data-framer-component-type=DeprecatedRichText] strong{font-weight:bolder}[data-framer-component-type=DeprecatedRichText] em{font-style:italic}[data-framer-component-type=DeprecatedRichText] .framer-image{display:block;max-width:100%;height:auto}[data-framer-component-type=DeprecatedRichText] ul,[data-framer-component-type=DeprecatedRichText] ol{display:table;width:100%;padding-left:0;margin:0}[data-framer-component-type=DeprecatedRichText] li{display:table-row;counter-increment:list-item;list-style:none}[data-framer-component-type=DeprecatedRichText] ol>li:before{display:table-cell;width:2.25ch;box-sizing:border-box;padding-right:.75ch;content:counter(list-item) ".";white-space:nowrap}[data-framer-component-type=DeprecatedRichText] ul>li:before{display:table-cell;width:2.25ch;box-sizing:border-box;padding-right:.75ch;content:"\2022"}:not([data-framer-generated])>[data-framer-stack-content-wrapper]>*,:not([data-framer-generated])>[data-framer-stack-content-wrapper]>[data-framer-component-type],:not([data-framer-generated])>[data-framer-stack-content-wrapper]>[data-framer-legacy-stack-gap-enabled]>*,:not([data-framer-generated])>[data-framer-stack-content-wrapper]>[data-framer-legacy-stack-gap-enabled]>[data-framer-component-type]{position:relative}.flexbox-gap-not-supported [data-framer-legacy-stack-gap-enabled=true]>*,[data-framer-legacy-stack-gap-enabled=true][data-framer-stack-flexbox-gap=false]{margin-top:calc(var(--stack-gap-y) / 2);margin-bottom:calc(var(--stack-gap-y) / 2);margin-right:calc(var(--stack-gap-x) / 2);margin-left:calc(var(--stack-gap-x) / 2)}[data-framer-stack-content-wrapper][data-framer-stack-gap-enabled=true]{row-gap:var(--stack-native-row-gap);column-gap:var(--stack-native-column-gap)}.flexbox-gap-not-supported [data-framer-stack-content-wrapper][data-framer-stack-gap-enabled=true]{row-gap:unset;column-gap:unset}.flexbox-gap-not-supported [data-framer-stack-direction-reverse=false] [data-framer-legacy-stack-gap-enabled=true]>*:first-child,[data-framer-stack-direction-reverse=false] [data-framer-legacy-stack-gap-enabled=true][data-framer-stack-flexbox-gap=false]>*:first-child,.flexbox-gap-not-supported [data-framer-stack-direction-reverse=true] [data-framer-legacy-stack-gap-enabled=true]>*:last-child,[data-framer-stack-direction-reverse=true] [data-framer-legacy-stack-gap-enabled=true][data-framer-stack-flexbox-gap=false]>*:last-child{margin-top:0;margin-left:0}.flexbox-gap-not-supported [data-framer-stack-direction-reverse=false] [data-framer-legacy-stack-gap-enabled=true]>*:last-child,[data-framer-stack-direction-reverse=false] [data-framer-legacy-stack-gap-enabled=true][data-framer-stack-flexbox-gap=false]>*:last-child,.flexbox-gap-not-supported [data-framer-stack-direction-reverse=true] [data-framer-legacy-stack-gap-enabled=true]>*:first-child,[data-framer-stack-direction-reverse=true] [data-framer-legacy-stack-gap-enabled=true][data-framer-stack-flexbox-gap=false]>*:first-child{margin-right:0;margin-bottom:0}NavigationContainer [data-framer-component-type=NavigationContainer]>*,[data-framer-component-type=NavigationContainer]>[data-framer-component-type]{position:relative}[data-framer-component-type=Scroll]::-webkit-scrollbar{display:none}[data-framer-component-type=ScrollContentWrapper]>*{position:relative}[data-framer-component-type=NativeScroll]{-webkit-overflow-scrolling:touch}[data-framer-component-type=NativeScroll]>*{position:relative}[data-framer-component-type=NativeScroll].direction-both{overflow-x:scroll;overflow-y:scroll}[data-framer-component-type=NativeScroll].direction-vertical{overflow-x:hidden;overflow-y:scroll}[data-framer-component-type=NativeScroll].direction-horizontal{overflow-x:scroll;overflow-y:hidden}[data-framer-component-type=NativeScroll].direction-vertical>*{width:100%!important}[data-framer-component-type=NativeScroll].direction-horizontal>*{height:100%!important}[data-framer-component-type=NativeScroll].scrollbar-hidden::-webkit-scrollbar{display:none}[data-framer-component-type=PageContentWrapper]>*,[data-framer-component-type=PageContentWrapper]>[data-framer-component-type]{position:relative}[data-framer-component-type=DeviceComponent].no-device>*{width:100%!important;height:100%!important}[data-is-present=false],[data-is-present=false] *{pointer-events:none!important}[data-framer-cursor=pointer]{cursor:pointer}[data-framer-cursor=grab]{cursor:grab}[data-framer-cursor=grab]:active{cursor:grabbing}[data-framer-component-type=Frame] *,[data-framer-component-type=Stack] *{pointer-events:auto}[data-framer-generated] *{pointer-events:unset}.svgContainer svg{display:block}[data-reset=button]{border-width:0;padding:0;background:none}[data-hide-scrollbars=true]::-webkit-scrollbar{width:0px;height:0px}[data-hide-scrollbars=true]::-webkit-scrollbar-thumb{background:transparent}.framer-cursor-none,.framer-cursor-none *{cursor:none!important}.framer-pointer-events-none,.framer-pointer-events-none *{pointer-events:none!important}.framer-body-NdUFisssz-framer-Em4oI{background:rgb(245,245,245)}.framer-Em4oI.framer-crcc52,.framer-Em4oI .framer-crcc52{display:block}.framer-Em4oI.framer-vv4vpa{align-content:center;align-items:center;background-color:#f5f5f5;display:flex;flex-direction:column;flex-wrap:nowrap;gap:32px;height:min-content;justify-content:center;overflow:visible;padding:88px;position:relative;width:1440px}.framer-Em4oI .framer-1qi95m8,.framer-Em4oI .framer-1laqeu6,.framer-Em4oI .framer-ep23p3{flex:none;height:auto;overflow:hidden;position:relative;white-space:pre-wrap;width:540px;word-break:break-word;word-wrap:break-word}.framer-Em4oI .framer-1f22e44{align-content:center;align-items:center;display:flex;flex:none;flex-direction:column;flex-wrap:nowrap;gap:0px;height:min-content;justify-content:center;overflow:visible;padding:0;position:relative;width:540px}.framer-Em4oI .framer-ju9lbr,.framer-Em4oI .framer-1ymuxs1{align-content:flex-end;align-items:flex-end;display:flex;flex:none;flex-direction:row;flex-wrap:nowrap;gap:6px;height:min-content;justify-content:flex-start;overflow:visible;padding:0;position:relative;width:540px}.framer-Em4oI .framer-eck5dy,.framer-Em4oI .framer-1l8fab4,.framer-Em4oI .framer-19xi4jd,.framer-Em4oI .framer-1o6kdvl{flex:none;height:auto;overflow:visible;position:relative;white-space:pre;width:auto}.framer-Em4oI .framer-113qhzi{align-content:center;align-items:center;display:flex;flex:none;flex-direction:column;flex-wrap:nowrap;gap:0px;height:min-content;justify-content:flex-start;overflow:visible;padding:0;position:relative;width:min-content}.framer-Em4oI .framer-mphqnx-container,.framer-Em4oI .framer-veemsx-container{flex:none;height:auto;opacity:.6;position:relative;width:auto}.framer-Em4oI .framer-1dmbtej{--framer-link-text-color: #0099ff;--framer-link-text-decoration: underline;--framer-paragraph-spacing: 0px;flex:none;height:auto;position:relative;white-space:pre;width:auto}.framer-Em4oI .framer-14satmo,.framer-Em4oI .framer-kgzd4n{flex:1 0 0px;height:auto;overflow:hidden;position:relative;white-space:pre-wrap;width:1px;word-break:break-word;word-wrap:break-word}.framer-Em4oI .framer-1jmb2q5{align-content:flex-end;align-items:flex-end;display:flex;flex:none;flex-direction:row;flex-wrap:nowrap;gap:6px;height:min-content;justify-content:flex-start;overflow:visible;padding:0;position:relative;width:100%}.framer-Em4oI .framer-116uo0h{-webkit-backdrop-filter:blur(0px);align-content:center;align-items:center;backdrop-filter:blur(0px);background:linear-gradient(180deg,rgba(255,255,255,0) -29.6875%,rgba(255,255,255,0) 70.3125%);display:flex;flex:none;flex-direction:row;flex-wrap:nowrap;gap:14px;height:auto;justify-content:flex-start;overflow:visible;padding:0 0 12px;position:relative;width:540px;z-index:1}.framer-Em4oI .framer-1fullor-container{flex:none;height:27px;position:relative;width:78px}.framer-Em4oI .framer-zng7lx,.framer-Em4oI .framer-4gwkta{align-content:center;align-items:center;display:flex;flex:none;flex-direction:row;flex-wrap:nowrap;gap:10px;height:min-content;justify-content:center;overflow:visible;padding:0;position:relative;width:min-content}.framer-Em4oI .framer-fj3i60-container,.framer-Em4oI .framer-uvz72m-container,.framer-Em4oI .framer-gdn51a-container,.framer-Em4oI .framer-9cbud8-container,.framer-Em4oI .framer-1733s2p-container,.framer-Em4oI .framer-1ru39ca-container{flex:none;height:auto;position:relative;width:auto}.framer-Em4oI .framer-17vnxt{background-color:#0000000d;flex:none;height:1px;overflow:hidden;position:relative;width:540px}.framer-Em4oI .framer-hwt2wk{-webkit-backdrop-filter:blur(0px);align-content:center;align-items:center;backdrop-filter:blur(0px);background:linear-gradient(180deg,rgba(255,255,255,0) -29.6875%,rgba(255,255,255,0) 70.3125%);display:flex;flex:none;flex-direction:row;flex-wrap:nowrap;gap:8px;height:auto;justify-content:flex-start;overflow:visible;padding:0 0 12px;position:relative;width:540px;z-index:1}.framer-Em4oI .framer-4swvz3,.framer-Em4oI .framer-1o8tcng{align-content:center;align-items:center;display:flex;flex:none;flex-direction:row;flex-wrap:nowrap;gap:10px;height:min-content;justify-content:center;overflow:hidden;padding:0;position:relative;width:min-content}.framer-Em4oI .framer-1twgfkn{align-content:flex-end;align-items:flex-end;display:flex;flex:none;flex-direction:row;flex-wrap:nowrap;height:min-content;justify-content:space-between;overflow:hidden;padding:0;position:relative;width:540px}.framer-Em4oI .framer-1fmuuk3{align-content:flex-start;align-items:flex-start;display:flex;flex:none;flex-direction:column;flex-wrap:nowrap;gap:6px;height:min-content;justify-content:flex-start;overflow:visible;padding:0;position:relative;width:min-content}.framer-Em4oI .framer-jham6v{flex:none;height:75px;position:relative;width:72px}.framer-Em4oI .framer-jqc5uq{-webkit-backdrop-filter:blur(0px);align-content:center;align-items:center;backdrop-filter:blur(0px);background:linear-gradient(180deg,rgba(255,255,255,0) -29.6875%,rgba(255,255,255,0) 70.3125%);display:flex;flex:none;flex-direction:row;flex-wrap:nowrap;gap:18px;height:auto;justify-content:flex-start;overflow:visible;padding:2px 0 12px;position:relative;width:100%;z-index:1}.framer-Em4oI .framer-1p5bt0j{-webkit-backdrop-filter:blur(0px);align-content:flex-start;align-items:flex-start;backdrop-filter:blur(0px);background:linear-gradient(180deg,rgba(255,255,255,0) -29.6875%,rgba(255,255,255,0) 70.3125%);display:flex;flex:none;flex-direction:column;flex-wrap:nowrap;gap:8px;height:auto;justify-content:flex-start;overflow:visible;padding:0 0 8px;position:relative;width:100%;z-index:1}@supports (background: -webkit-named-image(i)) and (not (scale:1)){.framer-Em4oI.framer-vv4vpa,.framer-Em4oI .framer-1f22e44,.framer-Em4oI .framer-ju9lbr,.framer-Em4oI .framer-113qhzi,.framer-Em4oI .framer-1ymuxs1,.framer-Em4oI .framer-1jmb2q5,.framer-Em4oI .framer-116uo0h,.framer-Em4oI .framer-zng7lx,.framer-Em4oI .framer-hwt2wk,.framer-Em4oI .framer-4swvz3,.framer-Em4oI .framer-1fmuuk3,.framer-Em4oI .framer-jqc5uq,.framer-Em4oI .framer-4gwkta,.framer-Em4oI .framer-1p5bt0j,.framer-Em4oI .framer-1o8tcng{gap:0px}.framer-Em4oI.framer-vv4vpa>*{margin:16px 0}.framer-Em4oI.framer-vv4vpa>:first-child,.framer-Em4oI .framer-1f22e44>:first-child,.framer-Em4oI .framer-113qhzi>:first-child,.framer-Em4oI .framer-1fmuuk3>:first-child,.framer-Em4oI .framer-1p5bt0j>:first-child{margin-top:0}.framer-Em4oI.framer-vv4vpa>:last-child,.framer-Em4oI .framer-1f22e44>:last-child,.framer-Em4oI .framer-113qhzi>:last-child,.framer-Em4oI .framer-1fmuuk3>:last-child,.framer-Em4oI .framer-1p5bt0j>:last-child{margin-bottom:0}.framer-Em4oI .framer-1f22e44>*,.framer-Em4oI .framer-113qhzi>*{margin:0}.framer-Em4oI .framer-ju9lbr>*,.framer-Em4oI .framer-1ymuxs1>*,.framer-Em4oI .framer-1jmb2q5>*{margin:0 3px}.framer-Em4oI .framer-ju9lbr>:first-child,.framer-Em4oI .framer-1ymuxs1>:first-child,.framer-Em4oI .framer-1jmb2q5>:first-child,.framer-Em4oI .framer-116uo0h>:first-child,.framer-Em4oI .framer-zng7lx>:first-child,.framer-Em4oI .framer-hwt2wk>:first-child,.framer-Em4oI .framer-4swvz3>:first-child,.framer-Em4oI .framer-jqc5uq>:first-child,.framer-Em4oI .framer-4gwkta>:first-child,.framer-Em4oI .framer-1o8tcng>:first-child{margin-left:0}.framer-Em4oI .framer-ju9lbr>:last-child,.framer-Em4oI .framer-1ymuxs1>:last-child,.framer-Em4oI .framer-1jmb2q5>:last-child,.framer-Em4oI .framer-116uo0h>:last-child,.framer-Em4oI .framer-zng7lx>:last-child,.framer-Em4oI .framer-hwt2wk>:last-child,.framer-Em4oI .framer-4swvz3>:last-child,.framer-Em4oI .framer-jqc5uq>:last-child,.framer-Em4oI .framer-4gwkta>:last-child,.framer-Em4oI .framer-1o8tcng>:last-child{margin-right:0}.framer-Em4oI .framer-116uo0h>*{margin:0 7px}.framer-Em4oI .framer-zng7lx>*,.framer-Em4oI .framer-4swvz3>*,.framer-Em4oI .framer-4gwkta>*,.framer-Em4oI .framer-1o8tcng>*{margin:0 5px}.framer-Em4oI .framer-hwt2wk>*{margin:0 4px}.framer-Em4oI .framer-1fmuuk3>*{margin:3px 0}.framer-Em4oI .framer-jqc5uq>*{margin:0 9px}.framer-Em4oI .framer-1p5bt0j>*{margin:4px 0}}@media (min-width: 1440px){.framer-Em4oI .hidden-vv4vpa{display:none!important}}@media (min-width: 716px) and (max-width: 1439px){.framer-Em4oI .hidden-ose66u{display:none!important}.framer-body-NdUFisssz-framer-Em4oI{background:rgb(245,245,245)}.framer-Em4oI.framer-vv4vpa{width:716px}.framer-Em4oI .framer-ju9lbr,.framer-Em4oI .framer-1ymuxs1{width:100%}}@media (min-width: 630px) and (max-width: 715px){.framer-Em4oI .hidden-1nnhexz{display:none!important}.framer-body-NdUFisssz-framer-Em4oI{background:rgb(245,245,245)}.framer-Em4oI.framer-vv4vpa{justify-content:flex-start;padding:44px;width:630px}.framer-Em4oI .framer-1qi95m8,.framer-Em4oI .framer-1laqeu6,.framer-Em4oI .framer-1f22e44,.framer-Em4oI .framer-ju9lbr,.framer-Em4oI .framer-1ymuxs1,.framer-Em4oI .framer-116uo0h,.framer-Em4oI .framer-17vnxt,.framer-Em4oI .framer-ep23p3,.framer-Em4oI .framer-hwt2wk,.framer-Em4oI .framer-1twgfkn{width:100%}}@media (min-width: 500px) and (max-width: 566px){.framer-Em4oI .hidden-7u6tde{display:none!important}.framer-body-NdUFisssz-framer-Em4oI{background:rgb(245,245,245)}.framer-Em4oI.framer-vv4vpa{justify-content:flex-start;padding:32px;width:500px}.framer-Em4oI .framer-1qi95m8,.framer-Em4oI .framer-1laqeu6,.framer-Em4oI .framer-ju9lbr,.framer-Em4oI .framer-116uo0h,.framer-Em4oI .framer-17vnxt,.framer-Em4oI .framer-ep23p3,.framer-Em4oI .framer-1twgfkn{width:100%}.framer-Em4oI .framer-1f22e44{justify-content:flex-start;width:100%}.framer-Em4oI .framer-1ymuxs1{gap:5px;width:100%}.framer-Em4oI .framer-1l8fab4{order:2}.framer-Em4oI .framer-veemsx-container{order:1}.framer-Em4oI .framer-kgzd4n{order:0}.framer-Em4oI .framer-hwt2wk{align-content:flex-start;align-items:flex-start;flex-direction:column;width:100%}@supports (background: -webkit-named-image(i)) and (not (scale:1)){.framer-Em4oI .framer-1ymuxs1,.framer-Em4oI .framer-hwt2wk{gap:0px}.framer-Em4oI .framer-1ymuxs1>*{margin:0 2.5px}.framer-Em4oI .framer-1ymuxs1>:first-child{margin-left:0}.framer-Em4oI .framer-1ymuxs1>:last-child{margin-right:0}.framer-Em4oI .framer-hwt2wk>*{margin:4px 0}.framer-Em4oI .framer-hwt2wk>:first-child{margin-top:0}.framer-Em4oI .framer-hwt2wk>:last-child{margin-bottom:0}}}@media (min-width: 470px) and (max-width: 499px){.framer-Em4oI .hidden-1oms2nz{display:none!important}.framer-body-NdUFisssz-framer-Em4oI{background:rgb(245,245,245)}.framer-Em4oI.framer-vv4vpa{justify-content:flex-start;padding:32px;width:470px}.framer-Em4oI .framer-1qi95m8,.framer-Em4oI .framer-1laqeu6,.framer-Em4oI .framer-1f22e44,.framer-Em4oI .framer-ju9lbr,.framer-Em4oI .framer-116uo0h,.framer-Em4oI .framer-17vnxt,.framer-Em4oI .framer-ep23p3,.framer-Em4oI .framer-1twgfkn{width:100%}.framer-Em4oI .framer-1ymuxs1{gap:5px;width:100%}.framer-Em4oI .framer-1l8fab4{order:3}.framer-Em4oI .framer-19xi4jd,.framer-Em4oI .framer-kgzd4n{order:0}.framer-Em4oI .framer-veemsx-container{order:2}.framer-Em4oI .framer-hwt2wk{align-content:flex-start;align-items:flex-start;flex-direction:column;width:100%}@supports (background: -webkit-named-image(i)) and (not (scale:1)){.framer-Em4oI .framer-1ymuxs1,.framer-Em4oI .framer-hwt2wk{gap:0px}.framer-Em4oI .framer-1ymuxs1>*{margin:0 2.5px}.framer-Em4oI .framer-1ymuxs1>:first-child{margin-left:0}.framer-Em4oI .framer-1ymuxs1>:last-child{margin-right:0}.framer-Em4oI .framer-hwt2wk>*{margin:4px 0}.framer-Em4oI .framer-hwt2wk>:first-child{margin-top:0}.framer-Em4oI .framer-hwt2wk>:last-child{margin-bottom:0}}}@media (min-width: 390px) and (max-width: 469px){.framer-Em4oI .hidden-1vngktn{display:none!important}.framer-body-NdUFisssz-framer-Em4oI{background:rgb(245,245,245)}.framer-Em4oI.framer-vv4vpa{padding:26px 26px 28px;width:390px}.framer-Em4oI .framer-1qi95m8,.framer-Em4oI .framer-1laqeu6,.framer-Em4oI .framer-1f22e44,.framer-Em4oI .framer-ju9lbr,.framer-Em4oI .framer-17vnxt,.framer-Em4oI .framer-ep23p3,.framer-Em4oI .framer-1twgfkn{width:100%}.framer-Em4oI .framer-1ymuxs1{gap:4px;width:100%}.framer-Em4oI .framer-14satmo{flex:none;order:0;overflow:visible;white-space:pre;width:auto}.framer-Em4oI .framer-1l8fab4{order:2}.framer-Em4oI .framer-veemsx-container{order:1}.framer-Em4oI .framer-kgzd4n{order:0}.framer-Em4oI .framer-116uo0h{gap:18px;padding:2px 0 12px;width:100%}.framer-Em4oI .framer-1fullor-container{height:auto;width:auto}.framer-Em4oI .framer-hwt2wk{align-content:flex-start;align-items:flex-start;flex-direction:column;padding:0 0 8px;width:100%}@supports (background: -webkit-named-image(i)) and (not (scale:1)){.framer-Em4oI .framer-1ymuxs1,.framer-Em4oI .framer-116uo0h,.framer-Em4oI .framer-hwt2wk{gap:0px}.framer-Em4oI .framer-1ymuxs1>*{margin:0 2px}.framer-Em4oI .framer-1ymuxs1>:first-child,.framer-Em4oI .framer-116uo0h>:first-child{margin-left:0}.framer-Em4oI .framer-1ymuxs1>:last-child,.framer-Em4oI .framer-116uo0h>:last-child{margin-right:0}.framer-Em4oI .framer-116uo0h>*{margin:0 9px}.framer-Em4oI .framer-hwt2wk>*{margin:4px 0}.framer-Em4oI .framer-hwt2wk>:first-child{margin-top:0}.framer-Em4oI .framer-hwt2wk>:last-child{margin-bottom:0}}}@media (max-width: 389px){.framer-Em4oI .hidden-1vaauhj{display:none!important}.framer-body-NdUFisssz-framer-Em4oI{background:rgb(245,245,245)}.framer-Em4oI.framer-vv4vpa{padding:26px 26px 28px;width:320px}.framer-Em4oI .framer-1qi95m8{order:0;width:100%}.framer-Em4oI .framer-1laqeu6{order:1;width:100%}.framer-Em4oI .framer-1f22e44{order:2;width:100%}.framer-Em4oI .framer-ju9lbr{width:100%}.framer-Em4oI .framer-1ymuxs1{gap:5px;width:100%}.framer-Em4oI .framer-14satmo{flex:none;order:0;overflow:visible;white-space:pre;width:auto}.framer-Em4oI .framer-veemsx-container{order:1}.framer-Em4oI .framer-kgzd4n{order:0}.framer-Em4oI .framer-17vnxt{order:5;width:100%}.framer-Em4oI .framer-ep23p3{order:6;width:100%}.framer-Em4oI .framer-1twgfkn{order:9;width:100%}.framer-Em4oI .framer-jqc5uq{order:3}.framer-Em4oI .framer-1p5bt0j{order:7}@supports (background: -webkit-named-image(i)) and (not (scale:1)){.framer-Em4oI .framer-1ymuxs1{gap:0px}.framer-Em4oI .framer-1ymuxs1>*{margin:0 2.5px}.framer-Em4oI .framer-1ymuxs1>:first-child{margin-left:0}.framer-Em4oI .framer-1ymuxs1>:last-child{margin-right:0}}}@media (min-width: 614px) and (max-width: 629px){.framer-Em4oI .hidden-z05we4{display:none!important}.framer-body-NdUFisssz-framer-Em4oI{background:rgb(245,245,245)}.framer-Em4oI.framer-vv4vpa{justify-content:flex-start;padding:37px;width:614px}.framer-Em4oI .framer-1qi95m8,.framer-Em4oI .framer-1laqeu6,.framer-Em4oI .framer-1f22e44,.framer-Em4oI .framer-ju9lbr,.framer-Em4oI .framer-1ymuxs1,.framer-Em4oI .framer-116uo0h,.framer-Em4oI .framer-ep23p3,.framer-Em4oI .framer-hwt2wk,.framer-Em4oI .framer-1twgfkn{width:100%}}@media (min-width: 610px) and (max-width: 613px){.framer-Em4oI .hidden-1mbj3kt{display:none!important}.framer-body-NdUFisssz-framer-Em4oI{background:rgb(245,245,245)}.framer-Em4oI.framer-vv4vpa{justify-content:flex-start;padding:35px;width:610px}.framer-Em4oI .framer-1qi95m8,.framer-Em4oI .framer-1laqeu6,.framer-Em4oI .framer-1f22e44,.framer-Em4oI .framer-ju9lbr,.framer-Em4oI .framer-1ymuxs1,.framer-Em4oI .framer-116uo0h,.framer-Em4oI .framer-17vnxt,.framer-Em4oI .framer-ep23p3,.framer-Em4oI .framer-hwt2wk,.framer-Em4oI .framer-1twgfkn{width:100%}}@media (min-width: 600px) and (max-width: 609px){.framer-Em4oI .hidden-j4b5na{display:none!important}.framer-body-NdUFisssz-framer-Em4oI{background:rgb(245,245,245)}.framer-Em4oI.framer-vv4vpa{justify-content:flex-start;padding:32px;width:600px}.framer-Em4oI .framer-1qi95m8,.framer-Em4oI .framer-1laqeu6,.framer-Em4oI .framer-1f22e44,.framer-Em4oI .framer-ju9lbr,.framer-Em4oI .framer-1ymuxs1,.framer-Em4oI .framer-116uo0h,.framer-Em4oI .framer-17vnxt,.framer-Em4oI .framer-ep23p3,.framer-Em4oI .framer-hwt2wk,.framer-Em4oI .framer-1twgfkn{width:100%}}@media (min-width: 567px) and (max-width: 599px){.framer-Em4oI .hidden-1wm097{display:none!important}.framer-body-NdUFisssz-framer-Em4oI{background:rgb(245,245,245)}.framer-Em4oI.framer-vv4vpa{justify-content:flex-start;padding:32px;width:567px}.framer-Em4oI .framer-1qi95m8,.framer-Em4oI .framer-1laqeu6,.framer-Em4oI .framer-1f22e44,.framer-Em4oI .framer-1ymuxs1,.framer-Em4oI .framer-116uo0h,.framer-Em4oI .framer-17vnxt,.framer-Em4oI .framer-ep23p3,.framer-Em4oI .framer-hwt2wk,.framer-Em4oI .framer-1twgfkn{width:100%}.framer-Em4oI .framer-ju9lbr{align-content:flex-start;align-items:flex-start;flex-direction:column;gap:0px;width:100%}.framer-Em4oI .framer-113qhzi{flex-direction:row;gap:4px;height:auto;width:100%}@supports (background: -webkit-named-image(i)) and (not (scale:1)){.framer-Em4oI .framer-ju9lbr,.framer-Em4oI .framer-113qhzi{gap:0px}.framer-Em4oI .framer-ju9lbr>*{margin:0}.framer-Em4oI .framer-ju9lbr>:first-child{margin-top:0}.framer-Em4oI .framer-ju9lbr>:last-child{margin-bottom:0}.framer-Em4oI .framer-113qhzi>*{margin:0 2px}.framer-Em4oI .framer-113qhzi>:first-child{margin-left:0}.framer-Em4oI .framer-113qhzi>:last-child{margin-right:0}}}.framer-P43QB.framer-1syzw27,.framer-P43QB .framer-1syzw27{display:block}.framer-P43QB.framer-1n93k18{align-content:center;align-items:center;cursor:pointer;display:flex;flex-direction:row;flex-wrap:nowrap;gap:5px;height:auto;justify-content:center;padding:0;position:relative;text-decoration:none;width:auto}.framer-P43QB .framer-a47sq3-container{flex:none;height:13px;position:relative;width:18px}.framer-P43QB .framer-wrnlef{flex:none;height:auto;position:relative;white-space:pre;width:auto}@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)){.framer-P43QB.framer-1n93k18{gap:0px}.framer-P43QB.framer-1n93k18>*{margin:0 2.5px}.framer-P43QB.framer-1n93k18>:first-child{margin-left:0}.framer-P43QB.framer-1n93k18>:last-child{margin-right:0}}.framer-P43QB.framer-v-1us6ssq.framer-1n93k18{cursor:unset;padding:0 0 0 1px}.framer-P43QB.framer-v-1us6ssq .framer-a47sq3-container{height:14px;width:19px}.ssr-variant{display:contents}.framer-BRyp7.framer-xv6hwn,.framer-BRyp7 .framer-xv6hwn{display:block}.framer-BRyp7.framer-4ys81n{align-content:center;align-items:center;cursor:pointer;display:flex;flex-direction:row;flex-wrap:nowrap;gap:6px;height:auto;justify-content:center;padding:5px 10px 4px;position:relative;text-decoration:none;width:auto}.framer-BRyp7 .framer-yxzpva{flex:none;height:auto;position:relative;white-space:pre;width:auto}@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)){.framer-BRyp7.framer-4ys81n{gap:0px}.framer-BRyp7.framer-4ys81n>*{margin:0 3px}.framer-BRyp7.framer-4ys81n>:first-child{margin-left:0}.framer-BRyp7.framer-4ys81n>:last-child{margin-right:0}}.framer-BRyp7.framer-v-1e6dhr1.framer-4ys81n{padding:5px 12px 4px 10px}.framer-BRyp7.framer-v-1e6dhr1 .framer-yxzpva{order:2}.framer-BRyp7.framer-v-1uzhlex.framer-4ys81n{height:27px;overflow:visible;padding:5px 10px}.framer-BRyp7.framer-v-1uzhlex .framer-yxzpva,.framer-BRyp7.framer-v-nnvzbd .framer-yxzpva{order:3}.framer-BRyp7.framer-v-ohm4r4.framer-4ys81n{cursor:unset;padding:6px 11px}.framer-BRyp7.framer-v-igsh9m.framer-4ys81n{cursor:unset;width:75px}.framer-BRyp7.framer-v-1wt4h3b.framer-4ys81n,.framer-BRyp7.framer-v-flohvc.framer-4ys81n{padding:0}.framer-BRyp7.framer-v-nnvzbd.framer-4ys81n{cursor:unset;padding:7px 14px}.framer-BRyp7.framer-v-1wt4h3b.hover .framer-yxzpva{--framer-custom-cursors: pointer}.framer-Raun8 .framer-styles-preset-1x5q87:not(.rich-text-wrapper),.framer-Raun8 .framer-styles-preset-1x5q87.rich-text-wrapper a{--framer-link-hover-text-decoration: underline;--framer-link-text-color: #060606;--framer-link-text-decoration: none}@supports (aspect-ratio: 1){body{--framer-aspect-ratio-supported: auto}}.framer-G4Mus.framer-7le95n,.framer-G4Mus .framer-7le95n{display:block}.framer-G4Mus.framer-kr0qig{align-content:center;align-items:center;cursor:pointer;display:flex;flex-direction:row;flex-wrap:nowrap;gap:6px;height:auto;justify-content:center;padding:5px 9px 4px;position:relative;text-decoration:none;width:auto}.framer-G4Mus .framer-1r2koeh,.framer-G4Mus .framer-193p1ak{flex:none;height:auto;position:relative;white-space:pre;width:auto}.framer-G4Mus .framer-55egj7{aspect-ratio:1 / 1;flex:none;height:var(--framer-aspect-ratio-supported, 15px);position:relative;width:15px}.framer-G4Mus .framer-nmpx1x{aspect-ratio:1 / 1;flex:none;height:var(--framer-aspect-ratio-supported, 17px);position:relative;width:17px}@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)){.framer-G4Mus.framer-kr0qig{gap:0px}.framer-G4Mus.framer-kr0qig>*{margin:0 3px}.framer-G4Mus.framer-kr0qig>:first-child{margin-left:0}.framer-G4Mus.framer-kr0qig>:last-child{margin-right:0}}.framer-G4Mus.framer-v-gz3lvj.framer-kr0qig{padding:5px 12px 4px 9px}.framer-G4Mus.framer-v-gz3lvj .framer-1r2koeh{order:2}.framer-G4Mus.framer-v-1pfux32.framer-kr0qig{overflow:visible;padding:6px 12px}.framer-G4Mus.framer-v-1pfux32 .framer-1r2koeh,.framer-G4Mus.framer-v-44r3i4 .framer-1r2koeh,.framer-G4Mus.framer-v-50p1bp .framer-1r2koeh,.framer-G4Mus.framer-v-is08fr .framer-1r2koeh{order:4}.framer-G4Mus.framer-v-1f331nc.framer-kr0qig{cursor:unset}.framer-G4Mus.framer-v-4fc2q9.framer-kr0qig{cursor:unset;width:75px}.framer-G4Mus.framer-v-pn6xfy.framer-kr0qig,.framer-G4Mus.framer-v-1yaqedb.framer-kr0qig{align-content:flex-start;align-items:flex-start;height:19px;justify-content:flex-start;padding:0}.framer-G4Mus.framer-v-pn6xfy .framer-1r2koeh{cursor:pointer}.framer-G4Mus.framer-v-1fl402.framer-kr0qig,.framer-G4Mus.framer-v-is08fr.framer-kr0qig{padding:0}.framer-G4Mus.framer-v-1fl402 .framer-1r2koeh,.framer-G4Mus.framer-v-vanwek .framer-nmpx1x{order:0}.framer-G4Mus.framer-v-44r3i4.framer-kr0qig{cursor:unset;padding:7px 14px}.framer-G4Mus.framer-v-50p1bp.framer-kr0qig,.framer-G4Mus.framer-v-vanwek.framer-kr0qig{gap:5px;padding:0}.framer-G4Mus.framer-v-50p1bp .framer-55egj7,.framer-G4Mus.framer-v-vanwek .framer-193p1ak,.framer-G4Mus.framer-v-is08fr .framer-55egj7{order:3}.framer-G4Mus.framer-v-50p1bp .framer-193p1ak,.framer-G4Mus.framer-v-is08fr .framer-193p1ak{order:1}@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)){.framer-G4Mus.framer-v-50p1bp.framer-kr0qig{gap:0px}.framer-G4Mus.framer-v-50p1bp.framer-kr0qig>*{margin:0 2.5px}.framer-G4Mus.framer-v-50p1bp.framer-kr0qig>:first-child{margin-left:0}.framer-G4Mus.framer-v-50p1bp.framer-kr0qig>:last-child{margin-right:0}}@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)){.framer-G4Mus.framer-v-vanwek.framer-kr0qig{gap:0px}.framer-G4Mus.framer-v-vanwek.framer-kr0qig>*{margin:0 2.5px}.framer-G4Mus.framer-v-vanwek.framer-kr0qig>:first-child{margin-left:0}.framer-G4Mus.framer-v-vanwek.framer-kr0qig>:last-child{margin-right:0}}
+  </style><!-- End of headEnd -->
 </head>
-<body>
-  <div id="maincontent" style="margin-top:70px">
-    <h2>Sanity.ai</h2>
-    <p><b>Make the world more human in the age of AI.</b></p>
-    <p>Sanity.ai is a platform that aims to make the development and deployment of AI systems more "sane" and human-friendly. The platform was created in response to the rapid growth and increasing influence of AI technologies, which can sometimes have unintended or concerning effects on individuals and society.</p>
+<body class="framer-body-NdUFisssz">
+  <script async src="https://events.framer.com/script" data-fid=
+  "daf93279324473d4eff83c382ef6a17b3cdf222ab8401e3c0c09fce195db7dbc"></script>
+  <!-- End of bodyStart -->
+  <div id="main" data-framer-hydrate-v2=
+  "{&quot;routeId&quot;:&quot;NdUFisssz&quot;,&quot;localeId&quot;:&quot;default&quot;,&quot;breakpoints&quot;:[{&quot;hash&quot;:&quot;vv4vpa&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 1440px)&quot;},{&quot;hash&quot;:&quot;ose66u&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 716px) and (max-width: 1439px)&quot;},{&quot;hash&quot;:&quot;1nnhexz&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 630px) and (max-width: 715px)&quot;},{&quot;hash&quot;:&quot;z05we4&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 614px) and (max-width: 629px)&quot;},{&quot;hash&quot;:&quot;1mbj3kt&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 610px) and (max-width: 613px)&quot;},{&quot;hash&quot;:&quot;j4b5na&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 600px) and (max-width: 609px)&quot;},{&quot;hash&quot;:&quot;1wm097&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 567px) and (max-width: 599px)&quot;},{&quot;hash&quot;:&quot;7u6tde&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 500px) and (max-width: 566px)&quot;},{&quot;hash&quot;:&quot;1oms2nz&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 470px) and (max-width: 499px)&quot;},{&quot;hash&quot;:&quot;1vngktn&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 390px) and (max-width: 469px)&quot;},{&quot;hash&quot;:&quot;1vaauhj&quot;,&quot;mediaQuery&quot;:&quot;(max-width: 389px)&quot;}]}"
+  data-framer-ssr-released-at="2024-05-31T08:55:39.663Z"
+  data-framer-page-optimized-at="2024-06-08T19:51:14.738Z">
+    <!--$-->
+    <div class="framer-Em4oI framer-vv4vpa" style=
+    "min-height:100vh;width:auto">
+      <div class="framer-1qi95m8" data-framer-name="Header" style=
+      "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+      data-framer-component-type="RichTextContainer">
+        <p style=
+        "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:rgb(6, 6, 6)"
+        class="framer-text">Designer</p>
+        <p style=
+        "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:rgb(102, 102, 102)"
+        class="framer-text">Based in Berlin, Germany</p>
+      </div>
+      <div class="framer-1laqeu6" data-framer-name="Paragraph"
+      style=
+      "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+      data-framer-component-type="RichTextContainer">
+        <p style=
+        "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:rgb(102, 102, 102)"
+        class="framer-text">As a designer, my primary focus is
+        crafting crisp, clean software products that offer seamless
+        user experience. My expertise also extends to brand
+        identities, iconography, and illustration, ensuring every
+        detail and digital interaction is both functional and
+        visually appealing.</p>
+      </div>
+      <div class="framer-1f22e44" data-framer-name="Paragraph"
+      name="Paragraph">
+        <div class="framer-ju9lbr" data-framer-name="Top" name=
+        "Top">
+          <div class=
+          "ssr-variant hidden-1vaauhj hidden-1vngktn hidden-1oms2nz">
+            <div class="framer-eck5dy" style=
+            "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+            data-framer-component-type="RichTextContainer">
+              <p style=
+              "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:rgb(102, 102, 102)"
+              class="framer-text">After 8 years of experience
+              working with startups, I founded</p>
+            </div>
+          </div>
+          <div class=
+          "ssr-variant hidden-1wm097 hidden-z05we4 hidden-7u6tde hidden-1vngktn hidden-1oms2nz hidden-1nnhexz hidden-ose66u hidden-vv4vpa hidden-j4b5na hidden-1mbj3kt">
+            <div class="framer-eck5dy" style=
+            "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+            data-framer-component-type="RichTextContainer">
+              <p style=
+              "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:rgb(102, 102, 102)"
+              class="framer-text">After 8 years of experience
+              working</p>
+            </div>
+          </div>
+          <div class=
+          "ssr-variant hidden-1vaauhj hidden-1wm097 hidden-z05we4 hidden-7u6tde hidden-1oms2nz hidden-1nnhexz hidden-ose66u hidden-vv4vpa hidden-j4b5na hidden-1mbj3kt">
+            <div class="framer-eck5dy" style=
+            "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+            data-framer-component-type="RichTextContainer">
+              <p style=
+              "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:rgb(102, 102, 102)"
+              class="framer-text">After 8 years of experience
+              working with</p>
+            </div>
+          </div>
+          <div class=
+          "ssr-variant hidden-1vaauhj hidden-1wm097 hidden-z05we4 hidden-7u6tde hidden-1vngktn hidden-1nnhexz hidden-ose66u hidden-vv4vpa hidden-j4b5na hidden-1mbj3kt">
+            <div class="framer-eck5dy" style=
+            "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+            data-framer-component-type="RichTextContainer">
+              <p style=
+              "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:rgb(102, 102, 102)"
+              class="framer-text">After 8 years of experience
+              working with startups,</p>
+            </div>
+          </div>
+          <div class=
+          "framer-113qhzi hidden-7u6tde hidden-1oms2nz hidden-1vngktn hidden-1vaauhj">
+            <div class="framer-mphqnx-container">
+              <a class=
+              "framer-P43QB framer-1n93k18 framer-v-1n93k18 framer-1syzw27"
+              data-framer-name="Variant 1" style=
+              "border-bottom-left-radius:9px;border-bottom-right-radius:9px;border-top-left-radius:9px;border-top-right-radius:9px"
+              href="https://finetune.co" target="_blank" rel=
+              "noopener" tabindex="0">
+              <div class="framer-a47sq3-container"
+              data-framer-name="Light" name="Light">
+                <div style="height:100%;width:100%"></div>
+              </div>
+              <div class="framer-wrnlef" style=
+              "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;--framer-paragraph-spacing:0px;transform:none"
+              data-framer-component-type="RichTextContainer">
+                <p style=
+                "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left"
+                class="framer-text">FineTune</p>
+              </div></a>
+            </div>
+            <div class=
+            "framer-1dmbtej hidden-vv4vpa hidden-ose66u hidden-1nnhexz hidden-z05we4 hidden-1mbj3kt hidden-j4b5na"
+            style=
+            "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+            data-framer-component-type="RichTextContainer">
+              <p style=
+              "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:rgb(102, 102, 102)"
+              class="framer-text">design studio, where I continue
+              to partner with</p>
+            </div>
+          </div>
+        </div>
+        <div class="framer-1ymuxs1" data-framer-name="Bottom" name=
+        "Bottom">
+          <div class=
+          "ssr-variant hidden-1vaauhj hidden-1wm097 hidden-1vngktn">
+            <div class=
+            "framer-14satmo hidden-7u6tde hidden-1oms2nz" style=
+            "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+            data-framer-component-type="RichTextContainer">
+              <p style=
+              "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:rgb(102, 102, 102)"
+              class="framer-text">design studio, where I continue
+              to partner with companies and founders</p>
+              <p style=
+              "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:rgb(102, 102, 102)"
+              class="framer-text">to deliver market-ready products
+              that stand out.</p>
+            </div>
+          </div>
+          <div class=
+          "ssr-variant hidden-1wm097 hidden-z05we4 hidden-7u6tde hidden-1vngktn hidden-1oms2nz hidden-1nnhexz hidden-ose66u hidden-vv4vpa hidden-j4b5na hidden-1mbj3kt">
+            <div class=
+            "framer-14satmo hidden-7u6tde hidden-1oms2nz" style=
+            "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+            data-framer-component-type="RichTextContainer">
+              <p style=
+              "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:rgb(102, 102, 102)"
+              class="framer-text">with startups, I founded</p>
+            </div>
+          </div>
+          <div class=
+          "ssr-variant hidden-1vaauhj hidden-z05we4 hidden-7u6tde hidden-1vngktn hidden-1oms2nz hidden-1nnhexz hidden-ose66u hidden-vv4vpa hidden-j4b5na hidden-1mbj3kt">
+            <div class=
+            "framer-14satmo hidden-7u6tde hidden-1oms2nz" style=
+            "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+            data-framer-component-type="RichTextContainer">
+              <p style=
+              "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:rgb(102, 102, 102)"
+              class="framer-text">companies and founders to deliver
+              market-ready products that stand out.</p>
+            </div>
+          </div>
+          <div class=
+          "ssr-variant hidden-1vaauhj hidden-1wm097 hidden-z05we4 hidden-7u6tde hidden-1oms2nz hidden-1nnhexz hidden-ose66u hidden-vv4vpa hidden-j4b5na hidden-1mbj3kt">
+            <div class=
+            "framer-14satmo hidden-7u6tde hidden-1oms2nz" style=
+            "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+            data-framer-component-type="RichTextContainer">
+              <p style=
+              "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:rgb(102, 102, 102)"
+              class="framer-text">startups, I founded</p>
+            </div>
+          </div>
+          <div class="ssr-variant hidden-7u6tde hidden-1oms2nz">
+            <div class=
+            "framer-1l8fab4 hidden-vv4vpa hidden-ose66u hidden-1nnhexz hidden-1vaauhj hidden-z05we4 hidden-1mbj3kt hidden-j4b5na hidden-1wm097"
+            style=
+            "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+            data-framer-component-type="RichTextContainer">
+              <p style=
+              "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:rgb(102, 102, 102)"
+              class="framer-text">design studio,</p>
+            </div>
+          </div>
+          <div class=
+          "ssr-variant hidden-1vaauhj hidden-1wm097 hidden-z05we4 hidden-1vngktn hidden-1oms2nz hidden-1nnhexz hidden-ose66u hidden-vv4vpa hidden-j4b5na hidden-1mbj3kt">
+            <div class=
+            "framer-1l8fab4 hidden-vv4vpa hidden-ose66u hidden-1nnhexz hidden-1vaauhj hidden-z05we4 hidden-1mbj3kt hidden-j4b5na hidden-1wm097"
+            style=
+            "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+            data-framer-component-type="RichTextContainer">
+              <p style=
+              "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:rgb(102, 102, 102)"
+              class="framer-text">design studio, where I continue
+              to partner with</p>
+            </div>
+          </div>
+          <div class=
+          "ssr-variant hidden-1vaauhj hidden-1wm097 hidden-z05we4 hidden-7u6tde hidden-1vngktn hidden-1nnhexz hidden-ose66u hidden-vv4vpa hidden-j4b5na hidden-1mbj3kt">
+            <div class=
+            "framer-1l8fab4 hidden-vv4vpa hidden-ose66u hidden-1nnhexz hidden-1vaauhj hidden-z05we4 hidden-1mbj3kt hidden-j4b5na hidden-1wm097"
+            style=
+            "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+            data-framer-component-type="RichTextContainer">
+              <p style=
+              "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:rgb(102, 102, 102)"
+              class="framer-text">design studio, where I
+              continue</p>
+            </div>
+          </div>
+          <div class=
+          "framer-19xi4jd hidden-vv4vpa hidden-ose66u hidden-1nnhexz hidden-7u6tde hidden-1vngktn hidden-1vaauhj hidden-z05we4 hidden-1mbj3kt hidden-j4b5na hidden-1wm097"
+          style=
+          "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+          data-framer-component-type="RichTextContainer">
+            <p style=
+            "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:rgb(102, 102, 102)"
+            class="framer-text">I founded</p>
+          </div>
+          <div class=
+          "framer-veemsx-container hidden-vv4vpa hidden-ose66u hidden-1nnhexz hidden-z05we4 hidden-1mbj3kt hidden-j4b5na hidden-1wm097">
+            <div class="ssr-variant hidden-1vaauhj hidden-1vngktn">
+              <a class=
+              "framer-P43QB framer-1n93k18 framer-v-1n93k18 framer-1syzw27"
+              data-framer-name="Variant 1" style=
+              "border-bottom-left-radius:9px;border-bottom-right-radius:9px;border-top-left-radius:9px;border-top-right-radius:9px"
+              href="https://finetune.co" target="_blank" rel=
+              "noopener" tabindex="0">
+              <div class="framer-a47sq3-container"
+              data-framer-name="Light" name="Light">
+                <div style="height:100%;width:100%"></div>
+              </div>
+              <div class="framer-wrnlef" style=
+              "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;--framer-paragraph-spacing:0px;transform:none"
+              data-framer-component-type="RichTextContainer">
+                <p style=
+                "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left"
+                class="framer-text">FineTune</p>
+              </div></a>
+            </div>
+            <div class=
+            "ssr-variant hidden-1wm097 hidden-z05we4 hidden-7u6tde hidden-1vngktn hidden-1oms2nz hidden-1nnhexz hidden-ose66u hidden-vv4vpa hidden-j4b5na hidden-1mbj3kt">
+              <a class=
+              "framer-P43QB framer-1n93k18 framer-v-1us6ssq framer-1syzw27"
+              data-framer-name="Mobile" style=
+              "border-bottom-left-radius:9px;border-bottom-right-radius:9px;border-top-left-radius:9px;border-top-right-radius:9px"
+              href="https://finetune.co" target="_blank" rel=
+              "noopener" tabindex="0">
+              <div class="framer-a47sq3-container"
+              data-framer-name="Light" name="Light">
+                <div style="height:100%;width:100%"></div>
+              </div>
+              <div class="framer-wrnlef" style=
+              "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;--framer-paragraph-spacing:0px;transform:none"
+              data-framer-component-type="RichTextContainer">
+                <p style=
+                "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left"
+                class="framer-text">FineTune</p>
+              </div></a>
+            </div>
+            <div class=
+            "ssr-variant hidden-1vaauhj hidden-1wm097 hidden-z05we4 hidden-7u6tde hidden-1oms2nz hidden-1nnhexz hidden-ose66u hidden-vv4vpa hidden-j4b5na hidden-1mbj3kt">
+              <a class=
+              "framer-P43QB framer-1n93k18 framer-v-1us6ssq framer-1syzw27"
+              data-framer-name="Mobile" style=
+              "border-bottom-left-radius:9px;border-bottom-right-radius:9px;border-top-left-radius:9px;border-top-right-radius:9px"
+              href="https://finetune.co" target="_blank" rel=
+              "noopener" tabindex="0">
+              <div class="framer-a47sq3-container"
+              data-framer-name="Light" name="Light">
+                <div style="height:100%;width:100%"></div>
+              </div>
+              <div class="framer-wrnlef" style=
+              "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;--framer-paragraph-spacing:0px;transform:none"
+              data-framer-component-type="RichTextContainer">
+                <p style=
+                "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left"
+                class="framer-text">FineTune</p>
+              </div></a>
+            </div>
+          </div>
+        </div>
+        <div class=
+        "framer-1jmb2q5 hidden-vv4vpa hidden-ose66u hidden-1nnhexz hidden-z05we4 hidden-1mbj3kt hidden-j4b5na hidden-1wm097"
+        data-framer-name="Bottom" name="Bottom">
+          <div class=
+          "ssr-variant hidden-1vaauhj hidden-7u6tde hidden-1oms2nz">
+            <div class="framer-kgzd4n" style=
+            "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+            data-framer-component-type="RichTextContainer">
+              <p style=
+              "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:rgb(102, 102, 102)"
+              class="framer-text">where I continue to partner with
+              companies and founders to deliver market-ready
+              products that stand out.</p>
+            </div>
+          </div>
+          <div class=
+          "ssr-variant hidden-1wm097 hidden-z05we4 hidden-7u6tde hidden-1vngktn hidden-1oms2nz hidden-1nnhexz hidden-ose66u hidden-vv4vpa hidden-j4b5na hidden-1mbj3kt">
+            <div class="framer-kgzd4n" style=
+            "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+            data-framer-component-type="RichTextContainer">
+              <p style=
+              "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:rgb(102, 102, 102)"
+              class="framer-text">design studio, where I continue
+              to partner with companies and founders to deliver
+              market-ready products that stand out.</p>
+            </div>
+          </div>
+          <div class=
+          "ssr-variant hidden-1vaauhj hidden-1wm097 hidden-z05we4 hidden-1vngktn hidden-1oms2nz hidden-1nnhexz hidden-ose66u hidden-vv4vpa hidden-j4b5na hidden-1mbj3kt">
+            <div class="framer-kgzd4n" style=
+            "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+            data-framer-component-type="RichTextContainer">
+              <p style=
+              "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:rgb(102, 102, 102)"
+              class="framer-text">companies and founders to deliver
+              market-ready products that stand out.</p>
+            </div>
+          </div>
+          <div class=
+          "ssr-variant hidden-1vaauhj hidden-1wm097 hidden-z05we4 hidden-7u6tde hidden-1vngktn hidden-1nnhexz hidden-ose66u hidden-vv4vpa hidden-j4b5na hidden-1mbj3kt">
+            <div class="framer-kgzd4n" style=
+            "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+            data-framer-component-type="RichTextContainer">
+              <p style=
+              "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:rgb(102, 102, 102)"
+              class="framer-text">companies and founders to deliver
+              market-ready products that stand out.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="framer-116uo0h hidden-1vaauhj" data-framer-name=
+      "Actions" name="Actions">
+        <div class="ssr-variant hidden-1vngktn">
+          <div class="framer-1fullor-container" data-framer-name=
+          "Primary" name="Primary">
+            <a name="Primary" class=
+            "framer-BRyp7 framer-Raun8 framer-4ys81n framer-v-1uzhlex framer-xv6hwn"
+            data-framer-name="Variant 3" style=
+            "backdrop-filter:none;background-color:rgb(6, 6, 6);border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-top-left-radius:100px;border-top-right-radius:100px;box-shadow:0px 1px 4px 0px rgba(6, 6, 6, 0.1);-webkit-backdrop-filter:none;height:100%;width:100%;opacity:1"
+            href="mailto:hi@danilotanic.com" target="_blank" rel=
+            "noopener" tabindex="0" id="Primary">
+            <div class="framer-yxzpva" style=
+            "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:rgb(255, 255, 255);--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;--framer-paragraph-spacing:0px;transform:none"
+            data-framer-component-type="RichTextContainer">
+              <p style=
+              "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-font-size:14px;--framer-letter-spacing:0px;--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, rgb(255, 255, 255))"
+              class="framer-text">Say hello</p>
+            </div></a>
+          </div>
+        </div>
+        <div class=
+        "ssr-variant hidden-1vaauhj hidden-1wm097 hidden-z05we4 hidden-7u6tde hidden-1oms2nz hidden-1nnhexz hidden-ose66u hidden-vv4vpa hidden-j4b5na hidden-1mbj3kt">
+          <div class="framer-1fullor-container" data-framer-name=
+          "Primary" name="Primary">
+            <a name="Primary" class=
+            "framer-BRyp7 framer-Raun8 framer-4ys81n framer-v-ohm4r4 framer-xv6hwn"
+            data-framer-name="Variant 4" style=
+            "backdrop-filter:none;background-color:rgb(6, 6, 6);border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-top-left-radius:100px;border-top-right-radius:100px;box-shadow:0px 1px 4px 0px rgba(6, 6, 6, 0.1);-webkit-backdrop-filter:none;height:100%;width:100%;opacity:1"
+            href="mailto:hi@danilotanic.com" target="_blank" rel=
+            "noopener" tabindex="0" id="Primary">
+            <div class="framer-yxzpva" style=
+            "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:rgb(255, 255, 255);--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;--framer-paragraph-spacing:0px;transform:none"
+            data-framer-component-type="RichTextContainer">
+              <p style=
+              "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, rgb(255, 255, 255))"
+              class="framer-text">Say hello</p>
+            </div></a>
+          </div>
+        </div>
+        <div class="framer-zng7lx" data-framer-name="Link" name=
+        "Link">
+          <div class="framer-fj3i60-container" data-framer-name="X"
+          name="X">
+            <div class="ssr-variant hidden-1vngktn">
+              <a name="X" class=
+              "framer-G4Mus framer-kr0qig framer-v-pn6xfy framer-7le95n"
+              data-framer-name="Variant 6" style=
+              "backdrop-filter:none;background-color:rgba(0, 0, 0, 0);border-bottom-left-radius:9px;border-bottom-right-radius:9px;border-top-left-radius:9px;border-top-right-radius:9px;box-shadow:none;-webkit-backdrop-filter:none;opacity:1"
+              href="https://x.com/danilotanic" target="_blank" rel=
+              "noopener" tabindex="0" id="X">
+              <div class="framer-1r2koeh" data-highlight="true"
+              style=
+              "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:rgb(102, 102, 102);--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;--framer-paragraph-spacing:0px;transform:none"
+              data-framer-component-type="RichTextContainer"
+              tabindex="0">
+                <p style=
+                "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-font-size:14px;--framer-letter-spacing:0px;--framer-line-height:1.25em;--framer-text-alignment:left;--framer-text-color:var(--extracted-r6o4lv, rgb(102, 102, 102))"
+                class="framer-text">Find me on <span style=
+                "--framer-font-size:15px" class=
+                "framer-text"><strong class=
+                "framer-text">𝕏</strong></span></p>
+              </div></a>
+            </div>
+            <div class=
+            "ssr-variant hidden-1vaauhj hidden-1wm097 hidden-z05we4 hidden-7u6tde hidden-1oms2nz hidden-1nnhexz hidden-ose66u hidden-vv4vpa hidden-j4b5na hidden-1mbj3kt">
+              <a name="X" class=
+              "framer-G4Mus framer-kr0qig framer-v-1yaqedb framer-7le95n"
+              data-framer-name="X-mobile" style=
+              "backdrop-filter:none;background-color:rgba(0, 0, 0, 0);border-bottom-left-radius:9px;border-bottom-right-radius:9px;border-top-left-radius:9px;border-top-right-radius:9px;box-shadow:none;-webkit-backdrop-filter:none;opacity:1"
+              href="https://x.com/danilotanic" target="_blank" rel=
+              "noopener" tabindex="0" id="X">
+              <div class="framer-1r2koeh" style=
+              "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:rgb(102, 102, 102);--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;--framer-paragraph-spacing:0px;transform:none"
+              data-framer-component-type="RichTextContainer">
+                <p style=
+                "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-font-size:14px;--framer-letter-spacing:0px;--framer-line-height:1.1em;--framer-text-alignment:left;--framer-text-color:var(--extracted-r6o4lv, rgb(102, 102, 102))"
+                class="framer-text"><span style=
+                "--framer-font-size:16px" class="framer-text">Find
+                me on</span> <span style="--framer-font-size:17px"
+                class="framer-text"><strong class=
+                "framer-text">𝕏</strong></span></p>
+              </div></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="framer-17vnxt" data-framer-name="Divider" name=
+      "Divider"></div>
+      <div class="framer-ep23p3" data-framer-name="Paragraph"
+      style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+      data-framer-component-type="RichTextContainer">
+        <p style=
+        "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:rgba(102, 102, 102, 0.6)"
+        class="framer-text">Alongside my design career, I’m a
+        composer. The music I write blends the intricate structures
+        of the Baroque style with my own creative expression.
+        Whether I’m sitting at my desk or on the piano bench, my
+        commitment to quality and creativity remains paramount.</p>
+      </div>
+      <nav class="framer-hwt2wk hidden-1vaauhj" data-framer-name=
+      "Actions" name="Actions">
+        <div class="framer-4swvz3" data-framer-name="Link" name=
+        "Link">
+          <div class="framer-uvz72m-container" data-framer-name=
+          "Spotify" name="Spotify">
+            <div class="ssr-variant hidden-1vngktn">
+              <a name="Spotify" class=
+              "framer-G4Mus framer-kr0qig framer-v-50p1bp framer-7le95n"
+              data-framer-name="Variant 9" style=
+              "backdrop-filter:none;background-color:rgba(0, 0, 0, 0);border-bottom-left-radius:9px;border-bottom-right-radius:9px;border-top-left-radius:9px;border-top-right-radius:9px;box-shadow:none;-webkit-backdrop-filter:none;opacity:1"
+              href=
+              "https://open.spotify.com/artist/4ovmjw04C6ggtK0oYu99RZ?si=ItVcr_nBQF69Dp25ljrL0A"
+              target="_blank" rel="noopener" tabindex="0" id=
+              "Spotify">
+              <div class="framer-1r2koeh" style=
+              "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:rgb(102, 102, 102);--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;--framer-paragraph-spacing:0px;transform:none"
+              data-framer-component-type="RichTextContainer">
+                <p style=
+                "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-font-size:14px;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:var(--extracted-r6o4lv, rgb(102, 102, 102))"
+                class="framer-text">Spotify</p>
+              </div>
+              <div data-framer-component-type="SVG"
+              data-framer-name="iconmonstr_spotify_1" style=
+              "image-rendering:pixelated;flex-shrink:0;fill:rgb(102, 102, 102);color:rgb(102, 102, 102)"
+              class="framer-55egj7">
+                <div class="svgContainer" style=
+                "width:100%;height:100%;aspect-ratio:inherit">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" style=
+                  "width: 100%; height: 100%" viewbox="0 0 24 24">
+                  <use href="#svg-578644209_687"></use></svg>
+                </div>
+              </div>
+              <div class="framer-193p1ak" style=
+              "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:rgb(102, 102, 102);--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;--framer-paragraph-spacing:0px;transform:none"
+              data-framer-component-type="RichTextContainer">
+                <p style=
+                "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-font-size:14px;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:var(--extracted-r6o4lv, rgb(102, 102, 102))"
+                class="framer-text">Listen on</p>
+              </div></a>
+            </div>
+            <div class=
+            "ssr-variant hidden-1vaauhj hidden-1wm097 hidden-z05we4 hidden-7u6tde hidden-1oms2nz hidden-1nnhexz hidden-ose66u hidden-vv4vpa hidden-j4b5na hidden-1mbj3kt">
+              <a name="Spotify" class=
+              "framer-G4Mus framer-kr0qig framer-v-is08fr framer-7le95n"
+              data-framer-name="Spotify-mobile" style=
+              "backdrop-filter:none;background-color:rgba(0, 0, 0, 0);border-bottom-left-radius:9px;border-bottom-right-radius:9px;border-top-left-radius:9px;border-top-right-radius:9px;box-shadow:none;-webkit-backdrop-filter:none;opacity:1"
+              href=
+              "https://open.spotify.com/artist/4ovmjw04C6ggtK0oYu99RZ?si=UNt8aRerRG-a8dDogYwfwQ"
+              target="_blank" rel="noopener" tabindex="0" id=
+              "Spotify">
+              <div class="framer-1r2koeh" style=
+              "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:rgb(102, 102, 102);--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;--framer-paragraph-spacing:0px;transform:none"
+              data-framer-component-type="RichTextContainer">
+                <p style=
+                "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:var(--extracted-r6o4lv, rgb(102, 102, 102))"
+                class="framer-text">Spotify</p>
+              </div>
+              <div data-framer-component-type="SVG"
+              data-framer-name="iconmonstr_spotify_1" style=
+              "image-rendering:pixelated;flex-shrink:0;fill:rgb(102, 102, 102);color:rgb(102, 102, 102)"
+              class="framer-55egj7">
+                <div class="svgContainer" style=
+                "width:100%;height:100%;aspect-ratio:inherit">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" style=
+                  "width: 100%; height: 100%" viewbox="0 0 24 24">
+                  <use href="#svg-578644209_687"></use></svg>
+                </div>
+              </div>
+              <div class="framer-193p1ak" style=
+              "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:rgb(102, 102, 102);--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;--framer-paragraph-spacing:0px;transform:none"
+              data-framer-component-type="RichTextContainer">
+                <p style=
+                "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:var(--extracted-r6o4lv, rgb(102, 102, 102))"
+                class="framer-text">Listen on</p>
+              </div></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="framer-1twgfkn" data-framer-name="Footer" name=
+      "Footer">
+        <div class="framer-1fmuuk3" data-framer-name=
+        "Signature &amp; Name" name="Signature &amp; Name">
+          <div data-framer-component-type="SVG" data-framer-name=
+          "Signature" name="Signature" style=
+          "image-rendering:pixelated;flex-shrink:0;background-size:100% 100%;background-image:url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2072%2075%22%3E%3Cpath%20d%3D%22M%2021.098%2022.842%20L%2021.113%2023.329%20M%2028.723%2037.169%20L%2029.205%2037.093%20L%2028.723%2037.169%20Z%20M%2032.39%2063.463%20L%2031.909%2063.548%20C%2031.955%2063.811%2032.203%2063.988%2032.467%2063.946%20C%2032.731%2063.904%2032.912%2063.659%2032.874%2063.395%20L%2032.39%2063.463%20Z%20M%2039.133%2012.7%20L%2038.896%2012.274%20M%2045.291%2043.502%20L%2045.262%2043.016%20M%2045.845%2042.363%20L%2045.384%2042.202%20L%2045.379%2042.217%20L%2045.375%2042.232%20Z%20M%2046.758%2046.026%20L%2046.626%2045.557%20L%2046.757%2046.026%20Z%20M%2071.097%203.177%20C%2071.261%203.243%2071.448%203.216%2071.586%203.106%20C%2071.724%202.996%2071.791%202.82%2071.763%202.646%20C%2071.734%202.472%2071.613%202.327%2071.446%202.268%20Z%20M%202.423%2056.364%20C%202.486%2056.626%202.75%2056.787%203.012%2056.724%20C%203.274%2056.661%203.435%2056.398%203.372%2056.136%20L%202.423%2056.364%20Z%20M%2045.32%2043.989%20C%2045.533%2043.976%2045.672%2043.852%2045.733%2043.79%20C%2045.804%2043.717%2045.859%2043.634%2045.9%2043.565%20C%2045.983%2043.423%2046.056%2043.251%2046.114%2043.101%20C%2046.183%2042.919%2046.245%2042.735%2046.299%2042.548%20L%2046.311%2042.509%20L%2046.314%2042.498%20L%2046.315%2042.495%20L%2046.315%2042.494%20L%2045.845%2042.362%20L%2045.375%2042.232%20L%2045.375%2042.234%20C%2045.374%2042.235%2045.373%2042.238%2045.372%2042.242%20L%2045.363%2042.274%20C%2045.315%2042.436%2045.262%2042.596%2045.202%2042.753%20C%2045.162%2042.863%2045.114%2042.97%2045.058%2043.072%20C%2045.036%2043.11%2045.027%2043.117%2045.035%2043.109%20C%2045.052%2043.093%2045.07%2043.078%2045.091%2043.067%20C%2045.143%2043.037%2045.202%2043.02%2045.263%2043.016%20L%2045.32%2043.988%20Z%20M%2039.37%2013.125%20C%2039.658%2012.965%2039.868%2012.947%2040.029%2012.985%20C%2040.196%2013.024%2040.388%2013.143%2040.598%2013.401%20C%2041.03%2013.934%2041.415%2014.91%2041.741%2016.273%20C%2042.386%2018.974%2042.736%2022.899%2042.984%2026.965%20C%2043.229%2031.003%2043.374%2035.196%2043.61%2038.33%20C%2043.729%2039.9%2043.873%2041.238%2044.07%2042.187%20C%2044.168%2042.656%2044.286%2043.065%2044.438%2043.365%20C%2044.57%2043.625%2044.841%2044.016%2045.32%2043.988%20L%2045.262%2043.016%20C%2045.428%2043.006%2045.422%2043.147%2045.309%2042.924%20C%2045.216%2042.741%2045.119%2042.433%2045.026%2041.988%20C%2044.842%2041.106%2044.702%2039.823%2044.584%2038.257%20C%2044.347%2035.121%2044.207%2030.994%2043.959%2026.906%20C%2043.712%2022.846%2043.358%2018.841%2042.69%2016.047%20C%2042.359%2014.664%2041.936%2013.502%2041.357%2012.789%20C%2041.061%2012.424%2040.697%2012.141%2040.252%2012.037%20C%2039.8%2011.931%2039.34%2012.027%2038.895%2012.274%20Z%20M%2032.389%2063.462%20L%2032.87%2063.376%20L%2032.87%2063.375%20L%2032.869%2063.369%20L%2032.865%2063.347%20L%2032.849%2063.256%20C%2032.751%2062.683%2032.658%2062.11%2032.57%2061.536%20C%2032.319%2059.894%2032.096%2058.248%2031.899%2056.599%20C%2031.406%2052.477%2030.899%2046.901%2030.84%2041.079%20C%2030.781%2035.253%2031.173%2029.206%2032.466%2024.13%20C%2033.764%2019.038%2035.942%2015.028%2039.37%2013.125%20L%2038.895%2012.274%20C%2035.111%2014.375%2032.839%2018.713%2031.52%2023.889%20C%2030.197%2029.083%2029.805%2035.226%2029.864%2041.089%20C%2029.922%2046.957%2030.434%2052.57%2030.93%2056.715%20C%2031.178%2058.787%2031.423%2060.494%2031.605%2061.683%20C%2031.699%2062.295%2031.798%2062.906%2031.903%2063.516%20L%2031.908%2063.54%20L%2031.909%2063.546%20L%2031.909%2063.547%20Z%20M%2022.789%2048.98%20C%2018.486%2049.441%2014.199%2049.898%209.897%2050.095%20L%209.941%2051.068%20C%2014.278%2050.87%2018.594%2050.409%2022.893%2049.949%20Z%20M%2010.407%2050.579%20C%2010.395%2047.497%2011.385%2040.666%2013.275%2034.578%20C%2014.22%2031.535%2015.379%2028.713%2016.73%2026.648%20C%2018.095%2024.561%2019.571%2023.375%2021.113%2023.329%20L%2021.084%2022.355%20C%2019.039%2022.416%2017.319%2023.964%2015.912%2026.115%20C%2014.49%2028.29%2013.298%2031.209%2012.342%2034.29%20C%2010.43%2040.447%209.419%2047.379%209.431%2050.584%20L%2010.408%2050.58%20Z%20M%2021.112%2023.329%20C%2022.357%2023.292%2023.371%2023.821%2024.224%2024.748%20C%2025.089%2025.686%2025.776%2027.018%2026.323%2028.528%20C%2027.417%2031.55%2027.901%2035.118%2028.24%2037.245%20L%2029.205%2037.092%20C%2028.872%2035.005%2028.375%2031.326%2027.241%2028.197%20C%2026.673%2026.631%2025.933%2025.162%2024.943%2024.088%20C%2023.942%2023.002%2022.671%2022.309%2021.084%2022.355%20L%2021.113%2023.329%20Z%20M%2046.626%2045.556%20C%2038.879%2047.707%2030.837%2048.119%2022.789%2048.98%20L%2022.893%2049.949%20C%2030.867%2049.095%2039.039%2048.673%2046.888%2046.495%20Z%20M%2028.241%2037.246%20C%2029.524%2045.298%2030.776%2055.427%2031.907%2063.53%20L%2032.873%2063.395%20C%2031.747%2055.317%2030.49%2045.157%2029.205%2037.093%20Z%20M%209.897%2050.095%20C%206.031%2050.271%203.706%2049.451%202.513%2048.076%20C%201.332%2046.712%201.129%2044.645%201.903%2041.986%20C%203.453%2036.666%208.787%2029.475%2016.239%2022.595%20C%2023.676%2015.731%2033.156%209.237%2042.908%205.283%20C%2052.669%201.326%2062.636%20-0.061%2071.097%203.177%20L%2071.446%202.268%20C%2062.658%20-1.095%2052.414%200.378%2042.541%204.381%20C%2032.659%208.386%2023.082%2014.951%2015.576%2021.88%20C%208.086%2028.794%202.591%2036.133%200.966%2041.714%20C%200.153%2044.507%200.276%2046.984%201.775%2048.713%20C%203.263%2050.429%205.974%2051.249%209.942%2051.068%20L%209.897%2050.095%20Z%20M%2046.307%2042.523%20C%2048.1%2037.397%2049.787%2033.53%2051.321%2030.697%20C%2052.859%2027.857%2054.228%2026.085%2055.373%2025.118%20C%2056.525%2024.146%2057.339%2024.069%2057.87%2024.321%20C%2058.447%2024.595%2058.952%2025.364%2059.215%2026.645%20C%2059.735%2029.172%2059.198%2033.187%2057.201%2036.943%20C%2055.214%2040.683%2051.804%2044.119%2046.627%2045.557%20L%2046.889%2046.495%20C%2052.371%2044.973%2055.976%2041.33%2058.064%2037.4%20C%2060.144%2033.486%2060.746%2029.241%2060.171%2026.449%20C%2059.888%2025.072%2059.288%2023.916%2058.29%2023.442%20C%2057.246%2022.947%2056.016%2023.3%2054.743%2024.375%20C%2053.462%2025.456%2052.024%2027.349%2050.462%2030.234%20C%2048.896%2033.126%2047.189%2037.044%2045.385%2042.202%20L%2046.307%2042.524%20Z%20M%2022.363%2049.557%20C%2024.015%2058.166%2024.033%2064.397%2023.161%2068.423%20C%2022.725%2070.437%2022.074%2071.865%2021.324%2072.766%20C%2020.584%2073.656%2019.766%2074.018%2018.94%2073.973%20C%2018.094%2073.928%2017.138%2073.451%2016.16%2072.449%20C%2015.186%2071.45%2014.223%2069.961%2013.371%2067.984%20C%2011.668%2064.029%2010.438%2058.182%2010.408%2050.58%20L%209.432%2050.584%20C%209.462%2058.279%2010.706%2064.262%2012.474%2068.368%20C%2013.357%2070.42%2014.379%2072.019%2015.46%2073.128%20C%2016.539%2074.233%2017.711%2074.883%2018.887%2074.946%20C%2020.084%2075.01%2021.182%2074.463%2022.076%2073.388%20C%2022.961%2072.323%2023.661%2070.729%2024.116%2068.628%20C%2025.026%2064.424%2024.986%2058.048%2023.322%2049.373%20Z%20M%203.373%2056.136%20C%201.785%2049.555%201.845%2043.848%202.903%2039.502%20C%203.966%2035.138%206.014%2032.223%208.332%2031.085%20C%209.481%2030.522%2010.709%2030.385%2011.959%2030.726%20C%2013.217%2031.069%2014.531%2031.905%2015.817%2033.338%20C%2018.397%2036.215%2020.804%2041.433%2022.363%2049.556%20L%2023.322%2049.373%20C%2021.748%2041.172%2019.294%2035.754%2016.545%2032.689%20C%2015.167%2031.153%2013.7%2030.191%2012.217%2029.787%20C%2010.727%2029.381%209.255%2029.547%207.901%2030.211%20C%205.214%2031.529%203.051%2034.771%201.954%2039.273%20C%200.853%2043.792%200.805%2049.659%202.423%2056.364%20L%203.372%2056.137%20Z%22%20fill%3D%22rgb(6%2C%206%2C%206)%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E')"
+          class="framer-jham6v"></div>
+          <div class="ssr-variant hidden-1vaauhj hidden-1vngktn">
+            <div class="framer-1o6kdvl" style=
+            "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+            data-framer-component-type="RichTextContainer">
+              <p style=
+              "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-font-size:12px;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:rgba(102, 102, 102, 0.6)"
+              class="framer-text">Danilo Tanic</p>
+            </div>
+          </div>
+          <div class=
+          "ssr-variant hidden-1wm097 hidden-z05we4 hidden-7u6tde hidden-1vngktn hidden-1oms2nz hidden-1nnhexz hidden-ose66u hidden-vv4vpa hidden-j4b5na hidden-1mbj3kt">
+            <div class="framer-1o6kdvl" style=
+            "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+            data-framer-component-type="RichTextContainer">
+              <p style=
+              "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-font-size:13px;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:rgba(102, 102, 102, 0.6)"
+              class="framer-text">Danilo Tanic</p>
+            </div>
+          </div>
+          <div class=
+          "ssr-variant hidden-1vaauhj hidden-1wm097 hidden-z05we4 hidden-7u6tde hidden-1oms2nz hidden-1nnhexz hidden-ose66u hidden-vv4vpa hidden-j4b5na hidden-1mbj3kt">
+            <div class="framer-1o6kdvl" style=
+            "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+            data-framer-component-type="RichTextContainer">
+              <p style=
+              "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-font-size:13px;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:rgba(102, 102, 102, 0.6)"
+              class="framer-text">Danilo Tanic</p>
+            </div>
+          </div>
+        </div>
+        <div class="framer-gdn51a-container">
+          <div class="ssr-variant hidden-1vaauhj hidden-1vngktn">
+            <p style=
+            "margin:0;padding:0;color:rgba(102, 102, 102, 0.6);font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;font-weight:500;font-size:12px;line-height:1.45em;visibility:hidden;letter-spacing:0em;font-variant-numeric:normal;white-space:nowrap">
+            June 8, 2024</p>
+          </div>
+          <div class=
+          "ssr-variant hidden-1wm097 hidden-z05we4 hidden-7u6tde hidden-1vngktn hidden-1oms2nz hidden-1nnhexz hidden-ose66u hidden-vv4vpa hidden-j4b5na hidden-1mbj3kt">
+            <p style=
+            "margin:0;padding:0;color:rgba(102, 102, 102, 0.6);font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;font-weight:500;font-size:13px;line-height:1.45em;visibility:hidden;letter-spacing:0em;font-variant-numeric:normal;white-space:nowrap">
+            June 8, 2024</p>
+          </div>
+          <div class=
+          "ssr-variant hidden-1vaauhj hidden-1wm097 hidden-z05we4 hidden-7u6tde hidden-1oms2nz hidden-1nnhexz hidden-ose66u hidden-vv4vpa hidden-j4b5na hidden-1mbj3kt">
+            <p style=
+            "margin:0;padding:0;color:rgba(102, 102, 102, 0.6);font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;font-weight:500;font-size:13px;line-height:1.45em;visibility:hidden;letter-spacing:0em;font-variant-numeric:normal;white-space:nowrap">
+            June 8, 2024</p>
+          </div>
+        </div>
+      </div>
+      <nav class=
+      "framer-jqc5uq hidden-vv4vpa hidden-ose66u hidden-1nnhexz hidden-7u6tde hidden-1oms2nz hidden-1vngktn hidden-z05we4 hidden-1mbj3kt hidden-j4b5na hidden-1wm097"
+      data-framer-name="Actions" name="Actions">
+        <div class="framer-9cbud8-container" data-framer-name=
+        "Primary" name="Primary">
+          <a name="Primary" class=
+          "framer-BRyp7 framer-Raun8 framer-4ys81n framer-v-ohm4r4 framer-xv6hwn"
+          data-framer-name="Variant 4" style=
+          "backdrop-filter:none;background-color:rgb(6, 6, 6);border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-top-left-radius:100px;border-top-right-radius:100px;box-shadow:0px 1px 4px 0px rgba(6, 6, 6, 0.1);-webkit-backdrop-filter:none;opacity:1"
+          href="mailto:hi@danilotanic.com" target="_blank" rel=
+          "noopener" tabindex="0" id="Primary">
+          <div class="framer-yxzpva" style=
+          "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:rgb(255, 255, 255);--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;--framer-paragraph-spacing:0px;transform:none"
+          data-framer-component-type="RichTextContainer">
+            <p style=
+            "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, rgb(255, 255, 255))"
+            class="framer-text">Say hello</p>
+          </div></a>
+        </div>
+        <div class="framer-4gwkta" data-framer-name="Link" name=
+        "Link">
+          <div class="framer-1733s2p-container" data-framer-name=
+          "X" name="X">
+            <a name="X" class=
+            "framer-G4Mus framer-kr0qig framer-v-1yaqedb framer-7le95n"
+            data-framer-name="X-mobile" style=
+            "backdrop-filter:none;background-color:rgba(0, 0, 0, 0);border-bottom-left-radius:9px;border-bottom-right-radius:9px;border-top-left-radius:9px;border-top-right-radius:9px;box-shadow:none;-webkit-backdrop-filter:none;opacity:1"
+            href="https://x.com/danilotanic" target="_blank" rel=
+            "noopener" tabindex="0" id="X">
+            <div class="framer-1r2koeh" style=
+            "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:rgb(102, 102, 102);--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;--framer-paragraph-spacing:0px;transform:none"
+            data-framer-component-type="RichTextContainer">
+              <p style=
+              "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-font-size:14px;--framer-letter-spacing:0px;--framer-line-height:1.1em;--framer-text-alignment:left;--framer-text-color:var(--extracted-r6o4lv, rgb(102, 102, 102))"
+              class="framer-text"><span style=
+              "--framer-font-size:16px" class="framer-text">Find me
+              on</span> <span style="--framer-font-size:17px"
+              class="framer-text"><strong class=
+              "framer-text">𝕏</strong></span></p>
+            </div></a>
+          </div>
+        </div>
+      </nav>
+      <nav class=
+      "framer-1p5bt0j hidden-vv4vpa hidden-ose66u hidden-1nnhexz hidden-7u6tde hidden-1oms2nz hidden-1vngktn hidden-z05we4 hidden-1mbj3kt hidden-j4b5na hidden-1wm097"
+      data-framer-name="Actions" name="Actions">
+        <div class="framer-1o8tcng" data-framer-name="Link" name=
+        "Link">
+          <div class="framer-1ru39ca-container" data-framer-name=
+          "Spotify" name="Spotify">
+            <a name="Spotify" class=
+            "framer-G4Mus framer-kr0qig framer-v-is08fr framer-7le95n"
+            data-framer-name="Spotify-mobile" style=
+            "backdrop-filter:none;background-color:rgba(0, 0, 0, 0);border-bottom-left-radius:9px;border-bottom-right-radius:9px;border-top-left-radius:9px;border-top-right-radius:9px;box-shadow:none;-webkit-backdrop-filter:none;opacity:1"
+            href=
+            "https://open.spotify.com/artist/4ovmjw04C6ggtK0oYu99RZ?si=UNt8aRerRG-a8dDogYwfwQ"
+            target="_blank" rel="noopener" tabindex="0" id=
+            "Spotify">
+            <div class="framer-1r2koeh" style=
+            "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:rgb(102, 102, 102);--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;--framer-paragraph-spacing:0px;transform:none"
+            data-framer-component-type="RichTextContainer">
+              <p style=
+              "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:var(--extracted-r6o4lv, rgb(102, 102, 102))"
+              class="framer-text">Spotify</p>
+            </div>
+            <div data-framer-component-type="SVG" data-framer-name=
+            "iconmonstr_spotify_1" style=
+            "image-rendering:pixelated;flex-shrink:0;fill:rgb(102, 102, 102);color:rgb(102, 102, 102)"
+            class="framer-55egj7">
+              <div class="svgContainer" style=
+              "width:100%;height:100%;aspect-ratio:inherit">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" style=
+                "width: 100%; height: 100%" viewbox="0 0 24 24">
+                <use href="#svg-578644209_687"></use></svg>
+              </div>
+            </div>
+            <div class="framer-193p1ak" style=
+            "outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:rgb(102, 102, 102);--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;--framer-paragraph-spacing:0px;transform:none"
+            data-framer-component-type="RichTextContainer">
+              <p style=
+              "--font-selector:Q1VTVE9NO1N1aXNzZSBJbnQnbCBSZWd1bGFy;--framer-font-family:&quot;Suisse Int'l Regular&quot;, &quot;Suisse Int'l Regular Placeholder&quot;, sans-serif;--framer-letter-spacing:0px;--framer-line-height:1.45em;--framer-text-alignment:left;--framer-text-color:var(--extracted-r6o4lv, rgb(102, 102, 102))"
+              class="framer-text">Listen on</p>
+            </div></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="framer-Em4oI" id="overlay"></div><!--/$-->
   </div>
+  <script>
+  (()=>{function t(){for(let e of document.querySelectorAll("[data-framer-original-sizes]")){let i=e.getAttribute("data-framer-original-sizes");i===""?e.removeAttribute("sizes"):e.setAttribute("sizes",i),e.removeAttribute("data-framer-original-sizes")}}function s(){window.__framer_onRewriteBreakpoints=t}return s})()()
+  </script>
+  <div id="svg-templates" style=
+  "position: absolute; overflow: hidden; top: 0; left: 0; width: 0; height: 0">
+    <div id="container_svg-578644209_687">
+      <svg width="24" height="24" xmlns=
+      "http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule=
+      "evenodd" id="svg-578644209_687">
+      <path d=
+      "M19.098 10.638C15.23 8.341 8.85 8.13 5.157 9.251a1.121 1.121 0 1 1-.651-2.148c4.239-1.287 11.285-1.038 15.738 1.605a1.123 1.123 0 0 1-1.146 1.93zm-.126 3.403a.937.937 0 0 1-1.287.308c-3.225-1.982-8.142-2.557-11.958-1.399a.936.936 0 1 1-.543-1.79c4.358-1.322 9.776-.682 13.48 1.595.44.27.578.847.308 1.286zm-1.469 3.267a.746.746 0 0 1-1.028.249c-2.818-1.722-6.365-2.111-10.542-1.157a.748.748 0 0 1-.333-1.458c4.571-1.045 8.492-.595 11.655 1.338a.747.747 0 0 1 .248 1.028zM12 0C5.373 0 0 5.373 0 12c0 6.628 5.373 12 12 12 6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12z"></path>
+      </svg>
+    </div>
+  </div>
+  <script data-framer-appear-animation="no-preference"></script> 
+  <script type="module" async data-framer-bundle="" fetchpriority=
+  "low" src=
+  "https://framerusercontent.com/sites/2sluiSkF9LKzBkI3On2ecQ/default_script0.3P7GUHEN.mjs"></script>
+  <!-- End of bodyEnd -->
 </body>
 </html>
