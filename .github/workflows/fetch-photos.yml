@@ -25,4 +25,4 @@ jobs:
           git config user.email "wasim.ullah@aol.com"
           git add assets/photos/*.jpg
           git diff --cached --quiet || git commit -m "Add licensed Unsplash+ photos (unwatermarked)"
-          git push
+          git pull --rebase origin main && git push
