@@ -1,0 +1,28 @@
+name: Fetch licensed photos
+on:
+  push:
+    paths: ['assets/photos/manifest.txt']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download and resize
+        run: |
+          sudo apt-get install -y -qq imagemagick >/dev/null || true
+          while read -r name url; do
+            [ -z "$name" ] && continue
+            curl -sSfL "$url" -o "/tmp/$name.jpg"
+            convert "/tmp/$name.jpg" -resize '2400x2400>' -strip -interlace Plane -quality 82 "assets/photos/$name.jpg"
+            echo "$name $(identify -format '%wx%h' assets/photos/$name.jpg)"
+          done < assets/photos/manifest.txt
+      - name: Commit
+        run: |
+          git config user.name "wasim-ullah"
+          git config user.email "wasim.ullah@aol.com"
+          git add assets/photos/*.jpg
+          git diff --cached --quiet || git commit -m "Add licensed Unsplash+ photos (unwatermarked)"
+          git push
