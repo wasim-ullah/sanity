@@ -16,7 +16,6 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://sanity.ai/assets/social/og-image.png">
 <link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="preconnect" href="https://plus.unsplash.com" crossorigin>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -55,7 +54,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid #1111
 .arr{display:inline-block;vertical-align:-1px;flex:none}
 a,button{transition:opacity .25s ease,transform .25s ease}
 a:hover,button:hover{opacity:.82}
-#hz-img{transition:opacity .45s ease}img[src^="https://plus.unsplash.com"]{background:#1b1c1f}
+#hz-img{transition:opacity .45s ease}img[src^="/assets/photos/"]{background:#1b1c1f}
 html.io .sv,html.io .fv,html.io .grow{opacity:0;transition:opacity 1s cubic-bezier(.22,.61,.36,1),transform 1s cubic-bezier(.22,.61,.36,1)}
 html.io .sv{transform:translateY(16px)}
 html.io .grow{transform:scale(.97)}
@@ -130,9 +129,9 @@ body{touch-action:pan-x pan-y;overscroll-behavior-x:none}
 <!-- HERO CAROUSEL -->
 <section aria-label="What working with us looks like" style="margin-top: 44px;">
 <div class="stage" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1100px) minmax(0, 1fr); gap: 16px;">
-<div class="peek" aria-hidden="true" style="height: 560px; overflow: hidden;"><img id="hz-prev-img" src="https://plus.unsplash.com/premium_photo-1777954146284-84f2a5c837fc?auto=format&fit=crop&w=2400&q=80" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: right center;"></div>
+<div class="peek" aria-hidden="true" style="height: 560px; overflow: hidden;"><img id="hz-prev-img" src="/assets/photos/hero-3.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: right center;"></div>
 <div class="rise d3" style="position: relative; height: 560px; overflow: hidden;">
-<img id="hz-img" src="https://plus.unsplash.com/premium_photo-1777954146273-f43c0cbab143?auto=format&fit=crop&w=2400&q=80" alt="" class="px" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+<img id="hz-img" src="/assets/photos/hero-1.jpg" alt="" class="px" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
 <div aria-hidden="true" style="position: absolute; inset: 0; background: rgba(40,42,60,0.12);"></div>
 
 <div class="hz-ov" data-i="0">
@@ -165,7 +164,7 @@ body{touch-action:pan-x pan-y;overscroll-behavior-x:none}
 </div>
 <div aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: #ffffff; z-index: 3;"><div id="hz-prog-fill" style="height: 100%; width: 0%; background: #111111;"></div></div>
 </div>
-<div class="peek" aria-hidden="true" style="height: 560px; overflow: hidden;"><img id="hz-next-img" src="https://plus.unsplash.com/premium_photo-1749641789705-d3109216ce1f?auto=format&fit=crop&w=2400&q=80" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: left center;"></div>
+<div class="peek" aria-hidden="true" style="height: 560px; overflow: hidden;"><img id="hz-next-img" src="/assets/photos/hero-2.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: left center;"></div>
 </div>
 <div style="max-width: 1100px; margin: 18px auto 0; padding: 0 16px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: flex-start; gap: 24px;">
 <p style="margin: 0; font-size: 15px; line-height: 1.4; font-weight: 500; letter-spacing: -0.02em; max-width: 24em;" id="hz-cap">Your marketing partner. For planning, fixing and growing with less guesswork.</p>
@@ -224,7 +223,7 @@ body{touch-action:pan-x pan-y;overscroll-behavior-x:none}
 <div style="align-self: start; border-top: 1px dashed #c9c9c5; padding-top: 14px; font-size: 12px;"><span style="font-weight: 500;">1.0</span>   Plan</div>
 <div>
 <div class="grow" style="position: relative; height: 330px; overflow: hidden;">
-<img src="https://plus.unsplash.com/premium_photo-1743337530708-dd4279835269?auto=format&fit=crop&w=2400&q=80" alt="" class="px" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+<img src="/assets/photos/plan.jpg" alt="" class="px" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
 <div class="panel fv" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: min(300px, calc(100% - 40px)); border-radius: 10px; padding: 14px 16px; font-size: 12px; display: flex; flex-direction: column; gap: 9px;">
 <div style="display: flex; align-items: center; gap: 8px; color: #55565a;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"></path></svg>Your 90-day plan</div>
 <div style="display: flex; gap: 8px;"><span aria-hidden="true">✓</span>Who buys, and where they look</div>
@@ -240,7 +239,7 @@ body{touch-action:pan-x pan-y;overscroll-behavior-x:none}
 <div style="align-self: start; border-top: 1px dashed #c9c9c5; padding-top: 14px; font-size: 12px;"><span style="font-weight: 500;">2.0</span>   Build</div>
 <div>
 <div class="grow" style="position: relative; height: 330px; overflow: hidden;">
-<img src="https://plus.unsplash.com/premium_photo-1751620467222-9b616288ce60?auto=format&fit=crop&w=2400&q=80" alt="" class="px" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+<img src="/assets/photos/build.jpg" alt="" class="px" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
 <div class="panel fv" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: min(320px, calc(100% - 40px)); border-radius: 10px; overflow: hidden;">
 <div style="display: flex; align-items: center; gap: 5px; padding: 9px 12px; border-bottom: 1px solid #e7e7e4;"><span style="width: 7px; height: 7px; border-radius: 50%; background: #d4d4d0;"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #d4d4d0;"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #d4d4d0;"></span><span style="margin-left: 8px; font-size: 11px; color: #6e6f74;">yourstudio.ae</span></div>
 <div style="padding: 18px 16px 20px;"><div style="font-size: 22px; line-height: 1.1; letter-spacing: -0.04em;">Rooms that feel like you.</div><div style="margin-top: 8px; font-size: 11px; color: #6e6f74;">Book a site visit <svg class="arr" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></div></div>
@@ -254,7 +253,7 @@ body{touch-action:pan-x pan-y;overscroll-behavior-x:none}
 <div style="align-self: start; border-top: 1px dashed #c9c9c5; padding-top: 14px; font-size: 12px;"><span style="font-weight: 500;">3.0</span>   Grow</div>
 <div>
 <div class="grow" style="position: relative; height: 330px; overflow: hidden;">
-<img src="https://plus.unsplash.com/premium_photo-1691547067161-fc1600117827?auto=format&fit=crop&w=2400&q=80" alt="" class="px" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+<img src="/assets/photos/grow.jpg" alt="" class="px" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
 <div class="panel fv" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: min(300px, calc(100% - 40px)); border-radius: 10px; padding: 12px 14px; font-size: 12px; display: flex; flex-direction: column; gap: 4px;">
 <div style="display: flex; justify-content: space-between; align-items: center; color: #55565a; padding-bottom: 6px;"><span>Quick actions</span><span aria-hidden="true">↺︎</span></div>
 <div style="padding: 7px 0; border-top: 1px solid #ececea;">Reply to tonight's enquiries</div>
@@ -286,7 +285,7 @@ body{touch-action:pan-x pan-y;overscroll-behavior-x:none}
 <div style="margin-top: 36px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;">
 <article class="sv">
 <div class="grow" style="position: relative; height: 380px; overflow: hidden;">
-<img src="https://plus.unsplash.com/premium_photo-1762432159387-2919c592778f?auto=format&fit=crop&w=2400&q=80" alt="" class="px" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+<img src="/assets/photos/sell.jpg" alt="" class="px" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
 <div class="panel notif" style="position: absolute; left: 24px; top: 40px; width: min(260px, calc(100% - 48px)); border-radius: 10px; padding: 14px 16px; font-size: 11px; display: flex; flex-direction: column; gap: 8px;">
 <div style="display: flex; justify-content: space-between; color: #55565a;"><span>Clinic dashboard</span><span aria-hidden="true">⤢︎</span></div>
 <div class="nitem" style="color: #6e6f74; display: flex; align-items: center; gap: 6px;"><span class="live-dot" aria-hidden="true"></span>Just now</div>
@@ -300,7 +299,7 @@ body{touch-action:pan-x pan-y;overscroll-behavior-x:none}
 </article>
 <article class="sv">
 <div class="grow" style="position: relative; height: 380px; overflow: hidden;">
-<img src="https://plus.unsplash.com/premium_photo-1677644293715-c013fa300360?auto=format&fit=crop&w=2400&q=80" alt="" class="px" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+<img src="/assets/photos/sector.jpg" alt="" class="px" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
 <div class="panel notif" style="position: absolute; right: 24px; bottom: 32px; width: min(280px, calc(100% - 48px)); border-radius: 10px; padding: 14px 16px; font-size: 11px; display: flex; flex-direction: column; gap: 8px;">
 <div class="nitem" style="color: #55565a;">Prepare a report for <span style="padding: 2px 6px; border-radius: 4px; background: #ece9f6; color: #4b3f8f;">off-plan launch</span></div>
 <div class="nitem typed" style="padding: 9px 10px; border-radius: 6px; background: #f3f2f8; color: #33343a; line-height: 1.45; min-height: 3em;">Enquiries by source, cost per viewing booked and which ads to scale next week.</div>
@@ -315,7 +314,7 @@ body{touch-action:pan-x pan-y;overscroll-behavior-x:none}
 
 <!-- CLOSING -->
 <section id="start" style="position: relative; margin-top: 160px; min-height: 760px; overflow: hidden; color: #ffffff;">
-<img src="https://plus.unsplash.com/premium_photo-1793624538964-343159548c41?auto=format&fit=crop&w=2400&q=80" alt="" class="px" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+<img src="/assets/photos/proof.jpg" alt="" class="px" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
 <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,22,30,0) 40%, rgba(12,14,16,0.85) 100%);"></div>
 <div style="position: relative; max-width: 1100px; margin: 0 auto; padding: 72px 16px 72px; box-sizing: border-box;">
 <div style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px;"><span aria-hidden="true" style="width: 14px; height: 14px; border-radius: 3px; background: rgba(255,255,255,0.3);"></span>13 years of marketing across the US, LATAM, Pakistan and the GCC</div>
@@ -376,7 +375,7 @@ body{touch-action:pan-x pan-y;overscroll-behavior-x:none}
 
 </div>
 <script>
-(function(){var I=["https://plus.unsplash.com/premium_photo-1777954146273-f43c0cbab143?auto=format&fit=crop&w=2400&q=80", "https://plus.unsplash.com/premium_photo-1792698513614-6612cdf6dcf5?auto=format&fit=crop&w=2400&q=80", "https://plus.unsplash.com/premium_photo-1697729965179-05a5ddcfe00e?auto=format&fit=crop&w=2400&q=80"],S=["https://plus.unsplash.com/premium_photo-1749641789705-d3109216ce1f?auto=format&fit=crop&w=2400&q=80", "https://plus.unsplash.com/premium_photo-1733864995441-fb90601dee83?auto=format&fit=crop&w=2400&q=80", "https://plus.unsplash.com/premium_photo-1777954146284-84f2a5c837fc?auto=format&fit=crop&w=2400&q=80"],C=["Your marketing partner. For planning, fixing and growing with less guesswork.", "Every enquiry answered in seconds, day or night, and saved with its source.", "Named when people ask AI assistants who to hire in your field."],i=0,n=3;
+(function(){var I=["/assets/photos/hero-1.jpg", "/assets/photos/hero-2.jpg", "/assets/photos/hero-3.jpg"],S=I,C=["Your marketing partner. For planning, fixing and growing with less guesswork.", "Every enquiry answered in seconds, day or night, and saved with its source.", "Named when people ask AI assistants who to hire in your field."],i=0,n=3;
 var img=document.getElementById('hz-img'),pv=document.getElementById('hz-prev-img'),nx=document.getElementById('hz-next-img'),cap=document.getElementById('hz-cap'),ov=document.querySelectorAll('.hz-ov');
 function go(k){i=(k+n)%n;img.style.opacity=0;setTimeout(function(){img.src=I[i];img.style.opacity=1;},220);pv.src=S[(i+n-1)%n];nx.src=S[(i+1)%n];cap.textContent=C[i];ov.forEach(function(o){o.hidden=+o.dataset.i!==i;});if(window.hzTick)hzTick();}
 window.hzGo=function(d){go(i+d)};
@@ -506,7 +505,7 @@ fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'
 <div class="pp-modal" role="dialog" aria-modal="true" aria-labelledby="pp-g-title">
 <button type="button" class="pp-x" data-close="ov" aria-label="Close"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
 <div class="pp-art" aria-hidden="true">
-<img class="bg" src="https://plus.unsplash.com/premium_photo-1747850337455-503f7bd29d06?auto=format&fit=crop&w=2400&q=80" alt="">
+<img class="bg" src="/assets/photos/dunes.jpg" alt="">
 <div class="pp-cover"><img src="/assets/guide/cover.jpg" alt=""></div>
 </div>
 <div class="pp-main">
