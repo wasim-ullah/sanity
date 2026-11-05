@@ -4,8 +4,11 @@ module.exports = function guideEmail(base) {
   const wa = 'https://wa.me/971585785819?text=' + encodeURIComponent('Hi Wasim, I read the AI in marketing guide and would like to book the free 20-minute call.');
   const F = "'Altera Sans','Helvetica Neue',Helvetica,Arial,sans-serif";
   const B = "'Helvetica Neue',Helvetica,Arial,sans-serif";
+  const H = "'Geist','Helvetica Neue',Helvetica,Arial,sans-serif";
+  const S = "'IBM Plex Serif',Georgia,'Times New Roman',serif";
   const item = (n, t) => '<tr><td width="34" valign="top" style="padding:12px 0;border-top:1px solid #e6e6e2;font:500 12px/20px ' + B + ';color:#8a8b90">' + n + '</td><td valign="top" style="padding:12px 0;border-top:1px solid #e6e6e2;font:400 15px/20px ' + B + ';color:#111111">' + t + '</td></tr>';
   const html = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light only"><title>Your guide: AI in marketing, without the hype</title>' +
+  '<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400&family=IBM+Plex+Serif:wght@400&display=swap" rel="stylesheet">' +
   '<style>@font-face{font-family:"Altera Sans";src:url("' + base + '/assets/haze/AlteraSans-Regular.otf") format("opentype");font-weight:400}' +
   'a{color:#111111}@media (max-width:620px){.card{padding:28px 22px !important}.h1{font-size:28px !important;line-height:32px !important}.pad{padding-left:16px !important;padding-right:16px !important}}</style></head>' +
   '<body style="margin:0;padding:0;background:#f3f3f1;-webkit-text-size-adjust:100%">' +
@@ -21,7 +24,7 @@ module.exports = function guideEmail(base) {
   // card
   '<tr><td class="card" style="background:#ffffff;border-radius:0 0 6px 6px;padding:40px 44px">' +
   '<p style="margin:0 0 12px;font:500 12px/16px ' + B + ';letter-spacing:1.5px;text-transform:uppercase;color:#8a8b90">Your guide</p>' +
-  '<h1 class="h1" style="margin:0 0 20px;font:400 34px/38px ' + F + ';letter-spacing:-0.5px;color:#111111">AI in marketing, without the hype</h1>' +
+  '<h1 class="h1" style="margin:0 0 20px;font:400 36px/40px ' + H + ';letter-spacing:-1.5px;color:#111111">AI in marketing, <span style="font-family:' + S + ';font-weight:400;letter-spacing:-1.6px">without the hype</span></h1>' +
   '<p style="margin:0 0 28px;font:400 16px/25px ' + B + ';color:#3a3b3f">Thank you for requesting the guide. Your copy is attached to this email as a PDF, and you can open it any time with the button below.</p>' +
   '<table role="presentation" cellpadding="0" cellspacing="0"><tr><td bgcolor="#111111" style="border-radius:6px"><a href="' + pdf + '" style="display:inline-block;padding:15px 26px;font:500 15px/18px ' + B + ';color:#ffffff;text-decoration:none;border-radius:6px">Open the guide&nbsp;&nbsp;&#8599;</a></td></tr></table>' +
   '<p style="margin:40px 0 4px;font:500 12px/16px ' + B + ';letter-spacing:1.5px;text-transform:uppercase;color:#8a8b90">What is inside</p>' +
