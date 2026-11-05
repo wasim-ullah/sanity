@@ -461,20 +461,20 @@ fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'
 
 .pp-ov{position:fixed;inset:0;z-index:70;background:rgba(17,17,17,0.4);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:center;padding:16px;opacity:0;pointer-events:none;transition:opacity .35s ease}
 .pp-ov.show{opacity:1;pointer-events:auto}
-.pp-modal{position:relative;width:min(560px,100%);background:#f5f5f4;display:grid;grid-template-columns:200px 1fr;box-shadow:0 30px 80px rgba(17,17,17,0.28);font-family:'Geist','Helvetica Neue',Helvetica,sans-serif;color:#111111;transform:translateY(14px);transition:transform .45s cubic-bezier(.22,.61,.36,1)}
+.pp-modal{position:relative;width:min(500px,100%);background:#f5f5f4;display:grid;grid-template-columns:170px 1fr;box-shadow:0 30px 80px rgba(17,17,17,0.28);font-family:'Geist','Helvetica Neue',Helvetica,sans-serif;color:#111111;transform:translateY(14px);transition:transform .45s cubic-bezier(.22,.61,.36,1)}
 .pp-ov.show .pp-modal{transform:none}
-.pp-art{position:relative;overflow:hidden;min-height:250px}
+.pp-art{position:relative;overflow:hidden;min-height:210px}
 .pp-art img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .pp-cover{position:absolute;left:50%;top:50%;width:62%;aspect-ratio:210/297;transform:translate(-50%,-50%) rotate(-3deg);overflow:hidden;box-shadow:0 18px 40px rgba(17,17,17,0.32)}
 .pp-cover img{width:100%;height:100%;object-fit:cover;display:block}
 .pp-main{padding:24px 24px 20px;display:flex;flex-direction:column;justify-content:center}
 .pp-kick{font-size:11px;letter-spacing:0.04em;color:#6e6f74}
-.pp-h{margin:8px 0 0;padding-right:18px;font-size:23px;line-height:1.08;letter-spacing:-0.04em;font-weight:400}
+.pp-h{margin:8px 0 0;padding-right:18px;font-size:21px;line-height:1.08;letter-spacing:-0.04em;font-weight:400}
 .pp-lead{margin:8px 0 0;font-size:12.5px;line-height:1.45;color:#55565a}
 .pp-guide .pp-field{margin-top:14px}
 .pp-ok{display:none}
 .pp-modal.sent .pp-guide{display:none}.pp-modal.sent .pp-ok{display:block}
-@media (max-width:560px){.pp-modal{grid-template-columns:1fr;width:min(340px,100%)}.pp-art{min-height:120px}.pp-cover{width:26%;top:55%}.pp-main{padding:18px 18px 16px}.pp-h{font-size:21px}}
+@media (max-width:900px),(pointer:coarse){.pp-ov{display:none !important}}
 @media (prefers-reduced-motion:reduce){.pp-cb,.pp-ov,.pp-modal{transition:none}}
 </style>
 
@@ -511,7 +511,6 @@ fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'
 <form class="pp-guide" id="pp-g-form" novalidate>
 <div class="pp-kick">FREE GUIDE · PDF</div>
 <h2 class="pp-h" id="pp-g-title">AI in marketing, <span class="focus">without the hype.</span></h2>
-<p class="pp-lead">A 7-page guide with a 30-day plan, sent to your inbox.</p>
 <label class="pp-field" for="pp-email"><span style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Work email</span>
 <input id="pp-email" name="email" type="email" autocomplete="email" placeholder="Work email" required>
 </label>
@@ -559,7 +558,8 @@ fetch('/api/lead',{method:'POST',headers:{'Content-Type':'application/json'},bod
 
 /* Exit-intent guide modal */
 var lastFocus=null;
-function canExit(){return !acted()&&!get('sa_guide_done')&&!sget('sa_exit_shown')&&(+get('sa_exit_snooze')||0)<Date.now();}
+function desk(){return matchMedia("(min-width: 901px) and (pointer: fine)").matches;}
+function canExit(){return desk()&&!acted()&&!get('sa_guide_done')&&!sget('sa_exit_shown')&&(+get('sa_exit_snooze')||0)<Date.now();}
 function showOv(){if(!canExit())return;sset('sa_exit_shown','1');hideCb(false);lastFocus=document.activeElement;ov.classList.add('show');ov.setAttribute('aria-hidden','false');setTimeout(function(){var i=document.getElementById('pp-email');if(i&&matchMedia('(pointer:fine)').matches)i.focus();},350);}
 function hideOv(){ov.classList.remove('show');ov.setAttribute('aria-hidden','true');if(!modal.classList.contains('sent'))set('sa_exit_snooze',String(Date.now()+7*DAY));if(lastFocus&&lastFocus.focus)lastFocus.focus();}
 var armed=false;setTimeout(function(){armed=true},8000);
@@ -567,7 +567,7 @@ document.addEventListener('mouseout',function(e){if(!armed||e.relatedTarget||e.c
 // Phones: a quick scroll back up after reading a good part of the page.
 var maxY=0,lastY=scrollY,lastT=Date.now();
 addEventListener('scroll',function(){var y=scrollY,t=Date.now();maxY=Math.max(maxY,y);
-if(armed&&matchMedia('(pointer:coarse)').matches&&maxY>document.body.scrollHeight*0.35){var v=(lastY-y)/Math.max(1,t-lastT);if(v>1.6&&y>400)showOv();}
+
 lastY=y;lastT=t;},{passive:true});
 document.addEventListener('click',function(e){var c=e.target.closest&&e.target.closest('[data-close]');if(!c)return;if(c.dataset.close==='cb')hideCb(true);else hideOv();});
 ov.addEventListener('click',function(e){if(e.target===ov)hideOv();});
@@ -584,7 +584,7 @@ fetch('/api/guide',{method:'POST',headers:{'Content-Type':'application/json'},bo
 // Preview helpers: add ?popup=callback or ?popup=guide to the URL.
 var q=new URLSearchParams(location.search).get('popup');
 if(q==='callback'){setTimeout(function(){cb.classList.add('show')},300);}
-if(q==='guide'){setTimeout(function(){sset('sa_exit_shown','');ov.classList.add('show');ov.setAttribute('aria-hidden','false')},300);}
+if(q==='guide'&&desk()){setTimeout(function(){sset('sa_exit_shown','');ov.classList.add('show');ov.setAttribute('aria-hidden','false')},300);}
 })();
 </script>
 </body>
