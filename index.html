@@ -23,6 +23,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&family=IBM+Plex+Serif:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
 <style>
 @font-face{font-family:"Altera Sans";src:url("/assets/haze/AlteraSans-Regular.otf") format("opentype");font-weight:400;font-style:normal}
 body{margin:0;background:#f5f5f4}
@@ -94,32 +95,34 @@ body{touch-action:pan-x pan-y;overscroll-behavior-x:none}
 
 <div style="font-family: 'Geist', 'Helvetica Neue', Helvetica, sans-serif; color: #111111; background: #f5f5f4; min-width: 0; letter-spacing: -0.01em;">
 
-<!-- NAV (solid, sticky) -->
-<style>
-/* Header: logo far left, buttons far right, menu starting on the page's content edge (wide screens) */
-.hd{max-width:1320px;margin:0 auto;padding:14px clamp(16px,3vw,40px);display:flex;align-items:center;gap:48px;box-sizing:border-box}
-.hd-cta{margin-left:auto;display:flex;gap:8px}
-@media (min-width:1440px){
-.hd{max-width:1100px;padding:14px 0;min-height:64px}
-.hd-logo{position:absolute;left:32px;top:50%;transform:translateY(-50%)}
-.hd-cta{position:absolute;right:32px;top:50%;transform:translateY(-50%)}
-}
-</style>
-<header style="position: sticky; top: 0; z-index: 30; background: rgba(245,245,244,0.96); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid #e4e4e1;">
+<!-- HEADER:START -->
+<header class="sh">
 <div class="hd">
-<a class="hd-logo" href="#top" aria-label="SanityAI home" style="display: flex; align-items: center; text-decoration: none; font-size: 15px;"><span class="mark" aria-hidden="true">Sanity<span class="bar"></span>AI</span></a>
-<nav class="navlinks" aria-label="Main" style="display: flex; gap: 28px; align-items: center; font-size: 13px; color: #55565a;">
-<a href="#services" style="text-decoration: none;">Services</a>
-<a href="#approach" style="text-decoration: none; display: flex; align-items: center; gap: 6px;">Approach <span aria-hidden="true" style="width: 16px; height: 16px; border-radius: 3px; background: #e7e7e4; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; color: #111111;">+</span></a>
-<a href="#start" style="text-decoration: none;">Pricing</a>
-<a href="#industries" style="text-decoration: none; display: flex; align-items: center; gap: 6px;">Industries <span aria-hidden="true" style="width: 16px; height: 16px; border-radius: 3px; background: #e7e7e4; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; color: #111111;">+</span></a>
+<a class="hd-logo" href="/" aria-label="SanityAI home"><span class="mark" aria-hidden="true">Sanity<span class="bar"></span>AI</span></a>
+<nav class="navlinks" aria-label="Main">
+<a href="/#services">About</a>
+<div class="dd"><button type="button" class="dd-btn" aria-expanded="false" aria-controls="dd-sol">Solutions <span class="plus" aria-hidden="true">+</span></button><div class="dd-panel" id="dd-sol"><a href="/solutions/websites"><span class="ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M7 6.5h.01"/></svg></span><span><b>Websites</b><small>Fast, phone-first sites people trust.</small></span></a><a href="/solutions/paid-ads"><span class="ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></span><span><b>Paid ads</b><small>Campaigns judged on bookings.</small></span></a><a href="/solutions/search-and-ai"><span class="ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></span><span><b>Search and AI</b><small>Found on Google and in AI answers.</small></span></a><a href="/solutions/automation"><span class="ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></span><span><b>Automation</b><small>Every lead followed up.</small></span></a><div class="dd-foot"><span>One team for all four, measured on enquiries.</span><a href="#start">Book a call <svg class="arr" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a></div></div></div>
+<a href="/#start">Pricing</a>
+<div class="dd"><button type="button" class="dd-btn" aria-expanded="false" aria-controls="dd-ind">Industries <span class="plus" aria-hidden="true">+</span></button><div class="dd-panel" id="dd-ind"><a href="/industries/clinics"><span class="ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M12 8v8M8 12h8"/></svg></span><span><b>Clinics and health</b><small>Full diaries from search, ads and WhatsApp.</small></span></a><a href="/industries/real-estate"><span class="ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V9l8-6 8 6v12"/><path d="M9 21v-6h6v6"/></svg></span><span><b>Real estate</b><small>Viewings booked by serious buyers.</small></span></a><a href="/industries/interior-design"><span class="ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11V8a2 2 0 012-2h10a2 2 0 012 2v3"/><path d="M3 11h18v5H3z"/><path d="M6 16v3M18 16v3"/></svg></span><span><b>Interior design</b><small>Enquiries from clients with real budgets.</small></span></a><a href="/industries/law-firms"><span class="ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M7 20h10"/><path d="M5 7h14"/><path d="M5 7l-3 6h6zM19 7l-3 6h6z"/></svg></span><span><b>Law firms</b><small>Consultations from people ready to act.</small></span></a><div class="dd-foot"><span>Not listed? We work across most service businesses.</span><a href="#start">Book a call <svg class="arr" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a></div></div></div>
 </nav>
 <div class="hd-cta">
-<a class="navwa" href="https://wa.me/971585785819" style="font-size: 13px; text-decoration: none; padding: 0 14px; min-height: 36px; display: flex; align-items: center; border: 1px solid #d6d6d2; border-radius: 6px; background: #ffffff;">WhatsApp</a>
-<a href="#start" style="font-size: 13px; color: #ffffff; background: #111111; text-decoration: none; padding: 0 14px; min-height: 36px; display: flex; align-items: center; gap: 6px; border-radius: 6px; white-space: nowrap;">Book a call <svg class="arr" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
+<a class="btn navwa" href="https://wa.me/971585785819">WhatsApp</a>
+<a class="btn dark" href="#start">Book a call <svg class="arr" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
+<button type="button" class="burger" aria-expanded="false" aria-controls="mnav" aria-label="Open menu"><span></span><span></span></button>
 </div>
 </div>
 </header>
+<div class="mnav" id="mnav" aria-hidden="true"><div class="mnav-in">
+<ul class="mnav-list">
+<li><a href="/#services">About</a></li>
+<li><button type="button" class="macc" aria-expanded="false">Solutions <span class="plus" aria-hidden="true">+</span></button><div class="msub"><div><div><a href="/solutions/websites">Websites<small>Fast, phone-first sites people trust.</small></a><a href="/solutions/paid-ads">Paid ads<small>Campaigns judged on bookings.</small></a><a href="/solutions/search-and-ai">Search and AI<small>Found on Google and in AI answers.</small></a><a href="/solutions/automation">Automation<small>Every lead followed up.</small></a></div></div></div></li>
+<li><a href="/#start">Pricing</a></li>
+<li><button type="button" class="macc" aria-expanded="false">Industries <span class="plus" aria-hidden="true">+</span></button><div class="msub"><div><div><a href="/industries/clinics">Clinics and health<small>Full diaries from search, ads and WhatsApp.</small></a><a href="/industries/real-estate">Real estate<small>Viewings booked by serious buyers.</small></a><a href="/industries/interior-design">Interior design<small>Enquiries from clients with real budgets.</small></a><a href="/industries/law-firms">Law firms<small>Consultations from people ready to act.</small></a></div></div></div></li>
+</ul>
+<div class="mnav-cta"><a class="btn" href="https://wa.me/971585785819">WhatsApp</a><a class="btn dark" href="#start">Book a call <svg class="arr" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a></div>
+<div class="mnav-meta"><a href="mailto:work@sanity.ai">work@sanity.ai</a><span>Dubai, UAE</span></div>
+</div></div>
+<!-- HEADER:END -->
 
 <!-- HERO -->
 <section id="top" style="max-width: 1180px; margin: 0 auto; padding: 72px clamp(16px, 3vw, 40px) 0; box-sizing: border-box;">
@@ -305,7 +308,7 @@ body{touch-action:pan-x pan-y;overscroll-behavior-x:none}
 </div>
 </div>
 <p class="sv" style="margin: 16px 0 0; font-size: 13px; line-height: 1.5; color: #77787d; max-width: 26em;"><span style="color: #111111; font-weight: 500;">Clinics and health.</span> Full diaries from ads, search and instant WhatsApp replies.</p>
-<a href="#start" style="margin-top: 14px; font-size: 12px; text-decoration: none; padding: 0 12px; min-height: 32px; display: inline-flex; align-items: center; gap: 6px; border: 1px solid #d6d6d2; border-radius: 6px; background: #ffffff;">Explore <svg class="arr" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
+<a href="/industries/clinics" style="margin-top: 14px; font-size: 12px; text-decoration: none; padding: 0 12px; min-height: 32px; display: inline-flex; align-items: center; gap: 6px; border: 1px solid #d6d6d2; border-radius: 6px; background: #ffffff;">Explore <svg class="arr" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
 </article>
 <article class="sv">
 <div class="grow" style="position: relative; height: 380px; overflow: hidden;">
@@ -317,7 +320,7 @@ body{touch-action:pan-x pan-y;overscroll-behavior-x:none}
 </div>
 </div>
 <p class="sv" style="margin: 16px 0 0; font-size: 13px; line-height: 1.5; color: #77787d; max-width: 26em;"><span style="color: #111111; font-weight: 500;">Real estate and design.</span> Sites and campaigns that make high-value buyers book the viewing.</p>
-<a href="#start" style="margin-top: 14px; font-size: 12px; text-decoration: none; padding: 0 12px; min-height: 32px; display: inline-flex; align-items: center; gap: 6px; border: 1px solid #d6d6d2; border-radius: 6px; background: #ffffff;">Explore <svg class="arr" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
+<a href="/industries/real-estate" style="margin-top: 14px; font-size: 12px; text-decoration: none; padding: 0 12px; min-height: 32px; display: inline-flex; align-items: center; gap: 6px; border: 1px solid #d6d6d2; border-radius: 6px; background: #ffffff;">Explore <svg class="arr" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
 </article>
 </div>
 </section>
@@ -372,15 +375,15 @@ body{touch-action:pan-x pan-y;overscroll-behavior-x:none}
 <p id="hz-sub-msg" role="status" aria-live="polite" style="margin: 2px 0 0; min-height: 18px; font-size: 12px; line-height: 1.45; color: #33343a;"></p>
 </form>
 </div>
-<div style="max-width: 1100px; margin: 0 auto; padding: 48px 16px 0; box-sizing: border-box; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 24px; font-size: 12px; line-height: 2; color: #55565a;">
-<div><div style="color: #111111; font-weight: 500;">Services</div>Websites<br>Paid ads<br>Search and AI<br>Automation</div>
-<div><div style="color: #111111; font-weight: 500;">Industries</div>Clinics<br>Real estate<br>Interior design<br>Law firms</div>
-<div><div style="color: #111111; font-weight: 500;">Company</div>Approach<br>Results<br>Pricing</div>
-<div><div style="color: #111111; font-weight: 500;">Contact</div><a href="mailto:work@sanity.ai" style="text-decoration: none;">work@sanity.ai</a><br><a href="https://wa.me/971585785819" style="text-decoration: none;">WhatsApp</a><br><a href="https://www.instagram.com/_sanityhq/" style="text-decoration: none;">Instagram</a></div>
+<!-- FOOTCOLS:START -->
+<div class="wrap ft-cols">
+<div><h4>Solutions</h4><a href="/solutions/websites">Websites</a><a href="/solutions/paid-ads">Paid ads</a><a href="/solutions/search-and-ai">Search and AI</a><a href="/solutions/automation">Automation</a></div>
+<div><h4>Industries</h4><a href="/industries/clinics">Clinics and health</a><a href="/industries/real-estate">Real estate</a><a href="/industries/interior-design">Interior design</a><a href="/industries/law-firms">Law firms</a></div>
+<div><h4>Company</h4><a href="/#services">About</a><a href="/#approach">How we work</a><a href="/#start">Pricing</a><a href="/privacy">Privacy policy</a></div>
+<div><h4>Contact</h4><a href="mailto:work@sanity.ai">work@sanity.ai</a><a href="https://wa.me/971585785819">WhatsApp</a><a href="https://www.instagram.com/_sanityhq/">Instagram</a></div>
 </div>
-<div style="max-width: 1100px; margin: 0 auto; padding: 40px 16px 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; font-size: 11px; color: #6e6f74;">
-<span>© 2026 SanityAI, a business of Safia Saif LLC, Dubai</span><span>Privacy policy</span>
-</div>
+<div class="wrap ft-base"><span>© 2026 SanityAI, a business of Safia Saif LLC, Dubai</span><a href="/privacy">Privacy policy</a></div>
+<!-- FOOTCOLS:END -->
 </footer>
 
 </div>
@@ -605,5 +608,6 @@ if(q==='callback'){setTimeout(function(){cb.classList.add('show')},300);}
 if(q==='guide'&&desk()){setTimeout(function(){sset('sa_exit_shown','');ov.classList.add('show');ov.setAttribute('aria-hidden','false')},300);}
 })();
 </script>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>
