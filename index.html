@@ -543,10 +543,17 @@ function markActed(){sset('sa_acted','1');set('sa_acted','1');}
 document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
 if(/wa\.me|whatsapp|mailto:|tel:|#start/.test(h)||/book a call|get in touch|contact/i.test(a.textContent))markActed();},true);
 
-/* Callback popup */
+/* Callback popup (bottom left)
+   Filled in: never shown again.
+   Closed 1st and 2nd time: shown again on the next visit.
+   Closed 3rd time onwards, within a month of the first close: shown again after a week.
+   Closed after that month: shown again after a month. */
 var cbSnooze=+get('sa_cb_snooze')||0;
-function showCb(){if(acted()||get('sa_cb_done')||now<cbSnooze||ov.classList.contains('show'))return;cb.classList.add('show');cb.setAttribute('aria-hidden','false');}
-function hideCb(snooze){cb.classList.remove('show');cb.setAttribute('aria-hidden','true');if(snooze)set('sa_cb_snooze',String(Date.now()+3*DAY));}
+function showCb(){if(acted()||get('sa_cb_done')||sget('sa_cb_closed')||now<cbSnooze||ov.classList.contains('show'))return;cb.classList.add('show');cb.setAttribute('aria-hidden','false');}
+function hideCb(snooze){cb.classList.remove('show');cb.setAttribute('aria-hidden','true');if(!snooze)return;
+var t=Date.now(),n=(+get('sa_cb_n')||0)+1,first=+get('sa_cb_first')||t;
+set('sa_cb_n',String(n));set('sa_cb_first',String(first));sset('sa_cb_closed','1');
+set('sa_cb_snooze',String(n<3?0:(t-first<30*DAY?t+7*DAY:t+30*DAY)));}
 setTimeout(showCb,10000);
 
 var cf=document.getElementById('pp-cb-form');
@@ -562,7 +569,7 @@ var lastFocus=null;
 function desk(){return matchMedia("(min-width: 901px) and (pointer: fine)").matches;}
 function canExit(){return desk()&&!acted()&&!get('sa_guide_done')&&!sget('sa_exit_shown')&&(+get('sa_exit_snooze')||0)<Date.now();}
 function showOv(){if(!canExit())return;sset('sa_exit_shown','1');hideCb(false);lastFocus=document.activeElement;ov.classList.add('show');ov.setAttribute('aria-hidden','false');setTimeout(function(){var i=document.getElementById('pp-email');if(i&&matchMedia('(pointer:fine)').matches)i.focus();},350);}
-function hideOv(){ov.classList.remove('show');ov.setAttribute('aria-hidden','true');if(!modal.classList.contains('sent'))set('sa_exit_snooze',String(Date.now()+7*DAY));if(lastFocus&&lastFocus.focus)lastFocus.focus();}
+function hideOv(){ov.classList.remove('show');ov.setAttribute('aria-hidden','true');if(!modal.classList.contains('sent'))set('sa_exit_snooze',String(Date.now()+30*DAY));if(lastFocus&&lastFocus.focus)lastFocus.focus();}
 var armed=false;setTimeout(function(){armed=true},8000);
 document.addEventListener('mouseout',function(e){if(!armed||e.relatedTarget||e.clientY>12)return;showOv();});
 // Phones: a quick scroll back up after reading a good part of the page.
