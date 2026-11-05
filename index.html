@@ -60,7 +60,22 @@ html.io .grow{transform:scale(.97)}
 html.io .ink{color:#a3a3a6 !important;transition:color 1.2s ease}
 html.io .in{opacity:1 !important;transform:none !important}
 html.io .ink.in{color:#111111 !important}
-@media (prefers-reduced-motion:reduce){html.io .sv,html.io .fv,html.io .grow{opacity:1 !important;transform:none !important;transition:none}html.io .ink{color:#111111 !important}#hz-img{transition:none}.rise,.msg,.sv,.fv,.ink,.px,.grow{animation:none !important}}
+.live-dot{width:6px;height:6px;border-radius:50%;background:#2f9e62;display:inline-block}
+@keyframes notifIn{from{opacity:0;transform:translateY(-16px) scale(.97)}to{opacity:1;transform:none}}
+@keyframes dotPulse{0%{box-shadow:0 0 0 0 rgba(47,158,98,.45)}70%{box-shadow:0 0 0 7px rgba(47,158,98,0)}100%{box-shadow:0 0 0 0 rgba(47,158,98,0)}}
+@keyframes sendPulse{0%{box-shadow:0 0 0 0 rgba(17,17,17,.35)}70%{box-shadow:0 0 0 8px rgba(17,17,17,0)}100%{box-shadow:0 0 0 0 rgba(17,17,17,0)}}
+html.live .notif{opacity:0;transform:translateY(-16px) scale(.97)}
+html.live .notif .nitem{opacity:0;transform:translateY(6px)}
+html.live .notif.on{animation:notifIn .7s cubic-bezier(.22,.61,.36,1) forwards}
+html.live .notif.on .nitem{animation:msg .5s cubic-bezier(.22,.61,.36,1) forwards}
+html.live .notif.on .nitem:nth-child(2){animation-delay:.55s}
+html.live .notif.on .nitem:nth-child(3){animation-delay:.95s}
+html.live .notif.on .nitem:nth-child(4){animation-delay:1.35s}
+html.live .notif.on .nitem:nth-child(5){animation-delay:1.75s}
+html.live .notif.on .nitem:first-child{animation-delay:.35s}
+html.live .notif.on .live-dot{animation:dotPulse 1.8s ease-out 1s infinite}
+html.live .notif.on .sendbtn.ready{animation:msg .4s ease forwards,sendPulse 1.6s ease-out .4s 2}
+@media (prefers-reduced-motion:reduce){html.io .sv,html.io .fv,html.io .grow{opacity:1 !important;transform:none !important;transition:none}html.io .ink{color:#111111 !important}#hz-img{transition:none}html.live .notif,html.live .notif .nitem{opacity:1 !important;transform:none !important;animation:none !important}.rise,.msg,.sv,.fv,.ink,.px,.grow{animation:none !important}}
 @media (max-width:900px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:10px;border:0 !important;background:transparent !important}.tiles>div{border:1px solid #dcdcd8 !important;border-radius:8px;min-height:150px !important}.navwa{display:none !important}.stage{grid-template-columns:minmax(0,1fr) !important}.peek{display:none !important}.navlinks{display:none !important}.split{grid-template-columns:1fr !important}.sticky{position:static !important}}
 </style>
 
@@ -193,8 +208,9 @@ html.io .ink.in{color:#111111 !important}
 </div>
 </div>
 
-<div class="split" style="margin-top: 72px; display: grid; grid-template-columns: 1fr 1.05fr; gap: 48px;">
-<div class="sticky" style="position: sticky; top: 90px; align-self: start; border-top: 1px dashed #c9c9c5; padding-top: 14px; font-size: 12px;"><span style="font-weight: 500;">1.0</span>   Plan</div>
+<div class="stackwrap" style="margin-top: 72px; padding-bottom: 40px;">
+<div class="split stack" style="position: sticky; top: 78px; margin-top: 0; display: grid; grid-template-columns: 1fr 1.05fr; gap: 48px; background: #f5f5f4; padding: 22px 0 36px; border-top: 1px solid #e2e2df; box-shadow: 0 -22px 34px -28px rgba(17,17,17,0.22);">
+<div style="align-self: start; padding-top: 2px; font-size: 12px;"><span style="font-weight: 500;">1.0</span>   Plan</div>
 <div>
 <div class="grow" style="position: relative; height: 330px; overflow: hidden;">
 <img src="/assets/haze/haze-sage.jpg" alt="" class="px" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
@@ -209,8 +225,8 @@ html.io .ink.in{color:#111111 !important}
 </div>
 </div>
 
-<div class="split" style="margin-top: 72px; display: grid; grid-template-columns: 1fr 1.05fr; gap: 48px;">
-<div class="sticky" style="position: sticky; top: 90px; align-self: start; border-top: 1px dashed #c9c9c5; padding-top: 14px; font-size: 12px;"><span style="font-weight: 500;">2.0</span>   Build</div>
+<div class="split stack" style="position: sticky; top: 100px; margin-top: 40px; display: grid; grid-template-columns: 1fr 1.05fr; gap: 48px; background: #f5f5f4; padding: 22px 0 36px; border-top: 1px solid #e2e2df; box-shadow: 0 -22px 34px -28px rgba(17,17,17,0.22);">
+<div style="align-self: start; padding-top: 2px; font-size: 12px;"><span style="font-weight: 500;">2.0</span>   Build</div>
 <div>
 <div class="grow" style="position: relative; height: 330px; overflow: hidden;">
 <img src="/assets/haze/haze-lilac.jpg" alt="" class="px" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
@@ -223,8 +239,8 @@ html.io .ink.in{color:#111111 !important}
 </div>
 </div>
 
-<div class="split" style="margin-top: 72px; display: grid; grid-template-columns: 1fr 1.05fr; gap: 48px;">
-<div class="sticky" style="position: sticky; top: 90px; align-self: start; border-top: 1px dashed #c9c9c5; padding-top: 14px; font-size: 12px;"><span style="font-weight: 500;">3.0</span>   Grow</div>
+<div class="split stack" style="position: sticky; top: 122px; margin-top: 40px; display: grid; grid-template-columns: 1fr 1.05fr; gap: 48px; background: #f5f5f4; padding: 22px 0 36px; border-top: 1px solid #e2e2df; box-shadow: 0 -22px 34px -28px rgba(17,17,17,0.22);">
+<div style="align-self: start; padding-top: 2px; font-size: 12px;"><span style="font-weight: 500;">3.0</span>   Grow</div>
 <div>
 <div class="grow" style="position: relative; height: 330px; overflow: hidden;">
 <img src="/assets/haze/haze-dawn.jpg" alt="" class="px" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
@@ -239,6 +255,7 @@ html.io .ink.in{color:#111111 !important}
 </div>
 </div>
 
+</div>
 <div class="split" style="margin-top: 96px; display: grid; grid-template-columns: 1fr 1.05fr; gap: 48px; align-items: end;">
 <div>
 <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #33343a;">Less time chasing suppliers.<br>More time with your clients.</p>
@@ -259,12 +276,12 @@ html.io .ink.in{color:#111111 !important}
 <article class="sv">
 <div class="grow" style="position: relative; height: 380px; overflow: hidden;">
 <img src="/assets/haze/haze-dusk.jpg" alt="" class="px" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
-<div class="panel fv" style="position: absolute; left: 24px; top: 40px; width: min(260px, calc(100% - 48px)); border-radius: 10px; padding: 14px 16px; font-size: 11px; display: flex; flex-direction: column; gap: 8px;">
+<div class="panel notif" style="position: absolute; left: 24px; top: 40px; width: min(260px, calc(100% - 48px)); border-radius: 10px; padding: 14px 16px; font-size: 11px; display: flex; flex-direction: column; gap: 8px;">
 <div style="display: flex; justify-content: space-between; color: #55565a;"><span>Clinic dashboard</span><span aria-hidden="true">⤢︎</span></div>
-<div style="color: #6e6f74;">Today, 9:41</div>
-<div style="display: flex; gap: 8px;"><span aria-hidden="true">•</span>Missed calls now get a WhatsApp reply</div>
-<div style="display: flex; gap: 8px;"><span aria-hidden="true">•</span>Whitening ads bring most bookings</div>
-<div style="display: flex; gap: 8px;"><span aria-hidden="true">•</span>Reviews request sent after each visit</div>
+<div class="nitem" style="color: #6e6f74; display: flex; align-items: center; gap: 6px;"><span class="live-dot" aria-hidden="true"></span>Just now</div>
+<div class="nitem" style="display: flex; gap: 8px;"><span aria-hidden="true">•</span>Missed calls now get a WhatsApp reply</div>
+<div class="nitem" style="display: flex; gap: 8px;"><span aria-hidden="true">•</span>Whitening ads bring most bookings</div>
+<div class="nitem" style="display: flex; gap: 8px;"><span aria-hidden="true">•</span>Reviews request sent after each visit</div>
 </div>
 </div>
 <p class="sv" style="margin: 16px 0 0; font-size: 13px; line-height: 1.5; color: #77787d; max-width: 26em;"><span style="color: #111111; font-weight: 500;">Clinics and health.</span> Full diaries from ads, search and instant WhatsApp replies.</p>
@@ -273,10 +290,10 @@ html.io .ink.in{color:#111111 !important}
 <article class="sv">
 <div class="grow" style="position: relative; height: 380px; overflow: hidden;">
 <img src="/assets/haze/haze-mist.jpg" alt="" class="px" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
-<div class="panel fv" style="position: absolute; right: 24px; bottom: 32px; width: min(280px, calc(100% - 48px)); border-radius: 10px; padding: 14px 16px; font-size: 11px; display: flex; flex-direction: column; gap: 8px;">
-<div style="color: #55565a;">Prepare a report for <span style="padding: 2px 6px; border-radius: 4px; background: #ece9f6; color: #4b3f8f;">off-plan launch</span></div>
-<div style="padding: 9px 10px; border-radius: 6px; background: #f3f2f8; color: #33343a; line-height: 1.45;">Enquiries by source, cost per viewing booked and which ads to scale next week.</div>
-<div style="align-self: flex-end; width: 22px; height: 22px; border-radius: 5px; background: #111111; color: #ffffff; display: flex; align-items: center; justify-content: center;"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></div>
+<div class="panel notif" style="position: absolute; right: 24px; bottom: 32px; width: min(280px, calc(100% - 48px)); border-radius: 10px; padding: 14px 16px; font-size: 11px; display: flex; flex-direction: column; gap: 8px;">
+<div class="nitem" style="color: #55565a;">Prepare a report for <span style="padding: 2px 6px; border-radius: 4px; background: #ece9f6; color: #4b3f8f;">off-plan launch</span></div>
+<div class="nitem typed" style="padding: 9px 10px; border-radius: 6px; background: #f3f2f8; color: #33343a; line-height: 1.45; min-height: 3em;">Enquiries by source, cost per viewing booked and which ads to scale next week.</div>
+<div class="nitem sendbtn" style="align-self: flex-end; width: 22px; height: 22px; border-radius: 5px; background: #111111; color: #ffffff; display: flex; align-items: center; justify-content: center;"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></div>
 </div>
 </div>
 <p class="sv" style="margin: 16px 0 0; font-size: 13px; line-height: 1.5; color: #77787d; max-width: 26em;"><span style="color: #111111; font-weight: 500;">Real estate and design.</span> Sites and campaigns that make high-value buyers book the viewing.</p>
@@ -361,6 +378,14 @@ if(!(window.CSS&&CSS.supports&&CSS.supports('animation-timeline: view()'))&&'Int
 document.documentElement.classList.add('io');
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:0.12});
 document.querySelectorAll('.sv,.fv,.grow,.ink').forEach(function(el){io.observe(el);});}
+var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+if('IntersectionObserver' in window&&!RM){document.documentElement.classList.add('live');
+document.querySelectorAll('.notif').forEach(function(n){var tx=n.querySelector('.typed'),full=tx?tx.textContent:'',send=n.querySelector('.sendbtn'),tm=[];
+function clear(){tm.forEach(clearTimeout);tm=[];}
+function play(){clear();n.classList.remove('on');void n.offsetWidth;n.classList.add('on');
+if(tx){tx.textContent='';if(send)send.classList.remove('ready');var i=0;tm.push(setTimeout(function step(){i++;tx.textContent=full.slice(0,i);if(i<full.length){tm.push(setTimeout(step,22+Math.random()*30));}else if(send){send.classList.add('ready');}},950));}}
+function reset(){clear();n.classList.remove('on');if(tx)tx.textContent=full;}
+new IntersectionObserver(function(es){es.forEach(function(e){if(e.intersectionRatio>=0.45){if(!n.classList.contains('on'))play();}else if(!e.isIntersecting)reset();});},{threshold:[0,0.45]}).observe(n);});}
 var f=document.getElementById('hz-sub');if(!f)return;var msg=document.getElementById('hz-sub-msg');
 f.addEventListener('submit',function(ev){ev.preventDefault();var em=f.email.value.trim();
 if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){msg.textContent='Please enter a valid email address.';f.email.focus();return;}
