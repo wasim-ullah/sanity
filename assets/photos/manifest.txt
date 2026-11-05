@@ -1,7 +1,7 @@
 hero-1 https://delivery.unsplash.com/premium_photo-1777954146273-f43c0cbab143?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=1f8b07b396ae19b6911b86eb4ed513f7
 hero-2 https://delivery.unsplash.com/premium_photo-1792698513614-6612cdf6dcf5?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=52e97aa8626c6a37c05451561f3c3bcf
 hero-3 https://delivery.unsplash.com/premium_photo-1697729965179-05a5ddcfe00e?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=8a24460009ab17337cbcdf6ad2511269
-plan https://delivery.unsplash.com/premium_photo-1743337530708-dd4279835269?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=8daa879d60e5e380e444c71e1cf71586
+plan https://delivery.unsplash.com/premium_photo-1685152009963-72988406be8a?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=f9ffe61cab4fd0ea4cb32ce045b20657
 build https://delivery.unsplash.com/premium_photo-1751620467222-9b616288ce60?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=fa7236b1b4eee0b89a5ebfa374ac915a
 grow https://delivery.unsplash.com/premium_photo-1691547067161-fc1600117827?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=b5e69c292b60460daa317c10f9e524a2
 sell https://delivery.unsplash.com/premium_photo-1762432159387-2919c592778f?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=a4fce9d6b84060ebaf22d8d929ae8552
@@ -11,9 +11,3 @@ dunes https://delivery.unsplash.com/premium_photo-1747850337455-503f7bd29d06?ixl
 night-fog https://delivery.unsplash.com/premium_photo-1777954146284-84f2a5c837fc?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=f3cabfb4c3c0224cf0c8a37ec36f8622
 mono-facade https://delivery.unsplash.com/premium_photo-1733864995441-fb90601dee83?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=8ea07116b3ff397ed0d83dd154e84856
 glass-roof https://delivery.unsplash.com/premium_photo-1749641789705-d3109216ce1f?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=92151e203bfa98d4e6176707522e3625
-cand-1 https://delivery.unsplash.com/premium_photo-1685152009963-72988406be8a?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=f9ffe61cab4fd0ea4cb32ce045b20657
-cand-2 https://delivery.unsplash.com/premium_photo-1684311197541-ff014d39a770?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=b03afb82c72e49dc18681c9795962f50
-cand-3 https://delivery.unsplash.com/premium_photo-1675628634509-a17a34153f1e?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=c8734821c4ecb785e7fc051850fefb60
-cand-4 https://delivery.unsplash.com/premium_photo-1726873270797-477efbdd4c28?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=581769d0e7be2d41d534ed9d996efcc1
-cand-5 https://delivery.unsplash.com/premium_photo-1697730117675-21d537b6fa12?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=47f1688ffb340b4256e87c9ea2576727
-cand-6 https://delivery.unsplash.com/premium_photo-1724634731381-8c9094e2e90d?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=d9877c092c5e74c39211f26d99091d42
