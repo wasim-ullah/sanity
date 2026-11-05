@@ -61,6 +61,7 @@ html.io .ink{color:#a3a3a6 !important;transition:color 1.2s ease}
 html.io .in{opacity:1 !important;transform:none !important}
 html.io .ink.in{color:#111111 !important}
 .live-dot{width:6px;height:6px;border-radius:50%;background:#2f9e62;display:inline-block}
+.bw{transition:color .35s ease,text-shadow .35s ease}
 @keyframes notifIn{from{opacity:0;transform:translateY(-16px) scale(.97)}to{opacity:1;transform:none}}
 @keyframes dotPulse{0%{box-shadow:0 0 0 0 rgba(47,158,98,.45)}70%{box-shadow:0 0 0 7px rgba(47,158,98,0)}100%{box-shadow:0 0 0 0 rgba(47,158,98,0)}}
 @keyframes sendPulse{0%{box-shadow:0 0 0 0 rgba(17,17,17,.35)}70%{box-shadow:0 0 0 8px rgba(17,17,17,0)}100%{box-shadow:0 0 0 0 rgba(17,17,17,0)}}
@@ -168,7 +169,7 @@ html.live .notif.on .sendbtn.ready{animation:msg .4s ease forwards,sendPulse 1.6
 <!-- STATEMENT + 4 TILES -->
 <section id="services" style="max-width: 1100px; margin: 0 auto; padding: 150px 16px 0; box-sizing: border-box;">
 <div style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; color: #33343a;"><span aria-hidden="true" style="width: 14px; height: 14px; border-radius: 3px; background: #e2e2df; display: inline-flex; align-items: center; justify-content: center;"><span style="width: 5px; height: 5px; background: #9a9aa0; transform: rotate(45deg);"></span></span>A simpler way to grow</div>
-<p class="sv" style="margin: 18px 0 0; max-width: 21em; font-size: clamp(26px, 2.6vw, 36px); line-height: 1.2; letter-spacing: -0.035em; color: #a3a3a6;">Your business doesn't need <span class="focus ink" style="color: #111111;">another supplier</span> to manage. It needs <span class="focus ink" style="color: #111111;">one team that owns the result</span>. We bring your website, ads, search and follow-up into one place.</p>
+<p class="sv beam" style="margin: 18px 0 0; max-width: 21em; font-size: clamp(26px, 2.6vw, 36px); line-height: 1.2; letter-spacing: -0.035em; color: #a3a3a6;">Your business doesn't need <span class="focus ink" style="color: #111111;">another supplier</span> to manage. It needs <span class="focus ink" style="color: #111111;">one team that owns the result</span>. We bring your website, ads, search and follow-up into one place.</p>
 <div class="sv tiles" style="margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); border: 1px solid #e2e2df; background: #f0f0ee;">
 
 <div class="hz-tile" style="min-height:190px;padding:16px;display:flex;flex-direction:column;box-sizing:border-box;border-right:1px solid #e2e2df;">
@@ -386,6 +387,23 @@ function play(){clear();n.classList.remove('on');void n.offsetWidth;n.classList.
 if(tx){tx.textContent='';if(send)send.classList.remove('ready');var i=0;tm.push(setTimeout(function step(){i++;tx.textContent=full.slice(0,i);if(i<full.length){tm.push(setTimeout(step,22+Math.random()*30));}else if(send){send.classList.add('ready');}},950));}}
 function reset(){clear();n.classList.remove('on');if(tx)tx.textContent=full;}
 new IntersectionObserver(function(es){es.forEach(function(e){if(e.intersectionRatio>=0.45){if(!n.classList.contains('on'))play();}else if(!e.isIntersecting)reset();});},{threshold:[0,0.45]}).observe(n);});}
+if(!RM){document.querySelectorAll('.beam').forEach(function(P){
+P.querySelectorAll('.ink').forEach(function(x){x.classList.remove('ink');});
+var W=[];(function walk(node,focus){[].slice.call(node.childNodes).forEach(function(c){
+if(c.nodeType===3){var parts=c.textContent.split(/(\s+)/),fr=document.createDocumentFragment();
+parts.forEach(function(t){if(!t)return;if(/^\s+$/.test(t)){fr.appendChild(document.createTextNode(t));return;}
+var w=document.createElement('span');w.className='bw';w.textContent=t;w._f=focus;fr.appendChild(w);W.push(w);});
+node.replaceChild(fr,c);}else if(c.nodeType===1){walk(c,focus||c.classList.contains('focus'));}});})(P,false);
+var N=W.length,last=-99,ticking=false;
+function paint(){ticking=false;var r=P.getBoundingClientRect(),vh=innerHeight;
+var p=Math.min(1,Math.max(0,(vh*0.82-r.top)/(r.height+vh*0.38)));var pos=p*(N+4)-1.5;
+if(Math.abs(pos-last)<0.05)return;last=pos;
+for(var i=0;i<N;i++){var d=pos-i,w=W[i];
+if(d<0){w.style.color='#cfcfd2';w.style.textShadow='none';}
+else if(d<2.4){var g=1-Math.abs(d-1)/1.4;w.style.color='#111111';w.style.textShadow=g>0?'0 0 '+(14*g).toFixed(1)+'px rgba(255,214,150,'+(0.85*g).toFixed(2)+')':'none';}
+else{w.style.color=w._f?'#111111':'#9a9aa0';w.style.textShadow='none';}}}
+addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(paint);}},{passive:true});
+addEventListener('resize',paint);paint();});}
 var f=document.getElementById('hz-sub');if(!f)return;var msg=document.getElementById('hz-sub-msg');
 f.addEventListener('submit',function(ev){ev.preventDefault();var em=f.email.value.trim();
 if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){msg.textContent='Please enter a valid email address.';f.email.focus();return;}
