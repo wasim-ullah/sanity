@@ -479,3 +479,61 @@ PAGES.append({'file': 'careers.html', 'path': '/careers', 'title': 'Careers | Sa
               'img': 'hero-2.jpg',
               'btns': '<a class="btn light" href="mailto:work@sanity.ai?subject=Careers">Email work@sanity.ai ' + ARR + '</a>',
               'chip': 'Careers at SanityAI', 'stats': False}})
+
+# =================== Contact ===================
+_ic = lambda d: '<span class="ic">' + '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + d + '</svg></span>'
+contact = (
+    '<section class="wrap ph">\n<div class="chip rise"><i></i>Contact</div>\n'
+    '<div class="ph-grid">\n<h1 class="rise d1">Let\'s talk about <span class="focus">your next enquiry.</span></h1>\n'
+    '<div class="ph-side rise d2"><p>Tell us what you are working on and where it is stuck. A person reads every message and replies by email or WhatsApp, whichever you prefer.</p></div>\n</div>\n'
+    '<div class="cgrid">\n<div class="rise d2">\n<div class="cways">'
+    '<a href="' + WA + '?text=' + wa("Hi Wasim, I'd like to talk about our marketing.") + '">' + _ic('<path d="M21 12a9 9 0 01-13.5 7.8L3 21l1.2-4.5A9 9 0 1121 12z"/>') + '<span><b>WhatsApp</b><small>+971 58 578 5819, the fastest way to reach us</small></span>' + GO + '</a>'
+    '<a href="mailto:work@sanity.ai">' + _ic('<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>') + '<span><b>Email</b><small>work@sanity.ai, good for briefs and attachments</small></span>' + GO + '</a>'
+    '<a href="' + WA + '?text=' + wa("Hi Wasim, I'd like to book the free 20-minute call.") + '">' + _ic('<rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/>') + '<span><b>Book a free 20-minute call</b><small>We look at your site, ads and enquiries with you</small></span>' + GO + '</a>'
+    '</div>\n<p class="cnote">We are based in Dubai and work with service businesses across the UAE and the wider GCC. Meetings happen online or in person in Dubai, whichever suits you.</p>\n</div>\n'
+    '<div class="rise d3">\n<form class="cform" id="cform" novalidate>\n<h2>Send us a message</h2>\n'
+    '<label>Your name<input name="name" autocomplete="name" required></label>\n'
+    '<label>Work email<input name="email" type="email" autocomplete="email" required></label>\n'
+    '<label>Phone or WhatsApp<input name="phone" type="tel" autocomplete="tel" placeholder="Optional"></label>\n'
+    '<label>Company<input name="org" autocomplete="organization"></label>\n'
+    '<label class="full">What do you need help with?<select name="need"><option value="">Choose one</option>'
+    + ''.join('<option>%s</option>' % i['name'] for i in SOLUTIONS) +
+    '<option>More than one of these</option><option>Not sure yet</option></select></label>\n'
+    '<label class="full">Message<textarea name="message" required placeholder="What are you trying to fix or grow? Links to your site or ads help."></textarea></label>\n'
+    '<label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>\n'
+    '<div class="err" id="cerr" role="alert"></div>\n'
+    '<div class="row"><small>By sending this you agree to our <a href="/privacy" style="text-decoration:underline">privacy policy</a>. We only use your details to reply.</small>'
+    '<button class="btn dark" type="submit">Send message ' + ARR + '</button></div>\n</form>\n'
+    '<div class="cdone" id="cdone" role="status"><h2>Thanks, your message is <span class="focus">on its way.</span></h2>'
+    '<p>We will reply to the email you gave us. If it is urgent, message us on WhatsApp and mention that you used the form.</p>'
+    '<div style="margin-top:20px"><a class="btn" href="' + WA + '">Open WhatsApp</a></div></div>\n'
+    '</div>\n</div>\n</section>\n'
+    + steps('What happens next', 'From first message to <span class="focus">a clear plan.</span>',
+            'There is no pitch deck and no pressure. Each step is there to work out quickly whether we can help, and how.',
+            [('1.0', 'Reply', 'A real reply', 'A person reads your message and replies with a few questions or a time to talk. You will not get an automated sales sequence.'),
+             ('2.0', 'Call', 'A 20-minute call', 'We look at your site, ads and enquiry handling together. You leave with the first three fixes, whether or not we work together.'),
+             ('3.0', 'Plan', 'A written plan', 'If there is a fit, we send a short plan with scope, timeline and price. It lists the numbers we will report on each week.'),
+             ('4.0', 'Start', 'First fixes first', 'Work starts with the fixes that recover enquiries you already get. Growth work follows once tracking shows what to scale.')])
+    + faq([('Is the first call really free?', 'Yes. It is a working session on your numbers, not a sales presentation, and you keep the fixes we find either way.'),
+           ('Do you work with businesses outside the UAE?', 'Yes. We work with service businesses across the GCC, and calls happen online wherever you are.'),
+           ('What should I prepare before the call?', 'Nothing formal. A link to your website and a rough idea of your monthly ad spend and enquiries is enough to start.'),
+           ('Can I send a brief or an RFP?', 'Yes, email it to work@sanity.ai. We read every brief and will tell you honestly if we are not the right fit.')])
+)
+
+CONTACT_JS = '''<script>(function(){var f=document.getElementById('cform');if(!f)return;var e=document.getElementById('cerr'),d=document.getElementById('cdone');
+function err(t){e.textContent=t;e.style.display='block';}
+f.addEventListener('submit',function(ev){ev.preventDefault();e.style.display='none';var v=Object.fromEntries(new FormData(f).entries());
+if(!v.name.trim())return err('Please add your name.');
+if(!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]{2,}$/.test(v.email.trim()))return err('Please add a valid email address.');
+if(v.message.trim().length<10)return err('Please tell us a little more in the message.');
+v.page=location.href;f.classList.add('sending');
+fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(v)}).then(function(r){return r.json().catch(function(){return{ok:r.ok};});})
+.then(function(j){f.classList.remove('sending');if(j&&j.ok){f.style.display='none';d.style.display='block';d.scrollIntoView({block:'center',behavior:'smooth'});}
+else err('Something went wrong sending your message. Please email work@sanity.ai or message us on WhatsApp.');})
+.catch(function(){f.classList.remove('sending');err('Could not send right now. Please email work@sanity.ai or message us on WhatsApp.');});});})();</script>
+'''
+
+PAGES.append({'file': 'contact.html', 'path': '/contact', 'title': 'Contact | SanityAI',
+    'desc': 'Talk to SanityAI in Dubai about your website, ads, search or automation. WhatsApp, email or a free 20-minute call.',
+    'body': contact, 'script': CONTACT_JS,
+    'close': {'h2': 'Prefer to just <span class="focus">talk it through?</span>', 'lead': CLOSE_LEAD, 'img': 'hero-1.jpg'}})
