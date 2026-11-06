@@ -443,3 +443,39 @@ PAGES += [
      'desc': 'Search, ads, practice area pages and intake automation for law firms, measured on consultations booked.',
      'body': law, 'close': close("Let's find where your firm <span class=\"focus\">loses enquiries.</span>", 'night-fog.jpg', 'marketing for our firm')},
 ]
+
+# =================== Careers ===================
+careers = (
+    '<section class="wrap ph">\n<div class="chip rise"><i></i>Careers</div>\n'
+    '<div class="ph-grid">\n<h1 class="rise d1">Do the best work of your career, <span class="focus">without the agency noise.</span></h1>\n'
+    '<div class="ph-side rise d2"><p>SanityAI is a small team in Dubai working on websites, ads, search and automation for service businesses across the GCC. We hire slowly, and only when there is real work for someone good to own.</p>\n'
+    '<div class="row"><a class="btn dark" href="mailto:work@sanity.ai?subject=Careers">Send us your work ' + ARR + '</a></div></div>\n</div>\n</section>\n'
+    '<div class="wrap"><div class="band grow" style="height:clamp(300px,38vw,520px)"><img src="/assets/photos/glass-roof.jpg" alt="" class="px"></div></div>\n'
+    + tiles('How we work', 'What working here <span class="focus">feels like.</span>',
+            'We would rather do fewer things properly than many things loudly. These are the habits we look for and try to protect.',
+            [('Outcomes over output', 'We judge work by the enquiries and sales it brings, not by hours or slide counts. You will always know which number your work moves.'),
+             ('Plain words', 'We write the way we talk to clients, without jargon or filler. If an idea cannot be explained simply, it usually is not ready.'),
+             ('Honest numbers', 'We report what happened, including when something did not work. Nobody here gets in trouble for bad news shared early.'),
+             ('Ownership', 'You own your accounts and projects from start to finish. That comes with real trust and a direct line to the founder.')])
+    + rows('Who we want to hear from', 'Skills we are <span class="focus">always open to.</span>',
+           'We do not always have an open role. If your work is strong in one of these areas, we still want to see it, and we keep good people in mind.',
+           [('Paid media', 'Google and Meta specialists who can show results measured on bookings or sales. LinkedIn and TikTok experience is a plus.'),
+            ('Search and content', 'Writers and SEO people who can explain a complex service in simple language. You care about readers first and rankings second.'),
+            ('Automation', 'Builders who know WhatsApp Business, CRMs and booking tools. You like making messy processes simple and reliable.'),
+            ('Design and web', 'Designers and developers who build fast, clean sites that work on a phone first. Taste matters, and so does the conversion rate.')])
+    + steps('How to apply', 'Three steps, <span class="focus">no cover letter.</span>',
+            'We care more about your work than your CV. The process is short, and you will hear back either way.',
+            [('1.0', 'Email', 'Send your work', 'Email work@sanity.ai with "Careers" and your area in the subject line. Include two or three pieces of work you are proud of and what you personally did on each.'),
+             ('2.0', 'Talk', 'A real conversation', 'If there is a fit, we will set up a call to talk through your work. Expect questions about how you think, not trick questions.'),
+             ('3.0', 'Try', 'A small paid task', 'For serious candidates, we agree a short, paid piece of work close to the real job. It shows both sides what working together is like.'),
+             ('4.0', 'Decide', 'A clear answer', 'We make a decision quickly and tell you why. If it is not a fit now, we will say so honestly.')])
+)
+
+PAGES.append({'file': 'careers.html', 'path': '/careers', 'title': 'Careers | SanityAI',
+    'desc': 'Work with SanityAI in Dubai on websites, ads, search and automation for GCC service businesses.',
+    'body': careers,
+    'close': {'h2': 'Think you would fit? <span class="focus">Show us your work.</span>',
+              'lead': 'Email two or three pieces of work you are proud of to work@sanity.ai. Tell us what you did on each one, and what you would do differently now.',
+              'img': 'hero-2.jpg',
+              'btns': '<a class="btn light" href="mailto:work@sanity.ai?subject=Careers">Email work@sanity.ai ' + ARR + '</a>',
+              'chip': 'Careers at SanityAI', 'stats': False}})

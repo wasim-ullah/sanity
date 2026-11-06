@@ -9,6 +9,7 @@ Run from the repo root:  python3 tools/build.py
 import os, re, html, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from pages import SOLUTIONS, INDUSTRIES, PAGES
+from blog import blog_pages
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ARR = '<svg class="arr" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg>'
@@ -59,7 +60,7 @@ def footer_cols():
     return ('<!-- FOOTCOLS:START -->\n<div class="wrap ft-cols">\n'
         '<div><h4>Solutions</h4>' + sol + '</div>\n'
         '<div><h4>Industries</h4>' + ind + '</div>\n'
-        '<div><h4>Company</h4><a href="/#services">About</a><a href="/#approach">How we work</a><a href="/#start">Pricing</a><a href="/privacy">Privacy policy</a></div>\n'
+        '<div><h4>Company</h4><a href="/#services">About</a><a href="/#approach">How we work</a><a href="/#start">Pricing</a><a href="/blog">Blog</a><a href="/careers">Careers</a><a href="/privacy">Privacy policy</a></div>\n'
         '<div><h4>Contact</h4><a href="mailto:work@sanity.ai">work@sanity.ai</a><a href="' + WA + '">WhatsApp</a><a href="https://www.instagram.com/_sanityhq/">Instagram</a></div>\n'
         '</div>\n'
         '<div class="wrap ft-base"><span>© 2026 SanityAI, a business of Safia Saif LLC, Dubai</span><a href="/privacy">Privacy policy</a></div>\n'
@@ -72,7 +73,7 @@ def footer():
         '<div style="margin-top:14px;display:flex;gap:6px"><a class="btn dark sm" href="#start">Book a call ' + ARR + '</a><a class="btn sm" href="mailto:work@sanity.ai">Email us</a></div></div>\n'
         '</div>\n' + footer_cols() + '\n</footer>')
 
-def head(title, desc, path):
+def head(title, desc, path, extra_head=''):
     url = 'https://sanity.ai' + path
     t = html.escape(title)
     d = html.escape(desc)
@@ -88,20 +89,20 @@ def head(title, desc, path):
         '<link rel="apple-touch-icon" href="/apple-touch-icon.png">\n<meta name="theme-color" content="#f5f5f4">\n'
         '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
         '<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&family=IBM+Plex+Serif:wght@300;400&display=swap" rel="stylesheet">\n'
-        '<link rel="stylesheet" href="/assets/site.css">\n</head>\n<body>\n<div class="site">\n')
+        '<link rel="stylesheet" href="/assets/site.css">\n' + extra_head + '</head>\n<body>\n<div class="site">\n')
 
 def closing(c):
     return ('<section id="start" class="close">\n<img src="/assets/photos/' + c.get('img', 'proof.jpg') + '" alt="" class="px">\n'
         '<div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,16,.15) 0%,rgba(12,14,16,.25) 40%,rgba(12,14,16,.88) 100%)"></div>\n'
-        '<div class="wrap">\n<div class="chip" style="color:#ffffff"><i style="background:rgba(255,255,255,.3)"></i>13 years of marketing across the US, LATAM, Pakistan and the GCC</div>\n'
+        '<div class="wrap">\n<div class="chip" style="color:#ffffff"><i style="background:rgba(255,255,255,.3)"></i>' + c.get('chip', '13 years of marketing across the US, LATAM, Pakistan and the GCC') + '</div>\n'
         '<h2 class="sv">' + c['h2'] + '</h2>\n<p class="lead sv">' + c['lead'] + '</p>\n'
-        '<div style="margin-top:22px;display:flex;gap:8px;flex-wrap:wrap"><a class="btn light" href="' + WA + '?text=' + c.get('wa', 'Hi%20Wasim%2C%20I%27d%20like%20to%20book%20a%20call.') + '">Book a call on WhatsApp ' + ARR + '</a><a class="btn ghost" href="mailto:work@sanity.ai">work@sanity.ai</a></div>\n'
-        '<div class="stats sv"><div><div>$1M+</div><div>Revenue traced to our campaigns</div></div><div><div>60%</div><div>Lower cost per acquisition, four GCC markets</div></div><div><div>13</div><div>Years of marketing experience</div></div></div>\n'
+        '<div style="margin-top:22px;display:flex;gap:8px;flex-wrap:wrap">' + c.get('btns', '<a class="btn light" href="' + WA + '?text=' + c.get('wa', 'Hi%20Wasim%2C%20I%27d%20like%20to%20book%20a%20call.') + '">Book a call on WhatsApp ' + ARR + '</a><a class="btn ghost" href="mailto:work@sanity.ai">work@sanity.ai</a>') + '</div>\n'
+        + ('' if c.get('stats') is False else '<div class="stats sv"><div><div>$1M+</div><div>Revenue traced to our campaigns</div></div><div><div>60%</div><div>Lower cost per acquisition, four GCC markets</div></div><div><div>13</div><div>Years of marketing experience</div></div></div>\n') +
         '</div>\n</section>\n')
 
 def page(p):
-    return head(p['title'], p['desc'], p['path']) + header() + '\n<main>\n' + p['body'] + closing(p['close']) + '</main>\n' + footer() + \
-        '\n</div>\n<script src="/assets/site.js" defer></script>\n<script>' + REVEAL + '</script>\n</body>\n</html>\n'
+    return head(p['title'], p['desc'], p['path'], p.get('head', '')) + header() + '\n<main>\n' + p['body'] + closing(p['close']) + '</main>\n' + footer() + \
+        '\n</div>\n<script src="/assets/site.js" defer></script>\n<script>' + REVEAL + '</script>\n' + p.get('script', '') + '</body>\n</html>\n'
 
 # Scroll reveal fallback for browsers without scroll timelines (same as the home page).
 REVEAL = ("(function(){if(!(window.CSS&&CSS.supports&&CSS.supports('animation-timeline: view()'))&&'IntersectionObserver' in window){"
@@ -112,7 +113,8 @@ def main():
     base = open(os.path.join(ROOT, 'tools', 'base.css')).read()
     extra = open(os.path.join(ROOT, 'tools', 'site-extra.css')).read()
     open(os.path.join(ROOT, 'assets', 'site.css'), 'w').write('/* Generated by tools/build.py. Edit tools/base.css or tools/site-extra.css. */\n' + base + '\n' + extra)
-    for p in PAGES:
+    pages = PAGES + blog_pages()
+    for p in pages:
         out = os.path.join(ROOT, p['file'])
         os.makedirs(os.path.dirname(out), exist_ok=True)
         open(out, 'w').write(page(p))
@@ -123,6 +125,10 @@ def main():
     s = re.sub(r'<!-- FOOTCOLS:START -->.*?<!-- FOOTCOLS:END -->', lambda m: footer_cols(), s, flags=re.S)
     open(ix, 'w').write(s)
     print('updated index.html')
+    urls = ['/'] + [p['path'] for p in pages]
+    sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join('  <url><loc>https://sanity.ai%s</loc></url>\n' % u for u in urls) + '</urlset>\n'
+    open(os.path.join(ROOT, 'sitemap.xml'), 'w').write(sm)
+    print('wrote sitemap.xml with', len(urls), 'urls')
 
 if __name__ == '__main__':
     main()
