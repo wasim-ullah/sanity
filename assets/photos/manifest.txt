@@ -25,3 +25,15 @@ s-websites https://delivery.unsplash.com/premium_photo-1764236651694-ae656108803
 s-paid-ads https://delivery.unsplash.com/premium_photo-1661873154531-219430e580e9?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=e7a2c8c42fc937c0cafd858bafcc442b
 s-search https://delivery.unsplash.com/premium_photo-1779719491239-a365915580ab?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=05244bc80fd5737cf917f86494e83dd1
 s-automation https://delivery.unsplash.com/premium_photo-1725408016626-0b890540a2a3?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=f9fdf66ad4dfc4d1855b891ae16f17a4
+g-detroit-night https://delivery.unsplash.com/premium_photo-1787012038567-2ebc0f2c4ee9?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=a5fc9e72cbaeed5425b1818981a2c9b5
+g-above-clouds https://delivery.unsplash.com/premium_photo-1787014146467-93426af5f19b?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=a6b3fbbb78447a36d63fb56dc6ff9100
+g-miami-twilight https://delivery.unsplash.com/premium_photo-1786994044764-e28f638012af?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=77c204c38cd19dd15f4d83a1b382325e
+g-boston-sunrise https://delivery.unsplash.com/premium_photo-1786996914674-f3b2cb15b11a?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=d73dca5868c6fcd76a24f2a8b7827afc
+g-towers https://delivery.unsplash.com/premium_photo-1786992418815-81c968475e8c?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=d8bf40441fe008c65637615a2e953903
+g-city-grid https://delivery.unsplash.com/premium_photo-1786987205626-6eb03d6f4782?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=0c78b7211fd7fb439c689b59fa33fe8c
+g-winter-aerial https://delivery.unsplash.com/premium_photo-1786989624656-0fce3c8fb4bf?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=654bfaa3e9b088b5b2783e6c4719b4c7
+g-dubai-dusk https://delivery.unsplash.com/premium_photo-1733317416241-d92ba6af4e51?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=582c775b71e778dcfeb38913200ff848
+g-uae-dunes https://delivery.unsplash.com/premium_photo-1725404403236-e18bb6551202?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=4a9304148c194fa0f65c5deb2c0e7298
+g-doha-sun https://delivery.unsplash.com/premium_photo-1697730101992-44eb50ae2d64?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=2a2f2cd465132c45fc52d626f41f9016
+g-miami-dusk https://delivery.unsplash.com/premium_photo-1786975209503-6d249ab7ca54?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=d04c1fb0819198f33ab21823eaec5504
+g-cloudy-city https://delivery.unsplash.com/premium_photo-1786990855353-31fb8766817b?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=825d545c53afa69be43c96c98813a47e
