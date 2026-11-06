@@ -288,3 +288,6 @@ html.menu-open{overflow:hidden !important;overscroll-behavior:none}
 .post p,.post li{font-size:16px}
 .post>p:first-child{font-size:17.5px}
 }
+
+/* Wordmark SVG */
+.logo{display:inline-block;vertical-align:middle;flex:none;overflow:visible}

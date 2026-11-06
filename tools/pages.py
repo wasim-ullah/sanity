@@ -84,7 +84,7 @@ websites = (
     hero('Solutions', '/#services', 'Websites',
          'Websites that turn visits into <span class="focus">booked calls.</span>',
          'We plan, write and build fast, phone-first websites for service businesses in the GCC. Every page answers the questions buyers ask and makes it easy to call, book or message on WhatsApp.',
-         'glass-roof.jpg',
+         's-websites.jpg',
          panel_list('Launch checklist', ['Speed tested on a mid-range phone', 'Every form sends to WhatsApp and email', 'Lead source saved with each enquiry', 'Pages written around real searches'], '4 of 4'),
          'left:24px;top:40px;width:min(290px,calc(100% - 48px))',
          'Hi%20Wasim%2C%20I%27d%20like%20to%20talk%20about%20a%20website.')
@@ -238,7 +238,7 @@ report_panel = ('<div style="color:#55565a">Prepare a report for <span style="pa
 paid_ads = (
     hero('Solutions', '/#services', 'Paid ads', 'Paid ads judged on <span class="focus">bookings, not clicks.</span>',
          'We run Google, Meta, LinkedIn and TikTok campaigns for service businesses in the GCC. Every campaign is tracked to the enquiries and sales it brings, so budget goes where it pays.',
-         'grow.jpg', panel_list('Weekly ads review', ['Bookings traced to each campaign', 'Budget moved to the best cost per lead', 'Wasted search terms removed', 'New ad versions tested'], 'Monday'),
+         's-paid-ads.jpg', panel_list('Weekly ads review', ['Bookings traced to each campaign', 'Budget moved to the best cost per lead', 'Wasted search terms removed', 'New ad versions tested'], 'Monday'),
          'left:24px;top:40px;width:min(290px,calc(100% - 48px))', wa("Hi Wasim, I'd like to talk about our ads."))
     + tiles('What you get', 'Campaigns built around <span class="focus">what you sell.</span>',
             "We start from your offer and your margins, not from the platform's suggestions. The four parts below are included in every account we run.",
@@ -271,7 +271,7 @@ paid_ads = (
 search_ai = (
     hero('Solutions', '/#services', 'Search and AI', 'Found on Google and <span class="focus">named in AI answers.</span>',
          'More buyers now ask ChatGPT, Gemini and Perplexity who to hire, alongside searching on Google. We make sure your business shows up in both, with pages and facts these tools can trust.',
-         'night-fog.jpg', ask_panel, 'right:24px;bottom:32px;width:min(290px,calc(100% - 48px))', wa("Hi Wasim, I'd like to talk about search and AI visibility."))
+         's-search.jpg', ask_panel, 'right:24px;bottom:32px;width:min(290px,calc(100% - 48px))', wa("Hi Wasim, I'd like to talk about search and AI visibility."))
     + tiles('What you get', 'Visibility that <span class="focus">builds over time.</span>',
             'Paid ads stop the day the budget stops. Search work keeps paying back, because pages, reviews and mentions build on each other.',
             [('Technical health', 'Fast pages, clean structure and no errors blocking search engines. This comes first, because everything else depends on it.'),
@@ -303,7 +303,7 @@ search_ai = (
 automation = (
     hero('Solutions', '/#services', 'Automation', 'Every enquiry answered, <span class="focus">day or night.</span>',
          'Most leads go cold because nobody replied in time. We set up WhatsApp, email and CRM automations that answer in seconds, follow up for you and keep every enquiry in one place.',
-         'build.jpg', chat_panel, 'left:24px;top:40px;width:min(290px,calc(100% - 48px))', wa("Hi Wasim, I'd like to talk about automation."))
+         's-automation.jpg', chat_panel, 'left:24px;top:40px;width:min(290px,calc(100% - 48px))', wa("Hi Wasim, I'd like to talk about automation."))
     + tiles('What you get', 'Systems that do the <span class="focus">follow-up for you.</span>',
             'Automation here means simple, reliable steps that save your team time. Each one is built around how your business already sells.',
             [('Instant replies', 'Every WhatsApp message, form and missed call gets an answer within seconds. The reply offers a clear next step, such as booking a time.'),

@@ -8,7 +8,7 @@ POSTS = [
 {
 'slug': 'google-ai-mode-local-business',
 'cat': 'Search and AI',
-'img': 'night-fog.jpg',
+'img': 'b-ai-mode.jpg',
 'title': 'Google says search is now AI search. Here is what local businesses should change.',
 'dek': 'AI Mode is becoming the default way people search. The businesses that do well will be the ones that are easy to understand, not the ones with the most keywords.',
 'body': '''
@@ -33,7 +33,7 @@ POSTS = [
 {
 'slug': 'whatsapp-business-agent',
 'cat': 'Automation',
-'img': 'build.jpg',
+'img': 'b-whatsapp.jpg',
 'title': "Meta's WhatsApp agent is live everywhere. Should it answer your leads?",
 'dek': 'The new Business Agent can answer questions, qualify leads and book appointments inside WhatsApp. It is useful, as long as you decide where it stops.',
 'body': '''
@@ -57,7 +57,7 @@ POSTS = [
 {
 'slug': 'ads-in-ai-answers',
 'cat': 'Paid ads',
-'img': 'grow.jpg',
+'img': 'b-ads-ai.jpg',
 'title': 'Ads are moving into AI answers. What that means for lead generation.',
 'dek': 'Google is putting conversational ads and a lead-qualifying agent inside AI Mode. The businesses that gain most will be the ones measuring bookings, not form fills.',
 'body': '''
@@ -80,7 +80,7 @@ POSTS = [
 {
 'slug': 'ai-agents-booking',
 'cat': 'Websites',
-'img': 'glass-roof.jpg',
+'img': 'b-agents.jpg',
 'title': 'When an AI agent books for your customer, can it book you?',
 'dek': 'Assistants are starting to make calls and bookings on behalf of people. Businesses with clear information and simple booking will be easier to choose.',
 'body': '''
@@ -104,7 +104,7 @@ POSTS = [
 {
 'slug': 'what-ai-assistants-look-at',
 'cat': 'Search and AI',
-'img': 'hero-1.jpg',
+'img': 'b-assistants.jpg',
 'title': 'What AI assistants look at before they recommend a business',
 'dek': 'When someone asks ChatGPT, Gemini or Perplexity for a clinic or a lawyer in Dubai, the answer comes from somewhere. Here is what you can influence.',
 'body': '''
@@ -129,7 +129,7 @@ POSTS = [
 {
 'slug': 'human-content-wins',
 'cat': 'Content',
-'img': 'mono-facade.jpg',
+'img': 'b-human.jpg',
 'title': 'The backlash against AI slop is a chance for small brands',
 'dek': 'Feeds and inboxes are full of content that sounds the same. Writing like a real person with a real opinion has become a competitive advantage again.',
 'body': '''
@@ -154,7 +154,7 @@ POSTS = [
 {
 'slug': 'uae-advertiser-permit',
 'cat': 'Paid social',
-'img': 'sector.jpg',
+'img': 'b-permit.jpg',
 'title': 'Working with creators in the UAE now means checking their permit',
 'dek': 'The UAE Media Council advertiser permit is now required for creators who promote brands. Here is what businesses hiring them should check.',
 'body': '''
@@ -179,7 +179,7 @@ POSTS = [
 {
 'slug': 'measuring-with-fewer-clicks',
 'cat': 'Measurement',
-'img': 'plan-city.jpg',
+'img': 'b-measure.jpg',
 'title': 'Fewer clicks, same sales: how to measure marketing when AI answers keep people on Google',
 'dek': 'If customers decide inside AI answers and map listings, last-click reports will undercount what is working. Here is a simpler way to keep score.',
 'body': '''
@@ -203,7 +203,7 @@ POSTS = [
 {
 'slug': 'outreach-in-full-inboxes',
 'cat': 'Go to market',
-'img': 'hero-3.jpg',
+'img': 'b-outreach.jpg',
 'title': 'Every inbox is full of AI-written outreach. Here is what still gets a reply.',
 'dek': 'Automated sales tools have made cold email cheap and everywhere. For high-ticket deals in the GCC, fewer, better messages win.',
 'body': '''
@@ -227,7 +227,7 @@ POSTS = [
 {
 'slug': 'selling-into-saudi',
 'cat': 'Go to market',
-'img': 'dunes.jpg',
+'img': 'b-saudi.jpg',
 'title': 'Selling into Saudi from Dubai: why Arabic-first is no longer optional',
 'dek': 'Many UAE businesses treat Saudi as an extension of Dubai with a translated website. Buyers there increasingly expect to be spoken to in their own language and context.',
 'body': '''

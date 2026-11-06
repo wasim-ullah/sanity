@@ -17,7 +17,7 @@ module.exports = function guideEmail(base) {
   '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px">' +
   // header
   '<tr><td style="padding:0 4px 22px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>' +
-  '<td style="font:400 13px/16px ' + F + ';letter-spacing:4px;text-transform:uppercase;color:#111111">SANITY<span style="display:inline-block;width:1px;height:16px;background:#111111;margin:0 9px 0 5px;vertical-align:-3px"></span>AI</td>' +
+  '<td><img src="' + base + '/assets/brand/sanityai-logo.png" width="120" height="21" alt="SanityAI" style="display:block;border:0;outline:none;width:120px;height:21px"></td>' +
   '<td align="right" style="font:400 12px/16px ' + B + ';color:#8a8b90">Free guide</td></tr></table></td></tr>' +
   // cover
   '<tr><td><a href="' + pdf + '"><img src="' + base + '/assets/email/guide-banner.jpg" width="600" alt="AI in marketing, without the hype" style="display:block;width:100%;height:auto;border:0;border-radius:6px 6px 0 0"></a></td></tr>' +

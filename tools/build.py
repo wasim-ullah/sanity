@@ -15,7 +15,11 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ARR = '<svg class="arr" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg>'
 ARR_R = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>'
 WA = 'https://wa.me/971585785819'
-MARK = '<span class="mark">Sanity<span class="bar"></span>AI</span>'
+_vb, _ratio = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'logo_vb.txt')).read().split('|')
+# The wordmark is an SVG file (letters drawn as paths). <use> pulls it in and inherits the text colour.
+MARK = ('<svg class="logo" viewBox="' + _vb + '" style="height:1.3em;width:%.3fem" aria-hidden="true" focusable="false">'
+        '<use href="/assets/brand/sanityai-logo.svg#mark"></use></svg>') % (float(_ratio) * 1.3)
+MARK_IMG = MARK.replace('aria-hidden="true" focusable="false"', 'role="img" aria-label="SanityAI"')
 
 def icon(paths):
     return '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + paths + '</svg>'
@@ -32,7 +36,7 @@ def msub(label, items):
 
 def header():
     return ('<!-- HEADER:START -->\n<header class="sh">\n<div class="hd">\n'
-        '<a class="hd-logo" href="/" aria-label="SanityAI home">' + MARK.replace('class="mark"', 'class="mark" aria-hidden="true"') + '</a>\n'
+        '<a class="hd-logo" href="/" aria-label="SanityAI home">' + MARK + '</a>\n'
         '<nav class="navlinks" aria-label="Main">\n'
         '<a href="/#services">About</a>\n'
         + dd('Solutions', 'sol', SOLUTIONS, 'One team for all four, measured on enquiries.') + '\n'
@@ -68,7 +72,7 @@ def footer_cols():
 
 def footer():
     return ('<footer class="ft">\n<div class="wrap" style="padding-top:56px;display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between">\n'
-        '<div style="flex:1 1 280px"><div role="img" aria-label="SanityAI" style="font-size:14px">' + MARK + '</div>'
+        '<div style="flex:1 1 280px"><div style="font-size:14px;display:flex">' + MARK_IMG + '</div>'
         '<div style="margin-top:14px;font-size:22px;line-height:1.15;letter-spacing:-0.04em;max-width:10em">Your business, <span class="focus">found and chosen.</span></div>'
         '<div style="margin-top:14px;display:flex;gap:6px"><a class="btn dark sm" href="#start">Book a call ' + ARR + '</a><a class="btn sm" href="mailto:work@sanity.ai">Email us</a></div></div>\n'
         '</div>\n' + footer_cols() + '\n</footer>')
@@ -117,8 +121,10 @@ def main():
     def ver(f):
         return hashlib.md5(open(os.path.join(ROOT, 'assets', f), 'rb').read()).hexdigest()[:8]
     vcss, vjs = ver('site.css'), ver('site.js')
+    vlogo = hashlib.md5(open(os.path.join(ROOT, 'assets/brand/sanityai-logo.svg'), 'rb').read()).hexdigest()[:8]
     def stamp(t):
         t = re.sub(r'/assets/site\.css(\?v=\w+)?', '/assets/site.css?v=' + vcss, t)
+        t = re.sub(r'/assets/brand/sanityai-logo\.svg(\?v=\w+)?#mark', '/assets/brand/sanityai-logo.svg?v=' + vlogo + '#mark', t)
         return re.sub(r'/assets/site\.js(\?v=\w+)?', '/assets/site.js?v=' + vjs, t)
     for p in pages:
         out = os.path.join(ROOT, p['file'])
@@ -129,6 +135,7 @@ def main():
     s = open(ix).read()
     s = re.sub(r'<!-- HEADER:START -->.*?<!-- HEADER:END -->', lambda m: header(), s, flags=re.S)
     s = re.sub(r'<!-- FOOTCOLS:START -->.*?<!-- FOOTCOLS:END -->', lambda m: footer_cols(), s, flags=re.S)
+    s = re.sub(r'<span class="mark"[^>]*>Sanity<span class="bar"></span>AI</span>', lambda m: MARK_IMG, s)
     open(ix, 'w').write(stamp(s))
     print('updated index.html')
     urls = ['/'] + [p['path'] for p in pages]
