@@ -60,7 +60,8 @@ def post_page(i, p):
         % (p['cat'], p['title'], DATE, minutes(p['body']), p['img'], p['body'].strip(), ARR, ''.join(card(q) for q in related)))
     return {'file': 'blog/%s.html' % p['slug'], 'path': '/blog/' + p['slug'], 'title': p['title'] + ' | SanityAI',
             'desc': p['dek'], 'body': body,
-            'head': '<meta property="article:published_time" content="%s">\n<script type="application/ld+json">%s</script>\n' % (DATE_ISO, json.dumps(ld)),
+            'head': '<script type="application/ld+json">%s</script>\n' % json.dumps(ld),
+            'published': DATE_ISO, 'og_eyebrow': 'Blog  /  ' + p['cat'],
             'close': {'h2': 'Let\'s look at <span class="focus">your numbers.</span>',
                       'lead': 'Book a free 20-minute call and we will look at your site, ads and enquiries with you. You leave with the first three fixes, whether or not we work together.',
                       'img': ['proof.jpg', 'night-fog.jpg', 'dunes.jpg', 'hero-3.jpg', 'sector.jpg'][i % 5]}}

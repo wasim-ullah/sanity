@@ -10,6 +10,7 @@ import os, re, html, sys, hashlib
 sys.path.insert(0, os.path.dirname(__file__))
 from pages import SOLUTIONS, INDUSTRIES, PAGES
 from blog import blog_pages
+import og
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ARR = '<svg class="arr" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg>'
@@ -77,7 +78,7 @@ def footer():
         '<div style="margin-top:14px;display:flex;gap:6px"><a class="btn dark sm" href="#start">Book a call ' + ARR + '</a><a class="btn sm" href="mailto:work@sanity.ai">Email us</a></div></div>\n'
         '</div>\n' + footer_cols() + '\n</footer>')
 
-def head(title, desc, path, extra_head=''):
+def head(title, desc, path, extra_head='', meta=''):
     url = 'https://sanity.ai' + path
     t = html.escape(title)
     d = html.escape(desc)
@@ -85,10 +86,8 @@ def head(title, desc, path, extra_head=''):
         '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
         '<title>' + t + '</title>\n<meta name="description" content="' + d + '">\n'
         '<link rel="canonical" href="' + url + '">\n'
-        '<meta property="og:type" content="website">\n<meta property="og:url" content="' + url + '">\n'
-        '<meta property="og:title" content="' + t + '">\n<meta property="og:description" content="' + d + '">\n'
-        '<meta property="og:image" content="https://sanity.ai/assets/social/og-image.png">\n'
-        '<meta name="twitter:card" content="summary_large_image">\n'
+        + meta +
+
         '<link rel="icon" href="/favicon.ico" sizes="any">\n<link rel="icon" type="image/svg+xml" href="/favicon.svg">\n'
         '<link rel="apple-touch-icon" href="/apple-touch-icon.png">\n<meta name="theme-color" content="#f5f5f4">\n'
         '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
@@ -105,7 +104,7 @@ def closing(c):
         '</div>\n</section>\n')
 
 def page(p):
-    return head(p['title'], p['desc'], p['path'], p.get('head', '')) + header() + '\n<main>\n' + p['body'] + closing(p['close']) + '</main>\n' + footer() + \
+    return head(p['title'], p['desc'], p['path'], p.get('head', ''), p.get('meta', '')) + header() + '\n<main>\n' + p['body'] + closing(p['close']) + '</main>\n' + footer() + \
         '\n</div>\n<script src="/assets/site.js" defer></script>\n<script>' + REVEAL + '</script>\n' + p.get('script', '') + '</body>\n</html>\n'
 
 # Scroll reveal fallback for browsers without scroll timelines (same as the home page).
@@ -126,13 +125,37 @@ def main():
         t = re.sub(r'/assets/site\.css(\?v=\w+)?', '/assets/site.css?v=' + vcss, t)
         t = re.sub(r'/assets/brand/sanityai-logo\.svg(\?v=\w+)?#mark', '/assets/brand/sanityai-logo.svg?v=' + vlogo + '#mark', t)
         return re.sub(r'/assets/site\.js(\?v=\w+)?', '/assets/site.js?v=' + vjs, t)
+    # Share preview images and tags, for every page (current and future)
+    ix = os.path.join(ROOT, 'index.html')
+    ixs = open(ix).read()
+    def eyebrow(p):
+        if p.get('og_eyebrow'): return p['og_eyebrow']
+        for pre, lab in (('/solutions/', 'Solutions'), ('/industries/', 'Industries'), ('/blog', 'Blog'), ('/careers', 'Careers'), ('/privacy', 'Privacy policy')):
+            if p['path'].startswith(pre): return lab
+        return 'SanityAI'
+    def h1(t):
+        m = re.search(r'<h1[^>]*>(.*?)</h1>', t, re.S); return m.group(1) if m else ''
+    def photo(p):
+        m = re.search(r'/assets/photos/([\w.-]+\.jpg)', p['body']); return m.group(1) if m else p['close'].get('img', 'proof.jpg')
+    items = [{'key': 'home', 'headline': h1(ixs), 'eyebrow': 'Marketing agency in Dubai', 'img': 'hero-1.jpg'}]
+    for p in pages:
+        p['og_key'] = p['path'].strip('/').replace('/', '-') or 'home'
+        items.append({'key': p['og_key'], 'headline': p.get('og_headline') or h1(p['body']), 'eyebrow': eyebrow(p), 'img': photo(p)})
+    ogurls = og.render_all(items)
+    def alt(hl):
+        return re.sub(r'<[^>]+>', '', html.unescape(hl)).strip()
+    for p, it in zip(pages, items[1:]):
+        p['meta'] = og.meta_tags('https://sanity.ai' + p['path'], p['title'], p['desc'], ogurls[it['key']], alt(it['headline']) + ' | SanityAI',
+                                 'article' if p.get('published') else 'website', p.get('published'))
+    home_meta = og.meta_tags('https://sanity.ai/', re.search(r'<title>(.*?)</title>', ixs).group(1),
+                             html.unescape(re.search(r'<meta name="description" content="([^"]*)"', ixs).group(1)), ogurls['home'], alt(items[0]['headline']) + ' | SanityAI')
     for p in pages:
         out = os.path.join(ROOT, p['file'])
         os.makedirs(os.path.dirname(out), exist_ok=True)
         open(out, 'w').write(stamp(page(p)))
         print('wrote', p['file'])
-    ix = os.path.join(ROOT, 'index.html')
     s = open(ix).read()
+    s = re.sub(r'<!-- SHARE:START -->.*?<!-- SHARE:END -->', lambda m: '<!-- SHARE:START -->\n' + home_meta + '<!-- SHARE:END -->', s, flags=re.S)
     s = re.sub(r'<!-- HEADER:START -->.*?<!-- HEADER:END -->', lambda m: header(), s, flags=re.S)
     s = re.sub(r'<!-- FOOTCOLS:START -->.*?<!-- FOOTCOLS:END -->', lambda m: footer_cols(), s, flags=re.S)
     s = re.sub(r'<span class="mark"[^>]*>Sanity<span class="bar"></span>AI</span>', lambda m: MARK_IMG, s)
