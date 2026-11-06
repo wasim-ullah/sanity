@@ -67,7 +67,7 @@ li.open .msub{grid-template-rows:1fr}
 .mnav-cta .btn{justify-content:center;min-height:46px;font-size:14px}
 .mnav-meta{margin-top:18px;display:flex;justify-content:space-between;font-size:12px;color:#6e6f74}
 .mnav-meta a{text-decoration:none}
-body.menu-open{overflow:hidden}
+html.menu-open{overflow:hidden !important;overscroll-behavior:none}
 
 @media (min-width:1440px){
 .hd{max-width:1100px;padding:14px 0}
