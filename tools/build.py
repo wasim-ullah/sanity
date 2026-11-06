@@ -60,7 +60,7 @@ def footer_cols():
     return ('<!-- FOOTCOLS:START -->\n<div class="wrap ft-cols">\n'
         '<div><h4>Solutions</h4>' + sol + '</div>\n'
         '<div><h4>Industries</h4>' + ind + '</div>\n'
-        '<div><h4>Company</h4><a href="/#services">About</a><a href="/#approach">How we work</a><a href="/#start">Pricing</a><a href="/blog">Blog</a><a href="/careers">Careers</a><a href="/privacy">Privacy policy</a></div>\n'
+        '<div><h4>Company</h4><a href="/#start">Pricing</a><a href="/blog">Blog</a><a href="/careers">Careers</a><a href="/privacy">Privacy policy</a></div>\n'
         '<div><h4>Contact</h4><a href="mailto:work@sanity.ai">work@sanity.ai</a><a href="' + WA + '">WhatsApp</a><a href="https://www.instagram.com/_sanityhq/">Instagram</a></div>\n'
         '</div>\n'
         '<div class="wrap ft-base"><span>© 2026 SanityAI, a business of Safia Saif LLC, Dubai</span><a href="/privacy">Privacy policy</a></div>\n'
