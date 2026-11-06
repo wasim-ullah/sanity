@@ -37,3 +37,10 @@ g-uae-dunes https://delivery.unsplash.com/premium_photo-1725404403236-e18bb65512
 g-doha-sun https://delivery.unsplash.com/premium_photo-1697730101992-44eb50ae2d64?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=2a2f2cd465132c45fc52d626f41f9016
 g-miami-dusk https://delivery.unsplash.com/premium_photo-1786975209503-6d249ab7ca54?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=d04c1fb0819198f33ab21823eaec5504
 g-cloudy-city https://delivery.unsplash.com/premium_photo-1786990855353-31fb8766817b?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=825d545c53afa69be43c96c98813a47e
+d-meeting-room https://delivery.unsplash.com/premium_photo-1764691410985-de741160e8d6?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=77ddab1bbe939bf45207a1916dcdeb3b
+d-office-dark https://delivery.unsplash.com/premium_photo-1764695114923-0451b06297c7?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=2c658766ee5d66de94e3db06c6249b04
+d-glass-facade https://delivery.unsplash.com/premium_photo-1754269279969-17f68aa9683f?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=0d179a26a0fe049e0db1d855e3fb630b
+d-downtown https://delivery.unsplash.com/premium_photo-1770458480577-8a058dc141f1?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=b38a953fadd22062327c0417e2f3bfc3
+d-abu-dhabi https://delivery.unsplash.com/premium_photo-1661964095477-fe68b487f700?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=eec19c5263ba69b8484f0b64a6be1723
+d-dubai-trails https://delivery.unsplash.com/premium_photo-1661962244620-343b7ed42a16?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=fd005f9ecb50544baa0a6b056b53d712
+d-concrete https://delivery.unsplash.com/premium_photo-1764702318694-8e44974e8923?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=b1d36039ed5a1af52237b7cfa0126cc9
