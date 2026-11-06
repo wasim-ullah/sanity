@@ -38,7 +38,7 @@ def crumb(parent, parent_url, name):
 def hero(parent, parent_url, name, h1, side, img, panel, panel_pos, wa_text):
     return ('<section class="wrap ph">\n' + crumb(parent, parent_url, name) + '\n'
         '<div class="ph-grid">\n<h1 class="rise d1">' + h1 + '</h1>\n'
-        '<div class="ph-side rise d2"><p>' + side + '</p>\n<div class="row"><a class="btn dark" href="#start">Book a call ' + ARR + '</a>'
+        '<div class="ph-side rise d2"><p>' + side + '</p>\n<div class="row"><a class="btn dark" href="/contact">Book a call ' + ARR + '</a>'
         '<a class="btn" href="' + WA + '?text=' + wa_text + '">WhatsApp</a></div></div>\n</div>\n</section>\n'
         '<div class="wrap"><div class="band grow"><img src="/assets/photos/' + img + '" alt="" class="px">\n'
         '<div class="panel" style="' + panel_pos + '">' + panel + '</div></div></div>\n')

@@ -54,7 +54,7 @@ def post_page(i, p):
         '<div class="byline rise d2"><img src="/assets/haze/founder.jpg" alt=""><div><b>Wasim Ullah, Founder</b>%s &middot; %d min read</div></div>\n'
         '</section>\n<div class="wrap"><div class="band short grow"><img src="/assets/photos/%s" alt="" class="px"></div></div>\n'
         '<article class="wrap"><div class="post">%s</div>\n'
-        '<div class="endnote"><p>Want a second opinion on how this applies to you? We will look at your setup on a free 20-minute call.</p><a class="btn dark" href="#start">Book a call %s</a></div>\n</article>\n'
+        '<div class="endnote"><p>Want a second opinion on how this applies to you? We will look at your setup on a free 20-minute call.</p><a class="btn dark" href="/contact">Book a call %s</a></div>\n</article>\n'
         '<section class="wrap sec">\n<div class="chip"><i></i>Keep reading</div>\n<h2 class="sv">More from <span class="focus">the blog.</span></h2>\n'
         '<div class="pgrid" style="margin-top:40px">%s</div>\n</section>\n'
         % (p['cat'], p['title'], DATE, minutes(p['body']), p['img'], p['body'].strip(), ARR, ''.join(card(q) for q in related)))

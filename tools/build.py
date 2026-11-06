@@ -28,7 +28,7 @@ def icon(paths):
 def dd(label, key, items, foot):
     links = ''.join('<a href="%s"><span class="ic">%s</span><span><b>%s</b><small>%s</small></span></a>' % (i['url'], icon(i['icon']), i['name'], i['short']) for i in items)
     return ('<div class="dd"><button type="button" class="dd-btn" aria-expanded="false" aria-controls="dd-%s">%s <span class="plus" aria-hidden="true">+</span></button>'
-            '<div class="dd-panel" id="dd-%s">%s<div class="dd-foot"><span>%s</span><a href="#start">Book a call %s</a></div></div></div>') % (key, label, key, links, foot, ARR)
+            '<div class="dd-panel" id="dd-%s">%s<div class="dd-foot"><span>%s</span><a href="/contact">Book a call %s</a></div></div></div>') % (key, label, key, links, foot, ARR)
 
 def msub(label, items):
     links = ''.join('<a href="%s">%s<small>%s</small></a>' % (i['url'], i['name'], i['short']) for i in items)
@@ -47,7 +47,7 @@ def header():
         '</nav>\n'
         '<div class="hd-cta">\n'
         '<a class="btn navwa" href="' + WA + '">WhatsApp</a>\n'
-        '<a class="btn dark" href="#start">Book a call ' + ARR + '</a>\n'
+        '<a class="btn dark" href="/contact">Book a call ' + ARR + '</a>\n'
         '<button type="button" class="burger" aria-expanded="false" aria-controls="mnav" aria-label="Open menu"><span></span><span></span></button>\n'
         '</div>\n</div>\n</header>\n'
         '<div class="mnav" id="mnav" aria-hidden="true"><div class="mnav-in">\n<ul class="mnav-list">\n'
@@ -57,7 +57,7 @@ def header():
         + msub('Industries', INDUSTRIES) + '\n'
         '<li><a href="/contact">Contact</a></li>\n'
         '</ul>\n'
-        '<div class="mnav-cta"><a class="btn" href="' + WA + '">WhatsApp</a><a class="btn dark" href="#start">Book a call ' + ARR + '</a></div>\n'
+        '<div class="mnav-cta"><a class="btn" href="' + WA + '">WhatsApp</a><a class="btn dark" href="/contact">Book a call ' + ARR + '</a></div>\n'
         '<div class="mnav-meta"><a href="mailto:work@sanity.ai">work@sanity.ai</a><span>Dubai, UAE</span></div>\n'
         '</div></div>\n<!-- HEADER:END -->')
 
@@ -77,7 +77,7 @@ def footer():
     return ('<footer class="ft">\n<div class="wrap" style="padding-top:56px;display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between">\n'
         '<div style="flex:1 1 280px"><div style="font-size:14px;display:flex">' + MARK_IMG + '</div>'
         '<div style="margin-top:14px;font-size:22px;line-height:1.15;letter-spacing:-0.04em;max-width:10em">Your business, <span class="focus">found and chosen.</span></div>'
-        '<div style="margin-top:14px;display:flex;gap:6px"><a class="btn dark sm" href="#start">Book a call ' + ARR + '</a><a class="btn sm" href="mailto:work@sanity.ai">Email us</a></div></div>\n'
+        '<div style="margin-top:14px;display:flex;gap:6px"><a class="btn dark sm" href="/contact">Book a call ' + ARR + '</a><a class="btn sm" href="mailto:work@sanity.ai">Email us</a></div></div>\n'
         '</div>\n' + footer_cols() + '\n</footer>')
 
 def head(title, desc, path, extra_head='', meta=''):
@@ -101,7 +101,7 @@ def closing(c):
         '<div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,16,.15) 0%,rgba(12,14,16,.25) 40%,rgba(12,14,16,.88) 100%)"></div>\n'
         '<div class="wrap">\n<div class="chip" style="color:#ffffff"><i style="background:rgba(255,255,255,.3)"></i>' + c.get('chip', '13 years of marketing across the US, LATAM, Pakistan and the GCC') + '</div>\n'
         '<h2 class="sv">' + c['h2'] + '</h2>\n<p class="lead sv">' + c['lead'] + '</p>\n'
-        '<div style="margin-top:22px;display:flex;gap:8px;flex-wrap:wrap">' + c.get('btns', '<a class="btn light" href="' + WA + '?text=' + c.get('wa', 'Hi%20Wasim%2C%20I%27d%20like%20to%20book%20a%20call.') + '">Book a call on WhatsApp ' + ARR + '</a><a class="btn ghost" href="mailto:work@sanity.ai">work@sanity.ai</a>') + '</div>\n'
+        '<div style="margin-top:22px;display:flex;gap:8px;flex-wrap:wrap">' + c.get('btns', '<a class="btn light" href="/contact">Book a call ' + ARR + '</a><a class="btn ghost" href="mailto:work@sanity.ai">work@sanity.ai</a>') + '</div>\n'
         + ('' if c.get('stats') is False else '<div class="stats sv"><div><div>$1M+</div><div>Revenue traced to our campaigns</div></div><div><div>60%</div><div>Lower cost per acquisition, four GCC markets</div></div><div><div>13</div><div>Years of marketing experience</div></div></div>\n') +
         '</div>\n</section>\n')
 
