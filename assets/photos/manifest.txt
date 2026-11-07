@@ -44,3 +44,5 @@ d-downtown https://delivery.unsplash.com/premium_photo-1770458480577-8a058dc141f
 d-abu-dhabi https://delivery.unsplash.com/premium_photo-1661964095477-fe68b487f700?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=eec19c5263ba69b8484f0b64a6be1723
 d-dubai-trails https://delivery.unsplash.com/premium_photo-1661962244620-343b7ed42a16?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=fd005f9ecb50544baa0a6b056b53d712
 d-concrete https://delivery.unsplash.com/premium_photo-1764702318694-8e44974e8923?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=b1d36039ed5a1af52237b7cfa0126cc9
+b-dashboard https://delivery.unsplash.com/premium_photo-1787007623378-a7559b4e76a8?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=1defa2e8495ef36e0bf03bdda30432b5
+g-badlands https://delivery.unsplash.com/premium_photo-1786988164373-54b95d2190a4?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&expires=1794182399&s=9331b6a071a8ed3bf1ef7a4beed531e7
