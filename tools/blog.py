@@ -46,7 +46,7 @@ def post_page(i, p):
     same = [q for q in others if q['cat'] == p['cat']]
     related = (same + [q for q in others if q not in same])[:3]
     ld = {'@context': 'https://schema.org', '@type': 'BlogPosting', 'headline': p['title'], 'description': p['dek'],
-          'datePublished': DATE_ISO, 'author': {'@type': 'Person', 'name': 'Wasim Ullah'},
+          'datePublished': p.get('date_iso', DATE_ISO), 'author': {'@type': 'Person', 'name': 'Wasim Ullah'},
           'publisher': {'@type': 'Organization', 'name': 'SanityAI'}, 'image': 'https://sanity.ai/assets/photos/' + p['img'],
           'mainEntityOfPage': 'https://sanity.ai/blog/' + p['slug']}
     body = ('<section class="wrap ph ph-post">\n<div class="chip rise"><i></i><a href="/blog">Blog</a><span class="sep">/</span>%s</div>\n'
@@ -57,11 +57,11 @@ def post_page(i, p):
         '<div class="endnote"><p>Want a second opinion on how this applies to you? We will look at your setup on a free 20-minute call.</p><a class="btn dark" href="/contact">Book a call %s</a></div>\n</article>\n'
         '<section class="wrap sec">\n<div class="chip"><i></i>Keep reading</div>\n<h2 class="sv">More from <span class="focus">the blog.</span></h2>\n'
         '<div class="pgrid" style="margin-top:40px">%s</div>\n</section>\n'
-        % (p['cat'], p['title'], DATE, minutes(p['body']), p['img'], p['body'].strip(), ARR, ''.join(card(q) for q in related)))
+        % (p['cat'], p['title'], p.get('date', DATE), minutes(p['body']), p['img'], p['body'].strip(), ARR, ''.join(card(q) for q in related)))
     return {'file': 'blog/%s.html' % p['slug'], 'path': '/blog/' + p['slug'], 'title': p['title'] + ' | SanityAI',
             'desc': p['dek'], 'body': body,
             'head': '<script type="application/ld+json">%s</script>\n' % json.dumps(ld),
-            'published': DATE_ISO, 'og_eyebrow': 'Blog  /  ' + p['cat'],
+            'published': p.get('date_iso', DATE_ISO), 'og_eyebrow': 'Blog  /  ' + p['cat'],
             'close': {'h2': 'Let\'s look at <span class="focus">your numbers.</span>',
                       'lead': 'Book a free 20-minute call and we will look at your site, ads and enquiries with you. You leave with the first three fixes, whether or not we work together.',
                       'img': ['proof.jpg', 'night-fog.jpg', 'dunes.jpg', 'hero-3.jpg', 'sector.jpg'][i % 5]}}

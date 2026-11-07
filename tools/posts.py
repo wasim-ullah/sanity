@@ -6,6 +6,43 @@ DATE_ISO = '2026-11-06'
 
 POSTS = [
 {
+'slug': 'sanityai-dashboard',
+'cat': 'Measurement',
+'img': 'b-dashboard.jpg',
+'date': '7 November 2026',
+'date_iso': '2026-11-07',
+'title': 'Why we built our own Dashboard, and what it fixes for our clients.',
+'dek': 'Ad platforms report clicks and leads. Clients care about booked clients. The Dashboard at app.sanity.ai joins the two, from the first click to the booking.',
+'body': '''
+<p>Every performance marketer knows the meeting. The ads report says leads are up, the sales team says the leads are poor, and nobody in the room can show which campaign produced the clients who actually paid. In thirteen years of marketing across the US, LATAM, Pakistan and the GCC, I have seen that gap waste more budget than any bad creative or wrong bid.</p>
+<p>So we built the Dashboard at <a href="https://app.sanity.ai">app.sanity.ai</a>. SanityAI clients sign in with their work email, and it runs on their own enquiries rather than on what an ad platform chooses to report. This post explains what it does and the problems it was built to fix.</p>
+<h2>The problem is usually after the click</h2>
+<p>For service businesses like clinics, real estate, interiors and law firms, one new client can be worth thousands. The money is rarely lost at the ad. It is lost in the hours after someone enquires: a WhatsApp message nobody answers until the next day, a follow-up that never happens, a contact form that quietly stopped sending.</p>
+<p>Ad platforms cannot see any of this. They count a form fill as a success whether or not anyone replied, and they keep optimising toward the people who fill in forms, not the people who buy. Fixing that needs one place that follows each enquiry from the ad to the outcome.</p>
+<h2>What the Dashboard does</h2>
+<p>A small snippet on the client's website records where each visitor came from, such as Google Ads, Meta, TikTok, LinkedIn, Google search, Maps or an AI assistant. When that visitor fills in a form or taps WhatsApp, the enquiry lands in the Dashboard with its source attached. From there the team replies, assigns an owner, sets a follow-up date and marks the result as booked or lost.</p>
+<ul>
+<li><strong>Today</strong> lists what needs someone now, most urgent first: enquiries waiting for a reply, follow-ups that are due, broken pages and ad spend that has produced no bookings this month.</li>
+<li><strong>Enquiries</strong> is the shared inbox, with filters for unanswered, stalled and unowned enquiries, so nothing waits without someone knowing.</li>
+<li><strong>Performance</strong> shows the whole funnel from ad spend to booked revenue, with cost per booking and return on ad spend for each source.</li>
+<li><strong>Campaigns</strong> ranks campaigns and landing pages by bookings, not by clicks.</li>
+<li><strong>Lead quality</strong> shows why enquiries were lost and which channels send buyers rather than browsers.</li>
+</ul>
+<h2>Speed to lead, measured instead of guessed</h2>
+<p>Most businesses believe they reply quickly. The Dashboard records how long every enquiry waited for its first reply and groups bookings by that wait. Each client sets their own reply target, and anything past it goes to the top of Today. New WhatsApp chats can also get an instant first reply, so nobody is left waiting overnight.</p>
+<p>This is often the cheapest win available. Replying faster costs nothing in ad spend, and it improves every channel at once.</p>
+<h2>Sending bookings back to the ad platforms</h2>
+<p>When an enquiry is marked booked, the Dashboard sends it back to Meta through the Conversions API and prepares the offline conversion upload for Google Ads. Both platforms then learn which people became clients, so their algorithms can look for more people like them instead of more form fillers.</p>
+<h2>Protecting what is already working</h2>
+<p>Two checks run in the background. Every morning, the key pages of each site are loaded the way a visitor would load them, to confirm the page works, the form has a way to send and the WhatsApp button points to the right number. If something breaks, the client hears about it the same day rather than after a week of lost enquiries.</p>
+<p>Every Monday, we also ask an AI assistant the questions real buyers ask, and record whether the client is named in the answer and where. More people now ask an assistant before they search, so it is worth knowing when you are being recommended and when a competitor is.</p>
+<h2>Goals with an early warning</h2>
+<p>Clients set a monthly booking goal and the highest cost per booking they are happy to pay. The Dashboard shows whether the month is on pace while there is still time to act, rather than in a report after the month has closed. A daily email lists due follow-ups and unanswered enquiries, and a Monday email sums up the week.</p>
+<h2>What it is not</h2>
+<p>The Dashboard is not a replacement for Google Ads or Meta Ads Manager, and it does not try to report every metric they offer. It answers a narrower question that those tools cannot: which spend turned into booked clients, and where people are slipping away. Its numbers are only as good as the outcomes the team records, which is why marking every enquiry booked or lost is the one habit we ask for.</p>
+<p>If you already work with us, you can sign in at <a href="https://app.sanity.ai">app.sanity.ai</a> with your work email. If you do not, we are happy to show you how it would look with your own enquiries on a free call.</p>
+'''},
+{
 'slug': 'google-ai-mode-local-business',
 'cat': 'Search and AI',
 'img': 'b-ai-mode.jpg',
